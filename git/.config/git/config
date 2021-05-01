@@ -1,0 +1,7 @@
+[user]
+	email = 29860391+OzakIOne@users.noreply.github.com
+	name = ozaki
+[core]
+	editor = code -w
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
