@@ -14,8 +14,9 @@ export NPM_CONFIG_USERCONFIG="${HOME}/.config/npm/config"
 export PKG_CACHE_PATH="${HOME}/.cache/pkg-cache/"
 alias wget="wget --hsts-file=\"$HOME/.cache/wget-hsts\""
 alias v="nvim"
+alias zrc="nvim ~/.zshrc"
 
-source $HOME/.config/antigen.zsh
+source $HOME/.config/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle git
