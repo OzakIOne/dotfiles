@@ -20,6 +20,8 @@ source $HOME/.config/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle git
+antigen bundle deno
+antigen bundle gh
 antigen bundle command-not-found
 antigen bundle history
 antigen bundle z
