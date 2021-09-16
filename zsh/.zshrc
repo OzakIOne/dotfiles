@@ -18,6 +18,22 @@ alias zrc="nvim ~/.zshrc"
 alias myip="ip a | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
 source $HOME/.config/antigen/antigen.zsh
 
+function https2ssh() {
+  if git config --get remote.origin.url | grep -P '\.git$' >/dev/null; then 
+    newURL=`git config --get remote.origin.url | sed -r 's#(http.*://)([^/]+)/(.+)$#git@\2:\3#g'`
+  else
+    newURL=`git config --get remote.origin.url | sed -r 's#(http.*://)([^/]+)/(.+)$#git@\2:\3.git#g'`
+  fi;
+  echo "Does this new url look fine? (y/n) : " $newURL
+  read response
+  if [[ "$response" == "y" ]]; then 
+    git remote set-url origin $newURL; 
+    echo "Git remote updated."; 
+  else 
+    echo "Git remote unchanged."; 
+  fi;
+}
+
 antigen use oh-my-zsh
 antigen bundle git
 #antigen bundle deno
