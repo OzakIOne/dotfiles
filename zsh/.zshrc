@@ -15,14 +15,14 @@ export PKG_CACHE_PATH="${HOME}/.cache/pkg-cache/"
 alias wget="wget --hsts-file=\"$HOME/.cache/wget-hsts\""
 alias v="nvim"
 alias zrc="nvim ~/.zshrc"
-
+alias myip="ip a | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
 source $HOME/.config/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle git
 #antigen bundle deno
 antigen bundle denodev/oh-my-zsh-deno
-antigen bundle gh
+#antigen bundle gh
 antigen bundle command-not-found
 antigen bundle history
 antigen bundle z
