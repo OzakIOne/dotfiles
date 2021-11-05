@@ -1,6 +1,3 @@
-[user]
-	email = 29860391+OzakIOne@users.noreply.github.com
-	name = ozaki
 [core]
 	editor = code -w
 	autocrlf = input
