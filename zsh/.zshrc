@@ -12,9 +12,12 @@ export ADOTDIR="${HOME}/.config/antigen/"
 export NVM_DIR="${HOME}/.config/nvm"
 export NPM_CONFIG_USERCONFIG="${HOME}/.config/npm/config"
 export PKG_CACHE_PATH="${HOME}/.cache/pkg-cache/"
+export GITUSERNAME="ozakione"
+export GITUSEREMAIL="29860391+OzakIOne@users.noreply.github.com"
 alias wget="wget --hsts-file=\"$HOME/.cache/wget-hsts\""
 alias v="nvim"
 alias zrc="nvim ~/.zshrc"
+alias eee="explorer.exe ."
 alias myip="ip a | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
 source $HOME/.config/antigen/antigen.zsh
 
