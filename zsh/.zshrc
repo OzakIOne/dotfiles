@@ -21,6 +21,11 @@ alias eee="explorer.exe ."
 alias myip="ip a | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
 source ${ADOTDIR}antigen.zsh
 
+function setozakigit() {
+  git config user.name "$GITUSERNAME"
+  git config user.email "$GITUSEREMAIL"
+}
+
 function https2ssh() {
   if git config --get remote.origin.url | grep -P '\.git$' >/dev/null; then 
     newURL=`git config --get remote.origin.url | sed -r 's#(http.*://)([^/]+)/(.+)$#git@\2:\3#g'`
