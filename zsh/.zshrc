@@ -19,7 +19,7 @@ alias v="nvim"
 alias zrc="nvim ~/.zshrc"
 alias eee="explorer.exe ."
 alias myip="ip a | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
-source $HOME/.config/antigen/antigen.zsh
+source ${ADOTDIR}antigen.zsh
 
 function https2ssh() {
   if git config --get remote.origin.url | grep -P '\.git$' >/dev/null; then 
@@ -39,16 +39,24 @@ function https2ssh() {
 
 antigen use oh-my-zsh
 antigen bundle git
-#antigen bundle deno
-antigen bundle denodev/oh-my-zsh-deno
-#antigen bundle gh
-antigen bundle command-not-found
+## curl -fsSL https://deno.land/x/install/install.sh | sh
+# antigen bundle deno
+# antigen bundle denodev/oh-my-zsh-deno
+
+## curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+## echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+## sudo apt update
+## sudo apt install gh
+# antigen bundle gh
+
+## sudo apt install command-not-found
+# antigen bundle command-not-found
 antigen bundle history
 antigen bundle z
 antigen bundle sudo
 antigen bundle debian
-antigen bundle heroku
-#antigen bundle zsh-users/zsh-completions
+# antigen bundle heroku
+# antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme romkatv/powerlevel10k
