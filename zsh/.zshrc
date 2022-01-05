@@ -60,6 +60,7 @@ antigen bundle history
 antigen bundle z
 antigen bundle sudo
 antigen bundle debian
+antigen bundle colored-man-pages
 # antigen bundle heroku
 # antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
