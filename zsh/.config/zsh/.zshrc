@@ -31,7 +31,7 @@ export XAUTHORITY="${XDG_CONFIG_HOME}/Xauthority"
 
 alias wget="wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
 alias v="nvim"
-alias zrc="nvim ~/.config/zsh/.zshrc"
+alias zrc="nvim ${XDG_CONFIG_HOME}/zsh/.zshrc"
 alias myip="ip a | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
 alias yarn="yarn --use-yarnrc \"${XDG_CONFIG_HOME}/yarn/config\""
 source ${ADOTDIR}antigen.zsh
@@ -64,17 +64,8 @@ function https2ssh() {
 
 antigen use oh-my-zsh
 antigen bundle git
-## curl -fsSL https://deno.land/x/install/install.sh | sh
-# antigen bundle deno
-# antigen bundle denodev/oh-my-zsh-deno
-
-## curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-## echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-## sudo apt update
-## sudo apt install gh
-# antigen bundle gh
-
-## sudo apt install command-not-found
+which deno > /dev/null && antigen bundle deno && antigen bundle denodev/oh-my-zsh-deno
+which gh > /dev/null && antigen bundle gh
 antigen bundle command-not-found
 antigen bundle history
 antigen bundle z
