@@ -19,7 +19,7 @@ export GITEMAIL="29860391+OzakIOne@users.noreply.github.com"
 export HISTFILE="${XDG_CONFIG_HOME}/zsh/history"
 export ZSH="${XDG_CONFIG_HOME}/omzsh"
 export ADOTDIR="${XDG_CONFIG_HOME}/antigen/"
-export KDEHOME="${XDG_CONFIG_HOME}/kdehome"
+# export KDEHOME="${XDG_CONFIG_HOME}/kdehome"
 export GTK2_RC_FILES="${XDG_CONFIG_HOME}/gtk-2.0/gtkrc"
 export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
 export FFMPEG_DATADIR="${XDG_CONFIG_HOME}/ffmpeg"
@@ -74,10 +74,19 @@ function https2ssh() {
   fi;
 }
 
+function mountwindows() {
+  partitionPath=$(sudo fdisk -l | grep "Microsoft basic data" | awk '{print $1}')
+  partitionName=$(basename $partitionPath)
+  partitionType=$(lsblk -l -o name,fstype | grep $partitionName | awk '{print $2}')
+  if [[ "$partitionType" == "ntfs" ]]; then
+    sudo mkdir /mnt/windows && sudo mount -t ntfs $partitionPath /mnt/windows
+  fi
+}
+
 antigen use oh-my-zsh
 antigen bundle git
-which deno > /dev/null && antigen bundle deno && antigen bundle denodev/oh-my-zsh-deno
-which gh > /dev/null && antigen bundle gh
+which deno &> /dev/null && antigen bundle deno && antigen bundle denodev/oh-my-zsh-deno
+which gh &> /dev/null && antigen bundle gh
 antigen bundle command-not-found
 antigen bundle history
 antigen bundle z
