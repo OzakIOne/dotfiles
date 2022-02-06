@@ -52,14 +52,18 @@ fi
 ls -1 $HOME/.bash* 2>/dev/null && rm $HOME/.bash*
 rm $HOME/.profile
 
-echo -e "\nInstalling dotfiles\n"
+echo -e "\n${GREEN}Installing dotfiles${NC}\n"
 git clone https://github.com/ozakione/dotfiles .dotfiles && mkdir $XDG_CACHE_HOME ; cd $HOME/.dotfiles && stow neovim p10k profile
 
-echo -e "\nInstalling antigen\n"
+echo -e "\n${GREEN}Installing omzsh${NC}\n"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+rm $HOME/.zshrc ; rm $HOME/.zshrc.pre-oh-my-zsh
+
+echo -e "\n${GREEN}Installing antigen${NC}\n"
 mkdir $ADOTDIR ; curl -fsSL git.io/antigen > ${ADOTDIR}antigen.zsh
 
 
 
 ## Always at the end
 cd $HOME/.dotfiles && stow zsh
-echo -e "\nNow type exit and open again wsl\n"
+echo -e "\n${GREEN}Now type exit and open again wsl${NC}\n"
