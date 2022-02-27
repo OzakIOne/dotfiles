@@ -1,2 +1,4 @@
-zsh/.config/zsh/history
+zsh/.config/zsh/.zcompdump
 zsh/.config/zsh/.zshrc.zwc
+zsh/.config/zsh/history
+touchegg/.config/touchegg/.*
