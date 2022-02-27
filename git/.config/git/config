@@ -1,5 +1,5 @@
 [core]
-	editor = code -w
+	editor = code -w -n
 	autocrlf = input
 	fileMode = false
 [url "ssh://git@github.com/"]
