@@ -5,7 +5,7 @@ RED='\033[1;31m'
 GREEN='\033[1;32m'
 NC='\033[0m'
 
-DENO_INSTALL=/usr/local
+export DENO_INSTALL=/usr/local
 
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -26,8 +26,8 @@ read nvm
 
 if [[ $ghcli == "y" ]]; then
     echo -e "\n${GREEN}Installing github cli...${NC}"
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
-    apt-add-repository https://cli.github.com/packages
+    curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
     apt update
     apt install gh
 else
@@ -62,8 +62,8 @@ rm $HOME/.zshrc ; rm $HOME/.zshrc.pre-oh-my-zsh
 echo -e "\n${GREEN}Installing antigen${NC}\n"
 mkdir $ADOTDIR ; curl -fsSL git.io/antigen > ${ADOTDIR}antigen.zsh
 
-
+git config --global core.editor "code -n -w"
 
 ## Always at the end
 cd $HOME/.dotfiles && stow zsh
-echo -e "\n${GREEN}Now type exit and open again wsl${NC}\n"
+echo -e "\n${GREEN}Now type exit and open again wsl or restart your computer${NC}\n"
