@@ -12,6 +12,7 @@ fi
 export EDITOR="code"
 export BROWSER="brave"
 export TERMINAL="kitty"
+export TERM="xterm-256color"
 export LESSHISTFILE="-"
 export GITNAME="ozakione"
 export GITEMAIL="29860391+OzakIOne@users.noreply.github.com"
