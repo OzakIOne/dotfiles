@@ -10,6 +10,13 @@ error_symbol = "[❯](bold red)"
 
 [docker_context]
 only_with_files = false
+format = "via [🐋 $context](blue bold)"
+
+[deno]
+format = "via [🦕 $version](green bold) "
+
+[nodejs]
+format = "via [🤖 $version](bold green) "
 
 [fill]
 symbol = "-"
@@ -27,3 +34,21 @@ show_always = true
 
 [container]
 disabled = true
+
+[memory_usage]
+format = "$symbol[${ram}( | ${swap})]($style) "
+threshold = 0
+style = "bold dimmed white"
+disabled = false
+
+[localip]
+ssh_only = false
+format = "@[$localipv4](bold red) "
+disabled = false
+
+[shell]
+fish_indicator = ""
+powershell_indicator = "_"
+unknown_indicator = "mystery shell"
+style = "cyan bold"
+disabled = false
