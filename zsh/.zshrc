@@ -42,14 +42,20 @@ export _Z_DATA="${XDG_DATA_HOME}/z"
 ## cache
 export PKG_CACHE_PATH="${XDG_CACHE_HOME}/pkg-cache/"
 
-alias wget="wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
-alias v="nvim"
-alias zrc="nvim ${XDG_CONFIG_HOME}/zsh/.zshrc"
-alias myip="ip a | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+alias wget="/usr/bin/wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
+alias v='nvim $(fzf --height 40% --reverse)'
+alias zrc="nvim ${HOME}/.zshrc"
+alias myip="ip a | /usr/bin/grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | /usr/bin/grep -Eo '([0-9]*\.){3}[0-9]*' | /usr/bin/grep -v '127.0.0.1'"
 alias yarn="yarn --use-yarnrc \"${XDG_CONFIG_HOME}/yarn/config\""
+alias ls="exa"
+alias l="exa -lah"
+alias ll="exa -lh"
+alias tree="exa --tree"
+alias cat="bat"
+alias grep="rg"
 source ${ADOTDIR}antigen.zsh
 ## Alias depending on linux version
-grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
+/usr/bin/grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
 
 function setozakigit() {
   git config user.name "$GITNAME"
@@ -57,7 +63,7 @@ function setozakigit() {
 }
 
 function https2ssh() {
-  if git config --get remote.origin.url | grep -P '\.git$' >/dev/null; then
+  if git config --get remote.origin.url | /usr/bin/grep -P '\.git$' >/dev/null; then
     newURL=$(git config --get remote.origin.url | sed -r 's#(http.*://)([^/]+)/(.+)$#git@\2:\3#g')
   else
     newURL=$(git config --get remote.origin.url | sed -r 's#(http.*://)([^/]+)/(.+)$#git@\2:\3.git#g')
@@ -76,9 +82,9 @@ function https2ssh() {
 }
 
 function mountwindows() {
-  partitionPath=$(sudo fdisk -l | grep "Microsoft basic data" | awk '{print $1}')
+  partitionPath=$(sudo fdisk -l | /usr/bin/grep "Microsoft basic data" | awk '{print $1}')
   partitionName=$(basename $partitionPath)
-  partitionType=$(lsblk -l -o name,fstype | grep $partitionName | awk '{print $2}')
+  partitionType=$(lsblk -l -o name,fstype | /usr/bin//usr/bin/grep $partitionName | awk '{print $2}')
   if [[ "$partitionType" == "ntfs" ]]; then
     sudo mkdir /mnt/windows && sudo mount -t ntfs $partitionPath /mnt/windows
   fi
