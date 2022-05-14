@@ -35,21 +35,6 @@ export _Z_DATA="${XDG_DATA_HOME}/z"
 ## cache
 export PKG_CACHE_PATH="${XDG_CACHE_HOME}/pkg-cache/"
 
-alias wget="/usr/bin/wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
-alias v='nvim $(fzf --height 40% --reverse)'
-alias zrc="nvim ${HOME}/.zshrc"
-alias myip="ip a | /usr/bin/grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | /usr/bin/grep -Eo '([0-9]*\.){3}[0-9]*' | /usr/bin/grep -v '127.0.0.1'"
-alias yarn="yarn --use-yarnrc \"${XDG_CONFIG_HOME}/yarn/config\""
-alias ls="exa"
-alias l="exa -lah"
-alias ll="exa -lh"
-alias tree="exa --tree"
-alias cat="bat"
-alias grep="rg"
-source ${ADOTDIR}antigen.zsh
-## Alias depending on linux version
-/usr/bin/grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
-
 function setozakigit() {
   git config user.name "$GITNAME"
   git config user.email "$GITEMAIL"
@@ -77,18 +62,16 @@ function https2ssh() {
 function mountwindows() {
   partitionPath=$(sudo fdisk -l | /usr/bin/grep "Microsoft basic data" | awk '{print $1}')
   partitionName=$(basename $partitionPath)
-  partitionType=$(lsblk -l -o name,fstype | /usr/bin//usr/bin/grep $partitionName | awk '{print $2}')
+  partitionType=$(lsblk -l -o name,fstype | /usr/bin/grep $partitionName | awk '{print $2}')
   if [[ "$partitionType" == "ntfs" ]]; then
     sudo mkdir /mnt/windows && sudo mount -t ntfs $partitionPath /mnt/windows
   fi
 }
 
-eval "$(starship init zsh)"
+source /usr/share/zsh/share/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle git
-which deno &> /dev/null && antigen bundle deno && antigen bundle denodev/oh-my-zsh-deno
-which gh &> /dev/null && antigen bundle gh
 antigen bundle command-not-found
 antigen bundle history
 antigen bundle z
@@ -101,3 +84,19 @@ antigen bundle lukechilds/zsh-nvm
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
+
+eval "$(starship init zsh)"
+
+alias wget="/usr/bin/wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
+alias v='nvim $(fzf --height 40% --reverse)'
+alias zrc="nvim ${HOME}/.zshrc"
+alias myip="ip a | /usr/bin/grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | /usr/bin/grep -Eo '([0-9]*\.){3}[0-9]*' | /usr/bin/grep -v '127.0.0.1'"
+alias yarn="yarn --use-yarnrc \"${XDG_CONFIG_HOME}/yarn/config\""
+alias ls="exa"
+alias l="exa -lah"
+alias ll="exa -lh"
+alias tree="exa --tree"
+alias cat="bat"
+alias grep="rg"
+## Alias depending on linux version
+/usr/bin/grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
