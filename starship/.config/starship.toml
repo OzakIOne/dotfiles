@@ -1,0 +1,26 @@
+add newline = false
+format = """
+$fill
+$all
+"""
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[✖](bold red)"
+
+[docker_context]
+only_with_files = false
+
+[fill]
+symbol = "-"
+style = "bold #AAAAAA"
+
+[hostname]
+ssh_only = false
+
+[sudo]
+disabled = false
+format = "[sudo]($style) "
+
+[username]
+show_always = true
