@@ -1,0 +1,7 @@
+$HOME/.cache/
+$HOME/.local/
+$HOME/.android/
+$HOME/.npm/
+$HOME/.tldr/
+$HOME/.vscode-server/
+$HOME/.gnupg/
