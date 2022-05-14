@@ -24,3 +24,6 @@ format = "[sudo]($style) "
 
 [username]
 show_always = true
+
+[container]
+disabled = true
