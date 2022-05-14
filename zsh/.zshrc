@@ -9,6 +9,7 @@ export TERM="xterm-256color"
 export LESSHISTFILE="-"
 export GITNAME="ozakione"
 export GITEMAIL="29860391+OzakIOne@users.noreply.github.com"
+export PATH=$PATH:$HOME/.local/bin
 ## config
 export HISTFILE="${XDG_CONFIG_HOME}/zsh/history"
 export ZSH="${XDG_CONFIG_HOME}/omzsh"
@@ -34,6 +35,9 @@ export NVM_DIR="${XDG_DATA_HOME}/nvm"
 export _Z_DATA="${XDG_DATA_HOME}/z"
 ## cache
 export PKG_CACHE_PATH="${XDG_CACHE_HOME}/pkg-cache/"
+## OPTS
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+export FZF_DEFAULT_COMMAND='fd --hidden ""'
 
 function setozakigit() {
   git config user.name "$GITNAME"
@@ -88,7 +92,7 @@ antigen apply
 eval "$(starship init zsh)"
 
 alias wget="/usr/bin/wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
-alias v='nvim $(fzf --height 40% --reverse)'
+alias v='fzf | xargs -r nvim'
 alias zrc="nvim ${HOME}/.zshrc"
 alias myip="ip a | /usr/bin/grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | /usr/bin/grep -Eo '([0-9]*\.){3}[0-9]*' | /usr/bin/grep -v '127.0.0.1'"
 alias yarn="yarn --use-yarnrc \"${XDG_CONFIG_HOME}/yarn/config\""
@@ -98,5 +102,6 @@ alias ll="exa -lh"
 alias tree="exa --tree"
 alias cat="bat"
 alias grep="rg"
+# alias fd="fd --ignore-file \"${XDG_CONFIG_HOME}/fd/ignore\""
 ## Alias depending on linux version
 /usr/bin/grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."

@@ -1,4 +1,4 @@
-add newline = false
+add_newline = false
 format = """
 $fill
 $all
@@ -6,7 +6,7 @@ $all
 
 [character]
 success_symbol = "[❯](bold green)"
-error_symbol = "[✖](bold red)"
+error_symbol = "[❯](bold red)"
 
 [docker_context]
 only_with_files = false
@@ -16,7 +16,7 @@ symbol = "-"
 style = "bold #AAAAAA"
 
 [hostname]
-ssh_only = false
+ssh_only = true
 
 [sudo]
 disabled = false

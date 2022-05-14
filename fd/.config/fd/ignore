@@ -1,7 +1,10 @@
-$HOME/.cache/
-$HOME/.local/
-$HOME/.android/
-$HOME/.npm/
-$HOME/.tldr/
-$HOME/.vscode-server/
-$HOME/.gnupg/
+**/.cache
+**/.local
+**/.android
+**/.npm
+**/.tldr
+**/.vscode-server
+**/.gnupg
+**/.config
+**/.git
+**/node_modules
