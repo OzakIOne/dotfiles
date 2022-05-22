@@ -45,15 +45,17 @@ function arch() {
     echo_info "Installing yay"
     pacman -S --needed git base-devel
     git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+    echo_info "Installing required packages for arch"
     yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git
     pacman -Fy
 }
 
 function debian() {
     echo_info "Installing required packages for debian"
-    # todo : fd-find & alias it / starship
-    sudo apt install -y zsh bat tldr git stow curl command-not-found
-    echo_info "Installing antigen for debian"
+    apt install -y zsh bat tldr git stow curl command-not-found fd-find ripgrep fzf exa neovim
+    ln -s $(which fdfind) ~/.local/bin/fd
+    curl -sS https://starship.rs/install.sh | sh
+    echo_info "Installing antigen for debian" 
     mkdir -pv $ADOTDIR && curl -fsSL git.io/antigen > ${ADOTDIR}antigen.zsh
 }
 
