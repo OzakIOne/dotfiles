@@ -26,7 +26,7 @@ style = "bold #AAAAAA"
 ssh_only = true
 
 [sudo]
-disabled = false
+disabled = true
 format = "[sudo]($style) "
 
 [username]
@@ -39,16 +39,13 @@ disabled = true
 format = "$symbol[${ram}( | ${swap})]($style) "
 threshold = 0
 style = "bold dimmed white"
-disabled = false
+disabled = true
 
 [localip]
 ssh_only = false
-format = "@[$localipv4](bold red) "
-disabled = false
+format = "[$localipv4](bold red) "
+disabled = true
 
 [shell]
-fish_indicator = ""
-powershell_indicator = "_"
-unknown_indicator = "mystery shell"
 style = "cyan bold"
 disabled = false
