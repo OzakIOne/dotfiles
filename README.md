@@ -3,14 +3,24 @@
 ## Requirements
 
 ```bash
-sudo apt update
+sudo apt update && sudo apt upgrade -y
 
-sudo apt upgrade -y
-
-sudo apt install -y software-properties-common zsh build-essential git stow curl gcc neovim unzip command-not-found htop tldr trash-cli python3 bat ffmpeg
+sudo apt install -y software-properties-common \
+    build-essential \
+    gcc \
+    neovim \
+    unzip \
+    htop \
+    trash-cli \
+    python3 \
+    ffmpeg
 
 ## install only you aren't on WSL
-grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null || sudo apt install -y kitty vlc mpv flatpak yt-dlp
+grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null || sudo apt install -y kitty \
+  vlc \
+  mpv \
+  flatpak \
+  yt-dlp
 
 wget https://raw.githubusercontent.com/OzakIOne/dotfiles/master/install.sh
 
