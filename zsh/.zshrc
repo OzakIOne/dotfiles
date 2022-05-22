@@ -36,7 +36,7 @@ export _Z_DATA="${XDG_DATA_HOME}/z"
 ## cache
 export PKG_CACHE_PATH="${XDG_CACHE_HOME}/pkg-cache/"
 ## OPTS
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 export FZF_DEFAULT_COMMAND='fd --hidden ""'
 
 function setozakigit() {
