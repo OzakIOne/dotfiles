@@ -14,66 +14,55 @@ function echo_error() {     echo -ne "\033[0;1;31merror:\033[0;31m\t${*}${NC}\n"
 function echo_label() {     echo -ne "\033[0;1;32m${*}:${NC}\t"; }
 function echo_prompt() {    echo -ne "\033[0;36m${*}${NC} "; }
 
-export DENO_INSTALL=/usr/local
-
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
-
+export HISTFILE="${XDG_CONFIG_HOME}/zsh/history"
 export ZSH="${XDG_CONFIG_HOME}/omzsh"
-export NVM_DIR="${XDG_DATA_HOME}/nvm"
 export ADOTDIR="${XDG_CONFIG_HOME}/antigen/"
-
-chsh -s $(which zsh)
-
-echo_prompt "Should github cli be installed (y/n) ?"
-read ghcli
-echo_prompt "Should deno be installed (y/n) ?"
-read deno
-echo_prompt "Should nvm be installed (y/n) ?"
-read nvm
-
-if [[ $ghcli == "y" ]]; then
-    echo_info "Installing github cli..."
-    curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-    apt update
-    apt install gh
-else
-    echo_warning "Skipping github cli..."
-fi
-
-if [[ $deno == "y" ]]; then
-    echo_info "Installing deno..."
-    curl -fsSL https://deno.land/x/install/install.sh | sh
-else
-    echo_warning "Skipping deno..."
-fi
-
-if [[ $nvm == "y" ]]; then
-    echo_info "Installing nvm..."
-    git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR" && cd "$NVM_DIR" && git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)` && . "$NVM_DIR/nvm.sh"
-else
-    echo_warning "Skipping nvm..."
-fi
-
-## Cleaning home before installing dotfiles
-## Fix rm error causing script to end because of line 2
-ls -1 $HOME/.bash* 2>/dev/null && rm $HOME/.bash*
-rm $HOME/.profile
-
-echo_info "Installing dotfiles"
-git clone https://github.com/ozakione/dotfiles .dotfiles && mkdir $XDG_CACHE_HOME ; cd $HOME/.dotfiles && stow neovim p10k profile
-
-echo_info "Installing omzsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-rm $HOME/.zshrc ; rm $HOME/.zshrc.pre-oh-my-zsh
-
-echo_info "Installing antigen"
-mkdir $ADOTDIR ; curl -fsSL git.io/antigen > ${ADOTDIR}antigen.zsh
-
+export GTK2_RC_FILES="${XDG_CONFIG_HOME}/gtk-2.0/gtkrc"
+export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
+export FFMPEG_DATADIR="${XDG_CONFIG_HOME}/ffmpeg"
+export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/npmrc"
+export WGETRC="${XDG_CONFIG_HOME}/wgetrc"
+export XAUTHORITY="${XDG_CONFIG_HOME}/Xauthority"
+export GOPATH="${XDG_DATA_HOME}/go"
+export CARGO_HOME="${XDG_DATA_HOME}/cargo"
+export MACHINE_STORAGE_PATH="${XDG_DATA_HOME}/docker-machine"
+export GRADLE_USER_HOME="${XDG_DATA_HOME}/gradle"
+export MYSQL_HISTFILE="${XDG_DATA_HOME}/mysql_history"
+export NODE_REPL_HISTORY="${XDG_DATA_HOME}/node_repl_history"
+export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
+export NVM_DIR="${XDG_DATA_HOME}/nvm"
+export _Z_DATA="${XDG_DATA_HOME}/z"
+export PKG_CACHE_PATH="${XDG_CACHE_HOME}/pkg-cache/"
 git config --global core.editor "code -n -w"
 
+which pacman &> /dev/null && arch()
+which apt &> /dev/null && debian()
+
+function arch() {
+    echo_info "Installing yay"
+    pacman -S --needed git base-devel
+    git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git
+    pacman -Fy
+}
+
+function debian() {
+    echo_info "Installing required packages for debian"
+    # todo : fd-find & alias it / starship
+    sudo apt install -y zsh bat tldr git stow curl command-not-found
+    echo_info "Installing antigen for debian"
+    mkdir -pv $ADOTDIR && curl -fsSL git.io/antigen > ${ADOTDIR}antigen.zsh
+}
+
+chsh -s /usr/bin/zsh
+
+echo_info "Installing dotfiles"
+git clone https://github.com/ozakione/dotfiles .dotfiles && mkdir -vp $XDG_CACHE_HOME && cd $HOME/.dotfiles && stow neovim p10k profile
+
 ## Always at the end
-cd $HOME/.dotfiles && stow zsh
-echo_success "Now type exit and open again wsl or restart your computer"
+cd $HOME/.dotfiles && stow zsh fd neovim htop starship
+mkdir $HOME/.config/zsh && touch $HOME/.config/zsh/history && touch $HOME/.config/wgetrc 
+echo_success "Finished installing everything"
