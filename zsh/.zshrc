@@ -72,7 +72,20 @@ function mountwindows() {
   fi
 }
 
+function v() {
+  if [[ -z $1 ]]; then
+    fzf | xargs -r nvim
+  else
+    nvim $1
+  fi
+}
+
+function chs() {
+  curl cheat.sh/$1
+}
+
 source /usr/share/zsh/share/antigen.zsh
+which pacman &> /dev/null && source /usr/share/doc/find-the-command/ftc.zsh noprompt
 
 antigen use oh-my-zsh
 antigen bundle git
@@ -91,8 +104,10 @@ antigen apply
 
 eval "$(starship init zsh)"
 
+## Alias depending on linux version
+/usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
+
 alias wget="/usr/bin/wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
-alias v='fzf | xargs -r nvim'
 alias zrc="nvim ${HOME}/.zshrc"
 alias myip="ip a | /usr/bin/grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | /usr/bin/grep -Eo '([0-9]*\.){3}[0-9]*' | /usr/bin/grep -v '127.0.0.1'"
 alias yarn="yarn --use-yarnrc \"${XDG_CONFIG_HOME}/yarn/config\""
@@ -102,6 +117,3 @@ alias ll="exa -lh"
 alias tree="exa --tree"
 alias cat="bat"
 alias grep="rg"
-# alias fd="fd --ignore-file \"${XDG_CONFIG_HOME}/fd/ignore\""
-## Alias depending on linux version
-/usr/bin/grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
