@@ -90,11 +90,12 @@ which pacman &> /dev/null && source /usr/share/doc/find-the-command/ftc.zsh nopr
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle command-not-found
-antigen bundle history
+#antigen bundle history
 antigen bundle z
 antigen bundle sudo
 antigen bundle debian
 antigen bundle colored-man-pages
+# antigen bundle ddnexus/fm
 # antigen bundle heroku
 antigen bundle lukechilds/zsh-nvm
 # antigen bundle zsh-users/zsh-completions
@@ -103,6 +104,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 eval "$(starship init zsh)"
+eval "$(atuin init zsh)"
+eval "$(zoxide init zsh)"
 
 ## Alias depending on linux version
 /usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."

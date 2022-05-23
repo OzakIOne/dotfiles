@@ -46,16 +46,17 @@ function arch() {
     pacman -S --needed git base-devel
     git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     echo_info "Installing required packages for arch"
-    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git
+    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide
     pacman -Fy
 }
 
 function debian() {
     echo_info "Installing required packages for debian"
-    apt install -y zsh bat tldr git stow curl command-not-found fd-find ripgrep fzf exa neovim
+    apt install -y zsh bat tldr git stow curl command-not-found fd-find ripgrep fzf exa neovim zoxide
     ln -s $(which fdfind) ~/.local/bin/fd
     curl -sS https://starship.rs/install.sh | sh
-    echo_info "Installing antigen for debian" 
+    bash <(curl https://raw.githubusercontent.com/ellie/atuin/main/install.sh)
+    echo_info "Installing antigen for debian"
     mkdir -pv $ADOTDIR && curl -fsSL git.io/antigen > ${ADOTDIR}antigen.zsh
 }
 
@@ -66,5 +67,5 @@ git clone https://github.com/ozakione/dotfiles .dotfiles && mkdir -vp $XDG_CACHE
 
 ## Always at the end
 cd $HOME/.dotfiles && stow zsh fd neovim htop starship
-mkdir $HOME/.config/zsh && touch $HOME/.config/zsh/history && touch $HOME/.config/wgetrc 
+mkdir $HOME/.config/zsh && touch $HOME/.config/zsh/history && touch $HOME/.config/wgetrc
 echo_success "Finished installing everything"
