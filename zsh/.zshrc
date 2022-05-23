@@ -104,8 +104,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 eval "$(starship init zsh)"
-eval "$(atuin init zsh)"
 eval "$(zoxide init zsh)"
+ATUIN_NOBIND=1 eval "$(atuin init zsh)"
+bindkey '^r' _atuin_search_widget
 
 ## Alias depending on linux version
 /usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
