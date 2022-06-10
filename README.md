@@ -3,26 +3,32 @@
 ## Requirements
 
 ```bash
-sudo apt update && sudo apt upgrade -y
-
-sudo apt install -y software-properties-common \
+## Debian
+sudo apt update && sudo apt upgrade -y && sudo apt install -y software-properties-common \
     build-essential \
-    gcc \
-    neovim \
     unzip \
     htop \
-    trash-cli \
-    python3 \
-    ffmpeg
+    trash-cli
+```
 
-## install only you aren't on WSL
-grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null || sudo apt install -y kitty \
+```bash
+## Arch
+pacman -S --needed git base-devel which
+```
+
+```bash
+wget https://raw.githubusercontent.com/OzakIOne/dotfiles/master/install.sh
+
+chmod +x ./install.sh
+
+./install.sh
+```
+
+```bash
+## Install only you aren't on WSL
+grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null || sudo apt install -y kitty \
   vlc \
   mpv \
   flatpak \
   yt-dlp
-
-wget https://raw.githubusercontent.com/OzakIOne/dotfiles/master/install.sh
-
-sudo ./install.sh
 ```
