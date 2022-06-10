@@ -38,16 +38,15 @@ export _Z_DATA="${XDG_DATA_HOME}/z"
 export PKG_CACHE_PATH="${XDG_CACHE_HOME}/pkg-cache/"
 git config --global core.editor "code -n -w"
 
-which pacman &> /dev/null && arch()
-which apt &> /dev/null && debian()
-
 function arch() {
     echo_info "Installing yay"
-    pacman -S --needed git base-devel
+    pacman -S --needed git base-devel which
     git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     echo_info "Installing required packages for arch"
-    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide
+    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command
     pacman -Fy
+    sudo sed -ie s/\#Color/Color/ /etc/pacman.conf
+    sudo sed -ie s/\#ParallelDownloads\ \=\ 5/ParallelDownloads\ \=\ 10/ /etc/pacman.conf
 }
 
 function debian() {
@@ -59,6 +58,9 @@ function debian() {
     echo_info "Installing antigen for debian"
     mkdir -pv $ADOTDIR && curl -fsSL git.io/antigen > ${ADOTDIR}antigen.zsh
 }
+
+which pacman &> /dev/null && arch
+which apt &> /dev/null && debian
 
 chsh -s /usr/bin/zsh
 
