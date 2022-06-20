@@ -122,3 +122,5 @@ alias tree="exa --tree"
 alias cat="bat"
 alias grep="rg"
 alias ixio="curl -F 'f:1=<-' ix.io"
+
+bindkey '²' forward-char
