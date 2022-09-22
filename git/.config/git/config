@@ -2,3 +2,14 @@
 	editor = code -w -n
 	autocrlf = input
 	fileMode = false
+	whitespace = -trailing-space
+[stash]
+	showPatch = true
+[log]
+	decorate = full
+[color "status"]
+	added = green
+	changed = yellow bold
+	untracked = red bold
+# [rebase]
+# 	autostash = true
