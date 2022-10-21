@@ -39,25 +39,26 @@ export PKG_CACHE_PATH="${XDG_CACHE_HOME}/pkg-cache/"
 git config --global core.editor "code -n -w"
 
 function arch() {
+    sudo sed -ie s/\#Color/Color/ /etc/pacman.conf
+    sudo sed -ie s/\#ParallelDownloads\ \=\ 5/ParallelDownloads\ \=\ 10/ /etc/pacman.conf
+    sudo localectl set-locale LANG=en_US.UTF-8
+    sudo locale-gen
     echo_info "Installing yay"
     sudo pacman -S --needed git base-devel which wget
     git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     echo_info "Installing required packages for arch"
-    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command thefuck
+    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command
     sudo pacman -Fy
-    sudo sed -ie s/\#Color/Color/ /etc/pacman.conf
-    sudo sed -ie s/\#ParallelDownloads\ \=\ 5/ParallelDownloads\ \=\ 10/ /etc/pacman.conf
 }
 
 function debian() {
     echo_info "Installing required packages for debian"
-    sudo apt install -y zsh bat tldr git stow curl command-not-found fd-find ripgrep fzf exa neovim zoxide python3-dev python3-pip python3-setuptools
+    sudo apt install -y zsh bat tldr git stow curl command-not-found fd-find ripgrep fzf exa neovim zoxide
     ln -s $(which fdfind) ~/.local/bin/fd
     curl -sS https://starship.rs/install.sh | sh
     bash <(curl https://raw.githubusercontent.com/ellie/atuin/main/install.sh)
     echo_info "Installing antigen for debian"
     mkdir -pv $ADOTDIR && curl -fsSL git.io/antigen > ${ADOTDIR}antigen.zsh
-    pip3 install thefuck --user
 }
 
 which pacman &> /dev/null && arch
@@ -66,9 +67,7 @@ which apt &> /dev/null && debian
 chsh -s /usr/bin/zsh
 
 echo_info "Installing dotfiles"
-git clone https://github.com/ozakione/dotfiles .dotfiles && mkdir -vp $XDG_CACHE_HOME && cd $HOME/.dotfiles && stow neovim p10k profile
-
-## Always at the end
-cd $HOME/.dotfiles && stow zsh fd neovim htop starship
+cd $HOME && git clone https://github.com/ozakione/dotfiles .dotfiles && mkdir -vp $XDG_CACHE_HOME && cd $HOME/.dotfiles && stow neovim p10k profile zsh fd neovim htop starship
 mkdir $HOME/.config/zsh && touch $HOME/.config/zsh/history && touch $HOME/.config/wgetrc
+
 echo_success "Finished installing everything"
