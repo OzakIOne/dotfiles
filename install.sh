@@ -40,23 +40,24 @@ git config --global core.editor "code -n -w"
 
 function arch() {
     echo_info "Installing yay"
-    pacman -S --needed git base-devel which
+    sudo pacman -S --needed git base-devel which wget
     git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     echo_info "Installing required packages for arch"
-    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command
-    pacman -Fy
+    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command thefuck
+    sudo pacman -Fy
     sudo sed -ie s/\#Color/Color/ /etc/pacman.conf
     sudo sed -ie s/\#ParallelDownloads\ \=\ 5/ParallelDownloads\ \=\ 10/ /etc/pacman.conf
 }
 
 function debian() {
     echo_info "Installing required packages for debian"
-    apt install -y zsh bat tldr git stow curl command-not-found fd-find ripgrep fzf exa neovim zoxide
+    sudo apt install -y zsh bat tldr git stow curl command-not-found fd-find ripgrep fzf exa neovim zoxide python3-dev python3-pip python3-setuptools
     ln -s $(which fdfind) ~/.local/bin/fd
     curl -sS https://starship.rs/install.sh | sh
     bash <(curl https://raw.githubusercontent.com/ellie/atuin/main/install.sh)
     echo_info "Installing antigen for debian"
     mkdir -pv $ADOTDIR && curl -fsSL git.io/antigen > ${ADOTDIR}antigen.zsh
+    pip3 install thefuck --user
 }
 
 which pacman &> /dev/null && arch
