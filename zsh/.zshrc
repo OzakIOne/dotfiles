@@ -1,8 +1,12 @@
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
+export GDK_BACKEND="wayland,x11"
+export WAYLAND_DISPLAY="wayland-0"
+export QT_QPA_PLATFORM="wayland;xcb"
+export ANDROID_HOME="$HOME/Android/Sdk"
 
-export EDITOR="code"
+export EDITOR="code -n -w"
 export BROWSER="brave"
 export TERMINAL="kitty"
 export TERM="xterm-256color"
@@ -14,6 +18,8 @@ export PATH=$PATH:$HOME/.local/bin
 export HISTFILE="${XDG_CONFIG_HOME}/zsh/history"
 export ZSH="${XDG_CONFIG_HOME}/omzsh"
 export ADOTDIR="${XDG_CONFIG_HOME}/antigen/"
+export PNPM_HOME="/home/ozaki/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 # export KDEHOME="${XDG_CONFIG_HOME}/kdehome"
 export GTK2_RC_FILES="${XDG_CONFIG_HOME}/gtk-2.0/gtkrc"
 export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
@@ -28,6 +34,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 ## data
 export GOPATH="${XDG_DATA_HOME}/go"
 export CARGO_HOME="${XDG_DATA_HOME}/cargo"
+export PATH="$CARGO_HOME/bin:$PATH"
 export MACHINE_STORAGE_PATH="${XDG_DATA_HOME}/docker-machine"
 export GRADLE_USER_HOME="${XDG_DATA_HOME}/gradle"
 export MYSQL_HISTFILE="${XDG_DATA_HOME}/mysql_history"
@@ -86,6 +93,8 @@ function chs() {
   curl cheat.sh/$1
 }
 
+tre() { command tre "$@" -e && source "/tmp/tre_aliases_$USER" 2>/dev/null; }
+
 source /usr/share/zsh/share/antigen.zsh
 which pacman &> /dev/null && source /usr/share/doc/find-the-command/ftc.zsh noprompt
 
@@ -95,10 +104,8 @@ antigen bundle command-not-found
 #antigen bundle history
 antigen bundle z
 antigen bundle sudo
-antigen bundle debian
 antigen bundle colored-man-pages
-# antigen bundle ddnexus/fm
-# antigen bundle heroku
+antigen bundle ddnexus/fm
 antigen bundle lukechilds/zsh-nvm
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
@@ -110,8 +117,20 @@ eval "$(starship init zsh)"
 _ZO_ECHO=1
 _ZO_RESOLVE_SYMLINKS=1
 eval "$(zoxide init zsh)"
-ATUIN_NOBIND=1 eval "$(atuin init zsh)"
-bindkey '^r' _atuin_search_widget
+eval "$(thefuck --alias)"
+export ATUIN_NOBIND=1
+eval "$(atuin init zsh)"
+# bindkey '^r' _atuin_search_widget
+
+zle -N _atuinr_widget _atuinr
+
+_atuinr() {
+  FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
+  FZF_DEFAULT_COMMAND=''
+  atuin history list --cmd-only | fzf
+}
+
+bindkey '^r' _atuinr_widget
 
 ## Alias depending on linux version
 /usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
@@ -124,15 +143,13 @@ alias ls="exa"
 alias l="exa -lah"
 alias ll="exa -lh"
 alias tree="exa --tree"
-alias cat="bat"
-alias grep="rg"
+# alias cat="bat"
+# alias grep="rg"
 alias ixio="curl -F 'f:1=<-' ix.io"
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ip='ip --color=auto'
-
-# bun completions
-[ -s "/home/ozaki/.bun/_bun" ] && source "/home/ozaki/.bun/_bun"
+alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
 
 # ZSH CONFIG
 setopt autocd               # change directory just by typing its name
@@ -152,11 +169,11 @@ bindkey '^[[1;5C' forward-word          # ctrl + ->             # moves pointer 
 bindkey '^[[1;5D' backward-word         # ctrl + <-             # moves pointer backward a word
 bindkey '^[[1;3D' beginning-of-line     # alt  + ->             # moves pointer to start of the line
 bindkey '^[[1;3C' end-of-line           # alt  + <-             # moves pointer to end of the line
-bindkey '^[[1;5B' backward-kill-word    # ctrl + arrow down	 # deletes a word backwards
+bindkey '^[[1;5B' backward-kill-word    # ctrl + arrow down	    # deletes a word backwards
 bindkey '^[[3~'   kill-whole-line       # delete                # deletes whole line
 bindkey '^[[1;5A' undo                  # ctrl + arrow up       # undo
-bindkey '^x'	     edit-command-line	    # ctrl + x              # edit line in Vi
-bindkey '^x^e'	   edit-command-line	    # ctrl + x + e          # same but more common keybind
+bindkey '^x'	    edit-command-line	    # ctrl + x              # edit line in Vi
+bindkey '^x^e'    edit-command-line	    # ctrl + x + e          # same but more common keybind
 bindkey '^P'      toggle_prompt         # ctrl + p              # change prompt mode
 
 setopt hist_ignore_dups            # ignore duplicated commands history list
