@@ -54,6 +54,18 @@ function setozakigit() {
 }
 
 function https2ssh() {
+  # check if current directory is a git repo
+  if ! git rev-parse --is-inside-work-tree &>/dev/null; then
+    echo "Not a git repository."
+    return 1
+  fi;
+
+  # check if remote origin exists
+  if ! git remote | /usr/bin/grep -P '^origin$' >/dev/null; then
+    echo "No remote origin found."
+    return 1
+  fi;
+
   if git config --get remote.origin.url | /usr/bin/grep -P '\.git$' >/dev/null; then
     newURL=$(git config --get remote.origin.url | sed -r 's#(http.*://)([^/]+)/(.+)$#git@\2:\3#g')
   else
@@ -65,8 +77,10 @@ function https2ssh() {
     git remote set-url origin "$newURL";
     echo "Git remote updated.";
   elif [[ "$response" == "m" ]]; then
+    echo "Enter new url: "
     read modifiedURL
     git remote set-url origin "$modifiedURL";
+    echo "Git remote updated.";
   else
     echo "Git remote unchanged.";
   fi;
