@@ -183,12 +183,12 @@ bindkey '^[[1;5C' forward-word          # ctrl + ->             # moves pointer 
 bindkey '^[[1;5D' backward-word         # ctrl + <-             # moves pointer backward a word
 bindkey '^[[1;3D' beginning-of-line     # alt  + ->             # moves pointer to start of the line
 bindkey '^[[1;3C' end-of-line           # alt  + <-             # moves pointer to end of the line
-bindkey '^[[1;5B' backward-kill-word    # ctrl + arrow down	    # deletes a word backwards
+bindkey '^[[1;5B' backward-kill-word    # ctrl + arrow down	 # deletes a word backwards
 bindkey '^[[3~'   kill-whole-line       # delete                # deletes whole line
 bindkey '^[[1;5A' undo                  # ctrl + arrow up       # undo
 bindkey '^x'	    edit-command-line	    # ctrl + x              # edit line in Vi
-bindkey '^x^e'    edit-command-line	    # ctrl + x + e          # same but more common keybind
-bindkey '^P'      toggle_prompt         # ctrl + p              # change prompt mode
+bindkey '^x^e'	  edit-command-line	    # ctrl + x + e          # same but more common keybind
+bindkey "^[q"     push-line             # alt  + q              # stashing command while execute other command 
 
 setopt hist_ignore_dups            # ignore duplicated commands history list
 setopt hist_ignore_space           # ignore commands that start with space
