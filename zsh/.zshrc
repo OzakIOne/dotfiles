@@ -124,7 +124,7 @@ antigen bundle lukechilds/zsh-nvm
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle thefuck
+#antigen bundle thefuck
 antigen apply
 
 eval "$(starship init zsh)"
@@ -256,5 +256,18 @@ if [ -x /usr/bin/dircolors ]; then
     zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
     zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 fi
+
+alias k='kubectl'
+alias klog='kubectl get events --sort-by=.metadata.creationTimestam'
+alias kap='kubectl apply -f'
+alias kdes='kubectl describe'
+alias klogs='kubectl logs'
+alias kgp='kubectl get pod'
+alias kdel='kubectl delete'
+alias kcns='kubectl config set-context --current'
+alias kdk='kubectl delete -k .'
+alias kak='kubectl apply -k .'
+alias mk='minikube'
+export VAULT_ADDR='http://127.0.0.1:8200'
 
 bindkey '²' forward-char
