@@ -134,17 +134,18 @@ eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)"
 export ATUIN_NOBIND=1
 eval "$(atuin init zsh)"
-# bindkey '^r' _atuin_search_widget
+bindkey '^r' _atuin_search_widget
 
-zle -N _atuinr_widget _atuinr
+# zle -N _atuinr_widget _atuinr
 
-_atuinr() {
-  FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
-  FZF_DEFAULT_COMMAND=''
-  atuin history list --cmd-only | fzf
-}
+# _atuinr() {
+#   FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
+#   FZF_DEFAULT_COMMAND=''
+#   # ! fix: need to press enter to have the command in prompt
+#   print -z -- $(atuin history list --cmd-only | tac | awk '!a[$0]++' | fzf)
+# }
 
-bindkey '^r' _atuinr_widget
+# bindkey '^r' _atuinr_widget
 
 ## Alias depending on linux version
 /usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
