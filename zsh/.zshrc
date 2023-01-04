@@ -110,7 +110,7 @@ function chs() {
 tre() { command tre "$@" -e && source "/tmp/tre_aliases_$USER" 2>/dev/null; }
 
 source /usr/share/zsh/share/antigen.zsh
-which pacman &> /dev/null && source /usr/share/doc/find-the-command/ftc.zsh noprompt
+which pacman &> /dev/null && source /usr/share/doc/find-the-command/ftc.zsh noprompt noupdate
 
 antigen use oh-my-zsh
 antigen bundle git
