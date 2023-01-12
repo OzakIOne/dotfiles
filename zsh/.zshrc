@@ -131,7 +131,7 @@ eval "$(starship init zsh)"
 _ZO_ECHO=1
 _ZO_RESOLVE_SYMLINKS=1
 eval "$(zoxide init zsh)"
-eval "$(thefuck --alias)"
+#eval "$(thefuck --alias)"
 export ATUIN_NOBIND=1
 eval "$(atuin init zsh)"
 bindkey '^r' _atuin_search_widget
@@ -185,7 +185,7 @@ bindkey '^[[1;5D' backward-word         # ctrl + <-             # moves pointer 
 bindkey '^[[1;3D' beginning-of-line     # alt  + ->             # moves pointer to start of the line
 bindkey '^[[1;3C' end-of-line           # alt  + <-             # moves pointer to end of the line
 bindkey '^[[1;5B' backward-kill-word    # ctrl + arrow down	 # deletes a word backwards
-bindkey '^[[3~'   kill-whole-line       # delete                # deletes whole line
+#bindkey '^[[3~'   kill-whole-line       # delete                # deletes whole line
 bindkey '^[[1;5A' undo                  # ctrl + arrow up       # undo
 bindkey '^x'	    edit-command-line	    # ctrl + x              # edit line in Vi
 bindkey '^x^e'	  edit-command-line	    # ctrl + x + e          # same but more common keybind
