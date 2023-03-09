@@ -148,7 +148,7 @@ bindkey '^r' _atuin_search_widget
 # bindkey '^r' _atuinr_widget
 
 ## Alias depending on linux version
-/usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && alias eee="explorer.exe ."
+/usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && function eee() { if [ -d "$1" ]; then explorer.exe "$1"; else explorer.exe .; fi;}
 
 alias wget="/usr/bin/wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
 alias zrc="nvim ${HOME}/.zshrc"
