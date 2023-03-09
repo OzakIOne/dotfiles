@@ -88,10 +88,10 @@ function https2ssh() {
 
 function mountwindows() {
   partitionPath=$(sudo fdisk -l | /usr/bin/grep "Microsoft basic data" | awk '{print $1}')
-  partitionName=$(basename $partitionPath)
-  partitionType=$(lsblk -l -o name,fstype | /usr/bin/grep $partitionName | awk '{print $2}')
+  partitionName=$(basename "$partitionPath")
+  partitionType=$(lsblk -l -o name,fstype | /usr/bin/grep "$partitionName" | awk '{print $2}')
   if [[ "$partitionType" == "ntfs" ]]; then
-    sudo mkdir /mnt/windows && sudo mount -t ntfs $partitionPath /mnt/windows
+    sudo mkdir /mnt/windows && sudo mount -t ntfs "$partitionPath" /mnt/windows
   fi
 }
 
@@ -99,7 +99,7 @@ function v() {
   if [[ -z $1 ]]; then
     fzf | xargs -r nvim
   else
-    nvim $1
+    nvim "$1"
   fi
 }
 
