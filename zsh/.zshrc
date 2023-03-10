@@ -26,6 +26,7 @@ export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
 export FFMPEG_DATADIR="${XDG_CONFIG_HOME}/ffmpeg"
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/npmrc"
 export WGETRC="${XDG_CONFIG_HOME}/wgetrc"
+export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zshcodex"
 # export XINITRC="${XDG_CONFIG_HOME}/X11/xinitrc"
 # export XSERVERRC="${XDG_CONFIG_HOME}/X11/xserverrc"
 export XAUTHORITY="${XDG_CONFIG_HOME}/Xauthority"
@@ -136,16 +137,8 @@ export ATUIN_NOBIND=1
 eval "$(atuin init zsh)"
 bindkey '^r' _atuin_search_widget
 
-# zle -N _atuinr_widget _atuinr
-
-# _atuinr() {
-#   FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
-#   FZF_DEFAULT_COMMAND=''
-#   # ! fix: need to press enter to have the command in prompt
-#   print -z -- $(atuin history list --cmd-only | tac | awk '!a[$0]++' | fzf)
-# }
-
-# bindkey '^r' _atuinr_widget
+source "$ZSH_CUSTOM/plugins/zsh_codex/zsh_codex.plugin.zsh"
+bindkey '^X' create_completion
 
 ## Alias depending on linux version
 /usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && function eee() { if [ -d "$1" ]; then explorer.exe "$1"; else explorer.exe .; fi;}
