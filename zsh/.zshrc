@@ -54,6 +54,10 @@ function setozakigit() {
   git config user.email "$GITEMAIL"
 }
 
+function updatepnpm() {
+  corepack prepare pnpm@`pnpm info pnpm --json | jq -r '.version'`
+}
+
 function https2ssh() {
   # check if current directory is a git repo
   if ! git rev-parse --is-inside-work-tree &>/dev/null; then
@@ -128,6 +132,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 #antigen bundle thefuck
 antigen apply
 
+eval "$(github-copilot-cli alias -- "$0")"
 eval "$(starship init zsh)"
 _ZO_ECHO=1
 _ZO_RESOLVE_SYMLINKS=1
@@ -265,3 +270,5 @@ alias mk='minikube'
 export VAULT_ADDR='http://127.0.0.1:8200'
 
 bindkey '²' forward-char
+
+eval "$(github-copilot-cli alias -- "$0")"
