@@ -142,8 +142,7 @@ export ATUIN_NOBIND=1
 eval "$(atuin init zsh)"
 bindkey '^r' _atuin_search_widget
 
-source "$ZSH_CUSTOM/plugins/zsh_codex/zsh_codex.plugin.zsh"
-bindkey '^X' create_completion
+eval "$(github-copilot-cli alias -- "$0")"
 
 ## Alias depending on linux version
 /usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && function eee() { if [ -d "$1" ]; then explorer.exe "$1"; else explorer.exe .; fi;}
@@ -263,12 +262,8 @@ alias kdes='kubectl describe'
 alias klogs='kubectl logs'
 alias kgp='kubectl get pod'
 alias kdel='kubectl delete'
-alias kcns='kubectl config set-context --current'
 alias kdk='kubectl delete -k .'
 alias kak='kubectl apply -k .'
-alias mk='minikube'
-export VAULT_ADDR='http://127.0.0.1:8200'
 
 bindkey '²' forward-char
 
-eval "$(github-copilot-cli alias -- "$0")"
