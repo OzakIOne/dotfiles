@@ -1,0 +1,67 @@
+function setozakigit() {
+  git config user.name "$GITNAME"
+  git config user.email "$GITEMAIL"
+}
+
+function updatepnpm() {
+  corepack prepare pnpm@"$(pnpm info pnpm --json | jq -r '.version')" --activate
+}
+
+function https2ssh() {
+  # check if current directory is a git repo
+  if ! git rev-parse --is-inside-work-tree &>/dev/null; then
+    echo "Not a git repository."
+    return 1
+  fi;
+
+  # check if remote origin exists
+  if ! git remote | /usr/bin/grep -P '^origin$' >/dev/null; then
+    echo "No remote origin found."
+    return 1
+  fi;
+
+  if git config --get remote.origin.url | /usr/bin/grep -P '\.git$' >/dev/null; then
+    newURL=$(git config --get remote.origin.url | sed -r 's#(http.*://)([^/]+)/(.+)$#git@\2:\3#g')
+  else
+    newURL=$(git config --get remote.origin.url | sed -r 's#(http.*://)([^/]+)/(.+)$#git@\2:\3.git#g')
+  fi;
+  echo "Does this new url look fine? (y/m/n) : $newURL"
+  read response
+  if [[ "$response" == "y" ]]; then
+    git remote set-url origin "$newURL";
+    echo "Git remote updated.";
+  elif [[ "$response" == "m" ]]; then
+    echo "Enter new url: "
+    read modifiedURL
+    git remote set-url origin "$modifiedURL";
+    echo "Git remote updated.";
+  else
+    echo "Git remote unchanged.";
+  fi;
+}
+
+function mountwindows() {
+  partitionPath=$(sudo fdisk -l | /usr/bin/grep "Microsoft basic data" | awk '{print $1}')
+  partitionName=$(basename "$partitionPath")
+  partitionType=$(lsblk -l -o name,fstype | /usr/bin/grep "$partitionName" | awk '{print $2}')
+  if [[ "$partitionType" == "ntfs" ]]; then
+    sudo mkdir /mnt/windows && sudo mount -t ntfs "$partitionPath" /mnt/windows
+  fi
+}
+
+function v() {
+  if [[ -z $1 ]]; then
+    fzf | xargs -r nvim
+  else
+    nvim "$1"
+  fi
+}
+
+function chs() {
+  curl cheat.sh/$1
+}
+
+tre() { command tre "$@" -e && source "/tmp/tre_aliases_$USER" 2>/dev/null; }
+
+## Alias depending on linux version
+/usr/bin/grep -qPi "(Microsoft|WSL)" /proc/version &> /dev/null && function eee() { if [ -d "$1" ]; then explorer.exe "$1"; else explorer.exe .; fi;}

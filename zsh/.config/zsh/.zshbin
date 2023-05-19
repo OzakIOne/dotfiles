@@ -1,0 +1,19 @@
+eval "$(starship init zsh)"
+
+which pacman &> /dev/null && source /usr/share/doc/find-the-command/ftc.zsh noprompt noupdate
+
+eval "$(github-copilot-cli alias -- "$0")"
+
+# zoxide
+_ZO_ECHO=1
+_ZO_RESOLVE_SYMLINKS=1
+eval "$(zoxide init zsh)"
+
+#eval "$(thefuck --alias)"
+
+# atuin
+export ATUIN_NOBIND=1
+eval "$(atuin init zsh)"
+bindkey '^r' _atuin_search_widget
+
+[ -s "/home/ozaki/.bun/_bun" ] && source "/home/ozaki/.bun/_bun"

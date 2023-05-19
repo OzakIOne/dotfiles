@@ -17,13 +17,3 @@ wget https://raw.githubusercontent.com/OzakIOne/dotfiles/master/install.sh && ch
 
 ./install.sh
 ```
-
-## mpv
-
-To install mpv plugin run :
-
-```
-chmod +x clone.sh
-./clone.sh
-stow mpv
-```

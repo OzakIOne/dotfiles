@@ -67,7 +67,7 @@ which apt &> /dev/null && debian
 chsh -s /usr/bin/zsh
 
 echo_info "Installing dotfiles"
-cd $HOME && git clone https://github.com/ozakione/dotfiles .dotfiles && mkdir -vp $XDG_CACHE_HOME && cd $HOME/.dotfiles && stow neovim p10k profile zsh fd neovim htop starship
+cd $HOME && git clone --recursive https://github.com/ozakione/dotfiles .dotfiles && mkdir -vp $XDG_CACHE_HOME && cd $HOME/.dotfiles && stow neovim p10k profile zsh fd neovim htop starship
 mkdir $HOME/.config/zsh && touch $HOME/.config/zsh/history && touch $HOME/.config/wgetrc
 
 echo_success "Finished installing everything"

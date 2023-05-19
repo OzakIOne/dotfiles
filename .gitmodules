@@ -1,0 +1,15 @@
+[submodule "kitty/.config/kitty/kitty-themes"]
+	path = kitty/.config/kitty/kitty-themes
+	url = https://github.com/dexpota/kitty-themes.git
+[submodule "mpv/.config/mpv/scripts/mpv_sponsorblock"]
+	path = mpv/.config/mpv/scripts/mpv_sponsorblock
+	url = https://github.com/po5/mpv_sponsorblock
+[submodule "mpv/.config/mpv/scripts/mpv-chapters"]
+	path = mpv/.config/mpv/scripts/mpv-chapters
+	url = https://github.com/zxhzxhz/mpv-chapters
+[submodule "mpv/.config/mpv/scripts/mpv-scripts"]
+	path = mpv/.config/mpv/scripts/mpv-scripts
+	url = https://github.com/Static39/mpv-scripts
+[submodule "mpv/.config/mpv/scripts/webtorrent-mpv-hook"]
+	path = mpv/.config/mpv/scripts/webtorrent-mpv-hook
+	url = https://github.com/mrxdst/webtorrent-mpv-hook

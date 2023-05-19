@@ -51,7 +51,8 @@ style = "cyan bold"
 disabled = false
 
 [kubernetes]
-format = 'on [⛵ $context \($namespace\)](green) '
+format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](green) '
+#format = 'on [⛵ $context \($namespace\)](green) '
 disabled = false
 
 [time]

@@ -1,0 +1,27 @@
+alias wget="/usr/bin/wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
+alias zrc="nvim ${HOME}/.zshrc"
+alias myip="ip a | /usr/bin/grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | /usr/bin/grep -Eo '([0-9]*\.){3}[0-9]*' | /usr/bin/grep -v '127.0.0.1'"
+alias yarn="yarn --use-yarnrc \"${XDG_CONFIG_HOME}/yarn/config\""
+alias ls="exa"
+alias l="exa -lah --icons --group-directories-first"
+alias ll="exa -lh --icons --group-directories-first"
+alias tree="exa --tree"
+# alias cat="bat"
+# alias grep="rg"
+alias ixio="curl -F 'f:1=<-' ix.io"
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+alias ip='ip --color=auto'
+alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
+
+## Devops
+
+alias k='kubectl'
+alias klog='kubectl get events --sort-by=.metadata.creationTimestam'
+alias kap='kubectl apply -f'
+alias kdes='kubectl describe'
+alias klogs='kubectl logs'
+alias kgp='kubectl get pod'
+alias kdel='kubectl delete'
+alias kdk='kubectl delete -k .'
+alias kak='kubectl apply -k .'
