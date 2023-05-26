@@ -1,8 +1,14 @@
-add_newline = false
 format = """
 $fill
-$all
+$time $all
+$character
+$line_break
 """
+
+add_newline = false
+
+[directory]
+truncation_length = 5
 
 [character]
 success_symbol = "[❯](bold green)"
@@ -26,11 +32,15 @@ style = "bold #AAAAAA"
 ssh_only = true
 
 [sudo]
+style = 'bold green'
+symbol = 'sudo'
 disabled = true
-format = "[sudo]($style) "
 
 [username]
 show_always = true
+format = "[$user ]($style)"
+style_user = 'red bold'
+style_root = 'yellow bold'
 
 [container]
 disabled = true
@@ -48,16 +58,17 @@ disabled = true
 
 [shell]
 style = "cyan bold"
-disabled = false
+disabled = true
 
 [kubernetes]
-format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](green) '
-#format = 'on [⛵ $context \($namespace\)](green) '
+#format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](green) '
+format = '[$context $namespace](green) '
 disabled = false
 
 [time]
 disabled = false
-format = '$time(gray) '
+format = "[$time]($style)"
+style = "bold bright-black"
 time_format = "%T"
-utc_time_offset = "+1"
+utc_time_offset = "+2"
 time_range = "10:00:00-14:00:00"
