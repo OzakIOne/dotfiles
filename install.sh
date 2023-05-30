@@ -48,7 +48,7 @@ function arch() {
     sudo pacman -S --needed git base-devel which wget
     git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     echo_info "Installing required packages for arch"
-    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command docker docker-compose
+    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command docker docker-compose openssh
     sudo pacman -Fy
 }
 
