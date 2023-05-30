@@ -37,6 +37,7 @@ export NVM_DIR="${XDG_DATA_HOME}/nvm"
 export _Z_DATA="${XDG_DATA_HOME}/z"
 export PKG_CACHE_PATH="${XDG_CACHE_HOME}/pkg-cache/"
 git config --global core.editor "code -n -w"
+touch $HOME/.config/wgetrc
 
 function arch() {
     sudo sed -ie s/\#Color/Color/ /etc/pacman.conf
@@ -47,13 +48,13 @@ function arch() {
     sudo pacman -S --needed git base-devel which wget
     git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     echo_info "Installing required packages for arch"
-    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command
+    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command docker docker-compose
     sudo pacman -Fy
 }
 
 function debian() {
     echo_info "Installing required packages for debian"
-    sudo apt install -y zsh bat tldr git stow curl command-not-found fd-find ripgrep fzf exa neovim zoxide
+    sudo apt install -y zsh bat tldr git stow curl command-not-found fd-find ripgrep fzf exa neovim zoxide docker
     ln -s $(which fdfind) ~/.local/bin/fd
     curl -sS https://starship.rs/install.sh | sh
     bash <(curl https://raw.githubusercontent.com/ellie/atuin/main/install.sh)
