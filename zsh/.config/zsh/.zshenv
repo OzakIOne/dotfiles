@@ -32,7 +32,7 @@ export WGETRC="${XDG_CONFIG_HOME}/wgetrc"
 # export XINITRC="${XDG_CONFIG_HOME}/X11/xinitrc"
 # export XSERVERRC="${XDG_CONFIG_HOME}/X11/xserverrc"
 export XAUTHORITY="${XDG_CONFIG_HOME}/Xauthority"
-export BUN_INSTALL="${XDG_DATA_HOME}/.bun"
+export BUN_INSTALL="${XDG_DATA_HOME}/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 ## data
 export GOPATH="${XDG_DATA_HOME}/go"
