@@ -4,7 +4,7 @@ function setozakigit() {
 }
 
 function updatepnpm() {
-  corepack prepare pnpm@"$(pnpm info pnpm --json | jq -r '.version')" --activate
+  corepack prepare pnpm@latest --activate
 }
 
 function https2ssh() {
