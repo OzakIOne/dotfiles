@@ -17,3 +17,11 @@ wget https://raw.githubusercontent.com/OzakIOne/dotfiles/master/install.sh && ch
 
 ./install.sh
 ```
+
+## Stow
+
+```bash
+stow zsh       # symlink zsh folder
+stow *         # symlink all folders
+stow -D zsh    # unlink zsh
+```
