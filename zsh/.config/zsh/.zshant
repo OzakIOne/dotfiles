@@ -1,4 +1,6 @@
 source /usr/share/zsh/share/antigen.zsh
+# export NVM_LAZY_LOAD=true
+export NVM_AUTO_USE=true
 
 antigen use oh-my-zsh
 antigen bundle git

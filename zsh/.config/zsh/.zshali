@@ -1,7 +1,7 @@
 alias wget="/usr/bin/wget --hsts-file=\"$XDG_CACHE_HOME/wget-hsts\""
 alias zrc="nvim ${HOME}/.zshrc"
 alias myip="ip a | /usr/bin/grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | /usr/bin/grep -Eo '([0-9]*\.){3}[0-9]*' | /usr/bin/grep -v '127.0.0.1'"
-alias yarn="yarn --use-yarnrc \"${XDG_CONFIG_HOME}/yarn/config\""
+#alias yarn="yarn --use-yarnrc \"${XDG_CONFIG_HOME}/yarn/config\""
 alias ls="exa"
 alias l="exa -lah --icons --group-directories-first"
 alias ll="exa -lh --icons --group-directories-first"
