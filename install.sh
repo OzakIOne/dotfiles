@@ -41,15 +41,18 @@ touch $HOME/.config/wgetrc
 
 function arch() {
     sudo sed -ie s/\#Color/Color/ /etc/pacman.conf
-    sudo sed -ie s/\#ParallelDownloads\ \=\ 5/ParallelDownloads\ \=\ 10/ /etc/pacman.conf
+    sudo sed -ie s/\#ParallelDownloads\ \=\ 5/ParallelDownloads\ \=\ 40/ /etc/pacman.conf
     sudo localectl set-locale LANG=en_US.UTF-8
     sudo locale-gen
     echo_info "Installing yay"
     sudo pacman -S --needed git base-devel which wget
     git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     echo_info "Installing required packages for arch"
-    yay -Sy zsh bat ripgrep fzf exa fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command docker docker-compose openssh
+    yay -Sy zsh bat ugrep fzf eza fd neovim stow starship tealdeer antigen-git atuin zoxide find-the-command docker docker-compose openssh reflector dum bunjs-bin btop parallel-disk-usage-bin yt-dlp ncdu fd
     sudo pacman -Fy
+    sudo systemctl enable docker
+    sudo systemctl enable reflector
+
 }
 
 function debian() {
