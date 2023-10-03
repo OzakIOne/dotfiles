@@ -15,6 +15,10 @@ alias diff='diff --color=auto'
 alias ip='ip --color=auto'
 alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
 alias dc='docker compose'
+alias dcd='docker compose down'
+alias dcb='docker compose build'
+alias dcu='docker compose up'
+alias dcub='docker compose up --build'
 ## Devops
 
 alias k='kubectl'
