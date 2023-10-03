@@ -14,7 +14,7 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ip='ip --color=auto'
 alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
-
+alias dc='docker compose'
 ## Devops
 
 alias k='kubectl'
