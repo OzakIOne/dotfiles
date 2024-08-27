@@ -22,7 +22,7 @@ format = "via [🐋 $context](blue bold)"
 format = "via [🦕 $version](green bold) "
 
 [nodejs]
-format = "via [🤖 $version](bold green) "
+format = "via [🤖 $version](green bold) "
 
 [fill]
 symbol = "-"
@@ -59,11 +59,6 @@ disabled = true
 [shell]
 style = "cyan bold"
 disabled = true
-
-[kubernetes]
-#format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](green) '
-format = '[$context $namespace](green) '
-disabled = false
 
 [time]
 disabled = false
