@@ -37,6 +37,7 @@
     nh
     nixfmt
     nvd
+    nil
   ];
 
   stable-packages = with pkgs; [
