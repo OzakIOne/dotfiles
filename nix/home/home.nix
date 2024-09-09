@@ -122,79 +122,79 @@
       };
     };
 
-  programs.starship = {
-    enable = true;
-    settings = {
-      format = lib.concatStrings [
-        "$fill"
-        "$time $all"
-        "$character"
-        "$line_break"
-      ];
-      add_newline = false;
-      directory = {
-        truncation_length = 5;
-      };
-      character = {
-        success_symbol = "[❯](bold green)";
-        error_symbol = "[❯](bold red)";
-      };
-      docker_context = {
-        only_with_files = false;
-        format = "via [🐋 $context](blue bold)";
-      };
-      deno = {
-        format = "via [🦕 $version](green bold)";
-      };
-      nodejs = {
-        format = "via [🤖 $version](green bold)";
-      };
-      fill = {
-        symbol = "-";
-        style = "bold #AAAAAA";
-      };
-      hostname = {
-        ssh_only = true;
-      };
-      sudo = {
-        style = "bold green";
-        symbol = "sudo";
-        disabled = true;
-      };
-      username = {
-        show_always = true;
-        format = "[$user ]($style)";
-        style_user = "red bold";
-        style_root = "yellow bold";
-      };
-      container = {
-        disabled = true;
-      };
-      memory_usage = {
-        format = "$symbol[${ram}( | ${swap})]($style)";
-        threshold = 0;
-        style = "bold dimmed white";
-        disabled = true;
-      };
-      localip = {
-        ssh_only = false;
-        format = "[$localipv4](bold red)";
-        disabled = true;
-      };
-      shell = {
-        style = "cyan bold";
-        disabled = true;
-      };
-      time = {
-        disabled = false;
-        format = "[$time]($style)";
-        style = "bold bright-black";
-        time_format = "%T";
-        utc_time_offset = "+2";
-        time_range = "10:00:00-14:00:00";
+    starship = {
+      enable = true;
+      settings = {
+        format = lib.concatStrings [
+          "$fill"
+          "$time $all"
+          "$character"
+          "$line_break"
+        ];
+        add_newline = false;
+        directory = {
+          truncation_length = 5;
+        };
+        character = {
+          success_symbol = "[❯](bold green)";
+          error_symbol = "[❯](bold red)";
+        };
+        docker_context = {
+          only_with_files = false;
+          format = "via [🐋 $context](blue bold)";
+        };
+        deno = {
+          format = "via [🦕 $version](green bold)";
+        };
+        nodejs = {
+          format = "via [🤖 $version](green bold)";
+        };
+        fill = {
+          symbol = "-";
+          style = "bold #AAAAAA";
+        };
+        hostname = {
+          ssh_only = true;
+        };
+        sudo = {
+          style = "bold green";
+          symbol = "sudo";
+          disabled = true;
+        };
+        username = {
+          show_always = true;
+          format = "[$user ]($style)";
+          style_user = "red bold";
+          style_root = "yellow bold";
+        };
+        container = {
+          disabled = true;
+        };
+        memory_usage = {
+          format = "$symbol[${ram}( | ${swap})]($style)";
+          threshold = 0;
+          style = "bold dimmed white";
+          disabled = true;
+        };
+        localip = {
+          ssh_only = false;
+          format = "[$localipv4](bold red)";
+          disabled = true;
+        };
+        shell = {
+          style = "cyan bold";
+          disabled = true;
+        };
+        time = {
+          disabled = false;
+          format = "[$time]($style)";
+          style = "bold bright-black";
+          time_format = "%T";
+          utc_time_offset = "+2";
+          time_range = "10:00:00-14:00:00";
+        };
       };
     };
-  };
 
 
     git = {
@@ -270,6 +270,11 @@
         prompt = "enabled";
         pager = "${pkgs.bat}/bin/bat";
       };
+      extensions = with pkgs; [
+        gh-poi
+        # gh-copilot
+      ];
+
     };
 
     kitty = {
