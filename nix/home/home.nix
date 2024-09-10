@@ -4,7 +4,6 @@
   nixpkgs = { config = { allowUnfree = true; }; };
   nixpkgs.config.allowUnfreePredicate = _: true;
 
-
   unstable-packages = with pkgs.unstable; [
     coreutils
     curl
@@ -24,7 +23,7 @@
     zip
     # shell better alternatives
     nvim
-    ripgrep 
+    ripgrep
     ugrep
     bat
     btop
@@ -33,34 +32,33 @@
     # nix
     statix
     deadnix
-    alejandra 
+    alejandra
     nh
     nixfmt
     nvd
     nil
   ];
 
-  stable-packages = with pkgs; [
-    fnm
-    atuin
-    ollama
-    lazydocker
-    tealdeer
-    github-copilot-cli
-    (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
-  ] ++ (if stdenv.isDarwin then [ raycast colima ] else [ google-chrome ]);
-
+  stable-packages = with pkgs;
+    [
+      fnm
+      atuin
+      ollama
+      lazydocker
+      tealdeer
+      github-copilot-cli
+      (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
+    ] ++ (if stdenv.isDarwin then [ raycast colima ] else [ google-chrome ]);
 
   home = {
     username = if pkgs.stdenv.isDarwin then "clementcouriol" else "ozaki";
-    homeDirectory = if pkgs.stdenv.isDarwin then "/Users/clementcouriol" else "/home/ozaki";
-    
-    packages = stable-packages
-      ++ unstable-packages;
-   
+    homeDirectory =
+      if pkgs.stdenv.isDarwin then "/Users/clementcouriol" else "/home/ozaki";
+
+    packages = stable-packages ++ unstable-packages;
+
     stateVersion = "23.11";
   };
-
 
   programs = {
     # Let Home Manager install and manage itself.
@@ -115,26 +113,20 @@
         cd = "z";
         ls = "eza";
         l = "eza -lah --icons --group-directories-first";
-        ll="eza -lh --icons --group-directories-first";
-        tree="eza --tree";
-        cat="bat";
-        ccat="cat";
+        ll = "eza -lh --icons --group-directories-first";
+        tree = "eza --tree";
+        cat = "bat";
+        ccat = "cat";
       };
     };
 
     starship = {
       enable = true;
       settings = {
-        format = lib.concatStrings [
-          "$fill"
-          "$time $all"
-          "$character"
-          "$line_break"
-        ];
+        format =
+          lib.concatStrings [ "$fill" "$time $all" "$character" "$line_break" ];
         add_newline = false;
-        directory = {
-          truncation_length = 5;
-        };
+        directory = { truncation_length = 5; };
         character = {
           success_symbol = "[❯](bold green)";
           error_symbol = "[❯](bold red)";
@@ -143,19 +135,13 @@
           only_with_files = false;
           format = "via [🐋 $context](blue bold)";
         };
-        deno = {
-          format = "via [🦕 $version](green bold)";
-        };
-        nodejs = {
-          format = "via [🤖 $version](green bold)";
-        };
+        deno = { format = "via [🦕 $version](green bold)"; };
+        nodejs = { format = "via [🤖 $version](green bold)"; };
         fill = {
           symbol = "-";
           style = "bold #AAAAAA";
         };
-        hostname = {
-          ssh_only = true;
-        };
+        hostname = { ssh_only = true; };
         sudo = {
           style = "bold green";
           symbol = "sudo";
@@ -167,9 +153,7 @@
           style_user = "red bold";
           style_root = "yellow bold";
         };
-        container = {
-          disabled = true;
-        };
+        container = { disabled = true; };
         memory_usage = {
           format = "$symbol[${ram}( | ${swap})]($style)";
           threshold = 0;
@@ -196,7 +180,6 @@
       };
     };
 
-
     git = {
       enable = true;
 
@@ -207,15 +190,11 @@
         whitespace = "-trailing-space";
         pager = "${pkgs.delta}/bin/bat";
       };
-      rerere = {
-        enabled = true;
-      };
-      push = {
-        autoSetupRemote = true;
-      };
+      rerere = { enabled = true; };
+      push = { autoSetupRemote = true; };
       user = {
         name = "ozakione";
-        email = "29860391+OzakIOne@users.noreply.github.com"
+        email = "29860391+OzakIOne@users.noreply.github.com";
       };
 
       delta = {
@@ -235,7 +214,6 @@
           untracked = "red bold";
         };
       };
-
 
       pull = { rebase = true; };
       rebase = { autostash = true; };
@@ -270,10 +248,11 @@
         prompt = "enabled";
         pager = "${pkgs.bat}/bin/bat";
       };
-      extensions = with pkgs; [
-        gh-poi
-        # gh-copilot
-      ];
+      extensions = with pkgs;
+        [
+          gh-poi
+          # gh-copilot
+        ];
 
     };
 
