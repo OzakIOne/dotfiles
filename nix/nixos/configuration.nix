@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    <home-manager/nixos>
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -69,7 +69,6 @@
     # xserver.libinput.enable = true;
   };
 
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.ozaki = {
     passwd = "ozaki";
@@ -90,21 +89,21 @@
   programs.zsh.enable = true;
   programs.nix-ld.enable = true;
 
-  programs.hyprland ={
+  programs.hyprland = {
     enable = true;
     xwayland = true;
     # nvidiaPatches = true;
-  }
+  };
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
     WLR_NO_HARDWARE_CURSORS = "1";
   };
-  hardware ={
-    opengl.enable= true;
+  hardware = {
+    opengl.enable = true;
     # nvidia.modesetting.enable = true;
     bluetooth.enable = true;
     bluetooth.powerOnBoot = true;
-  }
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -120,8 +119,8 @@
     wezterm
     rofi-wayland
     swww
+    home-manager
   ];
-
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
