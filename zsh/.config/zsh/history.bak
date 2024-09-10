@@ -1,0 +1,4433 @@
+yay -S node
+yay node
+corepack enable
+sudo groupadd docker
+sudo usermod -aG docker $USER
+docker run alpine
+docker run alpine /bin/sh
+docker run -it alpine /bin/sh
+corepack enable
+sudo corepack enable
+pnpm
+pnpm i -g github-copilot-cli
+pnpm i -g @githubnext/github-copilot-cli
+github-copilot-cli auth
+docker compose
+yay compose
+code .dotfiles
+cd .dotfiles
+touch .config/wgetrc
+code .dotfiles
+rm install.sh
+yay -Rns nodejs
+pnpm
+nvm install node
+nvm use node
+corepack enable
+pnpm
+code .ssh
+code .dotfiles
+chmod -R 600 .ssh/*
+?? list users in system
+?? remove ozaik user
+cat /etc/passwd | cut -d ":" -f 1
+?? get vault hashicorp policies containing in path "secret/"
+yay ncdu
+yay dust
+dust
+rm -rf yay
+md dev
+ssh rasp
+sudo pacman -Syu
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+sudo pacman -Syu
+cd .dotfiles
+gcl git@github.com:TeamTheRoseStudio/Course-Platform.git
+cd Course-Platform
+pnpm i
+updatepnpm
+pnpm -v
+pnpm up -i --latest
+pnpm dev
+git push -f
+exit
+z course
+code .
+nvm install node
+nvm use node
+corepack enable
+updatepnpm
+setozakigit
+nvm install node
+nvm use node
+corepack enable
+nvm -v
+pnpm -v
+which setozaki
+which setozakigit
+echo $GITEMAIL
+echo $GITNAME
+pnpm dev
+nvim test
+uniq test
+uniq test > uniqt
+sort uniqt
+uniq test > uniqt
+which uniq
+man uniq
+uniq --help
+uniq -u test
+uniq -u test > un
+sort un
+sort
+uniq
+sort test| uniq -c | sort  -n
+sort test| uniq -c | sort 
+sort test| uniq -u | sort 
+rm test un uniqt
+yay yt-dlp
+pnpm dev
+prisma generate
+pnpm i -g prisma
+prisma generate
+pnpm dev
+prisma generate
+prisma migrate dev
+prisma generate
+prisma migrate dev
+prisma migrate reset
+prisma generate
+prisma migrate reset
+prisma migrate dev
+pnpm seed
+prisma seed
+prisma validate
+prisma
+node prisma/seed.mjs
+prisma generat
+prisma generate
+prisma migrate dev
+prisma migrate reset
+pnpm dev
+prisma generate
+prisma migrate reset
+pnpm up -i --latest
+pnpm dev
+prisma migrate reset
+pnpm dev
+curl google.fr
+curl -L google.fr
+sudo pacman -Syu
+cd dev
+gcl git@github.com:TeamTheRoseStudio/Plantilla-Componentes-Storyblok.git
+code Plantilla-Componentes-Storyblok
+pnpm i -g local-ssl-proxy
+pnpm install @storyblok/nuxt
+pnpmupdate
+updatepnpm
+pnpm -v
+nvm install node
+pnpm dev
+pnpm nuxt
+pnpm nuxt dev help
+pnpm nuxt dev --help
+pnpm nuxt --help
+yay bun
+yay bun javascript
+pnpm nuxt --help
+pnpx nuxi dev --help
+pnpm storyblok
+pnpm story
+pnpm lint:fix
+pnpm story
+cd /mnt/d/PhoneSyncThing
+rm -rf Tachiyomi\  
+v test.js
+bun test.js
+v test.js
+bun test.js
+curl https://myanimelist.net/anime/496
+curl https://myanimelist.net/anime/1
+v test.js
+bun test.js
+node test.js
+yay -Syu
+pacman -Syu
+sudo pacman -Syu
+yay -Syu
+yay discord screen
+nvm install node
+yay --getpkgbuild obs-studio-git
+cat obs-studio-git/PKGBUILD
+?? find obs .desktop file
+yay bun javascript
+yay -S bunjs-bin
+tee /boot/grub/grub.cfg
+cat .config/zsh/.zshali
+ll dev
+ll .config
+alias p='pacman -Qq | fzf --preview '\''pacman -Qil {}'\'' --layout=reverse --bind '\''enter:execute(pacman -Qil {} | less)'\'
+sudo pacman -Qii | awk '/^MODIFIED/ {print $2}'
+code .dot
+code .dotfiles
+ls .dotnet
+v /etc/pacman.
+v /etc/pacman.conf
+sudo nvim /etc/pacman.conf
+v /etc/pacman.conf
+sudo nvim /etc/pacman.conf
+echo $HOME
+sudo nvim /etc/pacman.conf
+updatepnpm
+cat $HOME/.dotfiles/pacman/pacman.conf
+sudo nvim /etc/pacman.conf
+pnpm story
+pnpm dev
+pnpm story
+pnpm add @fortawesome/fontawesome-free @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/vue-fontawesome
+pnpm dev
+pnpm story
+code .dotfiles
+nvm install node
+pnpm story
+sudo echo lol
+z course
+code .
+z plant
+../Plantilla-Componentes-Storyblok
+git status
+git restore .
+git pull
+pnpm story
+pnpm lint:fix
+pnpm format:fix
+pnpm prettier:fix
+pnpm format:fix
+pnpm lint:fix
+pnpm lint
+pnpm story
+pnpm storyblok
+pnpm story
+pnpm dev:https
+pnpm add @tailwindcss/typography
+pnpm story
+pnpm dev
+pnpm story
+gcl https://github.dev/alvarosabu/sushi-wuut
+gcl https://github.com/alvarosabu/sushi-wuut
+cd sushi-wuut
+pnpm i
+code .
+pnpx nuxt
+pnpx nuxt dev --help
+rm -rf sushi-wuut
+cd Course-Platform
+z course
+code .
+pnpm stor
+pnpm story
+pnpm install-completion zsh
+code ~/.dotfiles
+exit
+z course
+code .
+code .dotfiles
+z dotfi
+stow -D pnpm
+pnpm install-completion zsh
+code ../.config
+z course
+source $XDG_CONFIG_HOME/tabtab/zsh/pnpm.zsh
+cat $XDG_CONFIG_HOME/tabtab/zsh/pnpm.zsh
+tldr zsh
+man zsh
+zsh --version
+pnpm -v
+updatepnpm
+pnpm -v
+nvm install node
+corepack enable
+pnpm -v
+pnpm install-completion
+pnpm --help
+z course
+git log
+git status
+code .
+git restore .
+git status
+git pull
+zsh -v
+cat ~/.config/tabtab/zsh/pnpm.zsh
+cat ~/.config/tabtab/zsh/__tabtab.zsh
+l tabtab/zsh
+rm -rf tabtab
+l tabtab/zsh
+rm ../.config/tabtab/zsh/pnpm.zsh
+rm ../.config/tabtab/zsh/__tabtab.zsh
+stow pnpm
+stow -v pnpm
+tldr stow
+tldr --update
+tldr stow
+stow --simulate pnpm
+man stow
+stow --help
+ls ../.config/tabtab/zsh/
+l ../.config/tabtab/zsh/
+stow pnpm
+stow -Dv pnpm
+stow -v pnpm
+pnpm dev
+pnpm add @flowbite/plugin
+pnpm dev
+pnpm install-completion zsh
+git pull
+pnpm story
+pnpm i
+pnpm story
+rm -rf node_modules
+pnpm i
+rm -rf node_modules
+pnpm i
+pnpm story
+pnpm i -g prisma
+pnpm story
+pnpm i prisma
+pnpm story
+prisma generate
+pnpm story
+code package.json
+pnpm i -g local-ssl-proxy
+pnpm story
+local-ssl-proxy --source 3010 --target 3000 --cert localhost/localhost.pem --key localhost/localhost-key.pem
+pnpm story
+pnpm lint:fix
+pnpm dev
+pnpm story
+pnpm story
+pnpm dev
+v .config/zsh/.zshbin
+tldr stow
+man stow
+stow --help
+l .config
+code .dot
+code .dotfiles
+z dot
+stow -D pnpm
+code .
+git config --global 
+?? show global git config
+stow git
+git config --global --list
+git config --system --list
+git config
+git --local
+git config --local --list
+git config
+git config --global --list
+cat ../.config/git/config 
+git config --global pull.rebase true\
+git config --global rebase.autoStash true\
+git config --global --list
+echo $GITEMAIL
+echo $GITNAME
+echo $GITEMAIL
+code .dotfiles
+pnpm
+source $XDG_CONFIG_HOME/tabtab/zsh/pnpm.zsh
+z dot
+stow -D pnpm
+stow pnpm
+cat $XDG_CONFIG_HOME/tabtab/zsh/pnpm.zsh
+code .dotfiles
+z course 
+code .
+pnpm story
+z dev
+code Plantilla-Componentes-Storyblok
+pnpm def
+pnpm story
+bun dev
+rm -rf blok
+pnpm dlx nuxi@latest init blok
+cd blok
+pnpm i
+pnpm dev
+bun run dev
+bun i local-ssl-proxy
+bun run story
+z course
+code .
+pnpm create nuxt
+bun create
+bun x
+bun x nuxi@latest init blok
+cd blok
+bun i
+code .
+bun i @storyblok/nuxt
+bun dev
+rm -rf blok
+bun x nuxi@latest init blok
+cd blok
+bun i
+bun run dev
+bun i @storyblok/nuxt
+yarn
+exit
+curl -fsSL https://pixi.sh/install.sh | bash
+pixi add python
+take prout
+pixi init
+pixi add python
+pixi add npm
+pixi add node
+pixi add yarn
+pixi add pnpm
+pixi
+pixi shell
+pixi
+pixi task
+pixi task add 
+pixi task add dev 'yarn dev'
+pixi task dev
+pixi task run dev
+pixi task 
+pixi task list
+pixi 
+pixi run dev
+code blok
+code Course-Platform
+code Plantilla-Componentes-Storyblok
+scoop search openjdk
+bun run dev
+bun run story
+pnpm dev
+pnpm i -g taze
+taze
+pnpm story
+pnpm dev
+pnpm story
+z plantilla
+pnpm update -i --latest
+pnpm i
+pnpm update -i --latest
+code .
+z blok
+code .
+npx @storyblok/create-demo@latest
+pnpx @storyblok/create-demo@latest
+cd fdp
+pnpm i
+pnpm dev
+code .
+pnpm dev
+npx @storyblok/create-demo@latest
+npx @storyblok/create-demo@latest --key YOpulo9teXrZnBPjtJ5I4Qtt
+cd ./fdp21 && npm install && npm run dev
+code .
+npm run dev
+rm -rf fdp fdp21
+sudo pacman -Syu archlinux-keyring
+pnpm story
+z course
+code .
+z plant
+code .
+z course
+pnpm story
+z course
+code .
+z plan
+code .
+pnpm i flowbite
+pnpm dev
+pnpm story
+pnpm i @fortawesome/fontawesome-free
+pnpm i @fortawesome/fontawesome-svg-core
+pnpm i @fortawesome/free-brands-svg-icons
+pnpm i @fortawesome/free-solid-svg-icons
+pnpm i @fortawesome/vue-fontawesome
+pnpm story
+pnpm i @heroicons/vue
+pnpm story
+z course
+code .
+z pla
+code .
+syncthing
+yay aria2
+git log
+pnpm update -i --latest
+pnpm prettier
+pnpm prettier:fix
+pnpm prettier
+pnpm lint
+pnpm lint:fix
+setozakigit
+git push -f
+man rm
+yay man
+man rm
+yay man
+man rm
+pnpm story
+pnpm i
+updatep npm
+updatepnpm
+pnpm i
+pnpm story
+pnpm up -i --latest
+pnpm story
+taze
+rm -rf node_modules
+pnpm i
+pnpm dev
+pnpm prebuild
+pnpm dev
+pnpm update
+pnpm story
+rm -rf node_modules
+pnpm i
+pnpm story
+pnpm prebuild
+pnpm dev
+rm -rf node_modules
+pnpm i
+pnpm dev
+pnpm prebuild
+pnpm dev
+git pull
+pnpm i
+pnpm up
+pnpm up -i --latest
+pnpm dev
+rm -rf node_modules
+pnpm i
+pnpm prebuild
+pnpm dev
+pnpm i
+pnpm dev
+pnpm nuxt buid
+pnpm build
+node .output/server/index.mjs
+rm -rf node_modules
+pnpm i
+pnpm dev
+pnpm prebuild
+pnpm dev
+pnpm --help
+pnpm i --help
+pnpm i --no-lockfile
+rm -rf node_modules
+pnpm i --no-lockfile
+pnpm dev
+pnpm prebuild
+pnpm dev
+rm pnpm-lock.yaml
+rm -rf node_modules
+pnpm i
+pnpm dev
+pnpm prebuild
+pnpm dev
+git log
+git llog
+git log
+bun i
+bun run dev
+git pull
+git log
+pnpm prebuild
+pnpm dev
+rm -rf node_modules pnpm-lock.yaml
+pnpm i
+pnpm prebuild
+pnpm dev
+pnpm i
+pnpm prebuild
+pnpm dev
+git pull
+pnpm update -i --latest
+pnpm run generate
+rm -rf node_modules
+rm pnpm-lock.yaml
+pnpm i
+pnpm dev
+pnpm prebuild
+pnpm dev
+z course
+code .
+gcl git@github.com:TeamTheRoseStudio/Course-Platform.git temp
+cd temp
+pnpm i
+code .
+pnpm dev
+pnpm dev
+pnpm prebuild
+pnpm dev
+git checkout b06699b
+pnpm i
+pnpm dev
+pnpm prebuild
+pnpm dev
+pnpm i
+pnpm prebuild
+pnpm dev
+git pull
+git checkout main
+pnpm i
+pnpm prebuild
+pnpm dev
+rm -rf node_modules pnpm-lock.yaml
+pnpm i @fortawesome/fontawesome-free @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/vue-fontawesome @heroicons/vue @tailwindcss/typography flowbite
+pnpm prebuild
+rm -rf node_modules pnpm-lock.yaml
+pnpm i -D @fortawesome/fontawesome-free @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/vue-fontawesome @heroicons/vue @tailwindcss/typography flowbite
+pnpm prebuild
+pnpm dev
+pnpm i @fortawesome/fontawesome-free @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/vue-fontawesome @heroicons/vue @tailwindcss/typography flowbite
+rm -rf node_modules pnpm-lock.yaml
+pnpm i
+pnpm prebuild
+pnpm dev
+setozakigit
+git pus
+git push
+pnpm dev
+pnpm story
+pnpm update -i --latest
+pnpm story
+pnpm dev
+z course
+code .
+cd temp
+code .
+pnpm story
+take temp
+?? list ts files
+updatepnpm
+pnpm up -i --latest -g
+z course
+code .
+?? list md files
+z temp
+code .
+rm -r temp
+z temp
+code .
+pnpm story
+z temp
+code .
+ls prout
+ls obs-studio-git
+rm -r obs-studio-git
+rm -rf obs-studio-git
+cat test.js
+rm test.js
+ll dev
+cd dev
+rm -rf Plantilla-Componentes-Storyblok
+ll blok
+rm -rf Course-Platform
+rm -rf blok/
+sudo ncdu / --exclude /mnt
+?? delete pacman cache
+?? delete yay cache
+sudo ncdu / --exclude /mnt
+// delete pnpm cache
+?? delete pnpm cache
+sudo ncdu / --exclude /mnt
+ls prout
+rm -rf prout
+yay pixi
+ls dev
+rm -rf temp
+git clone https://github.com/facebook/docusaurus/
+yarn -v
+mkdir /home/ozaki/.config/yarn
+touch /home/ozaki/.config/yarn/config
+yarn -v
+corepack prepare yarn@stable --activate
+yarn -0v
+yarn -v
+nvim ~/.dotfiles/zsh/.config/zsh/.zshenv
+nvim ~/.dotfiles/zsh/.config/zsh/.zshali
+cd docusaurus
+source ~/.config/zsh/.zshconf
+nvim ~/.config/zsh/.zshconf
+which zrc
+source ~/.zshrc
+yarn
+yarn -v
+z docu
+yarn
+yarn -v
+corepack prepare yarn@1 --activate
+yarn -v
+yarn
+rm -rf docusaurus
+git clone https://github.com/facebook/docusaurus/
+cp -r docusaurus docuyarn
+cd docuyarn
+yarn
+yarn start
+nvm use
+corepack enable
+yarn
+yarnpkg -v
+curl -Ftoken= -Fdelete= https://0x0.st/HpnB.zip
+which pacman
+which pacma
+?? run alpine container shell
+ssh oracle
+bun i
+bun run
+bun run dev
+cd dev
+gcl https://github.com/neolectron/benjamincode-xss-poc
+code benjamincode-xss-poc
+rm -rf benjamincode-xss-poc
+bun bundle
+bun repl
+cd /mnt/c/Users/ozaki/Downloads/ffmpeg/
+curl 'https://raw.githubusercontent.com/NapoleonWils0n/ubuntu-bin/master/scene-detect' -o ~/Desktop/scene-detect
+curl 'https://raw.githubusercontent.com/NapoleonWils0n/ubuntu-bin/master/scene-time' -o ~/Desktop/scene-time
+curl 'https://raw.githubusercontent.com/NapoleonWils0n/ubuntu-bin/master/scene-cut' -o ~/Desktop/scene-cut
+scene-detect -h
+curl 'https://raw.githubusercontent.com/NapoleonWils0n/ubuntu-bin/master/scene-time' -o ./scene-time
+curl 'https://raw.githubusercontent.com/NapoleonWils0n/ubuntu-bin/master/scene-detect' -o ,.scene-detect
+curl 'https://raw.githubusercontent.com/NapoleonWils0n/ubuntu-bin/master/scene-detect' -o ./scene-detect
+rm ,.scene-detect
+curl 'https://raw.githubusercontent.com/NapoleonWils0n/ubuntu-bin/master/scene-cut' -o ./scene-cut
+./scene-detect -h
+chmod +x scene-cut scene-detect scene-time
+./scene-detect -h
+./scene-detect -i Cassette02.mkv -o Cassette02.txt
+btop
+yay -S btop
+btop
+cd dev
+pnpm create create-docusaurus@latest docweb classic
+gcl https://github.com/codinglab-io/discord-bot
+code .
+code discord-bot
+which exa
+which eza
+z doc
+../docuyarn
+code .
+yarn build
+yarn
+yarn build
+yarn format
+yarn lint
+bun run test
+yarn test
+bun test
+yarn build:website:en
+yarn build
+pnpm i
+nvm use
+nvm install && nvm use
+updatepnpm
+cd docweb
+pnpm i
+pnpm start
+code docweb
+pnpm start
+mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
+cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md\
+pnpm dev
+pnpm start
+npm run start -- --locale fr
+pnpm build
+npm run serve
+npm run docusaurus docs:version 1.0
+pnpm start
+npm run docusaurus docs:version 2.0
+pnpm build && pnpm serve
+git add .
+gm 'docs: publish'
+alias | grep commit
+gc 'docs: publish'
+gcam 'docs: publish'
+setozakigit
+gcam 'docs: publish'
+git remote add origin git@github.com:OzakIOne/docutry.git
+git push -u origin master
+pnpm run swizzle -- --list
+npm run swizzle -- --list
+cd docweb
+git init
+code .
+code ../docuyarn
+pnpm create docusauris
+pnpm create docusaurus
+bun create docusaurus
+rm -rf docubun
+bun create docusaurus
+yay -S dum
+yay -S dum
+z docu
+cd docweb
+code .
+pnpm run swizzle -- --list
+pnpm run swizzle --list
+npm run swizzle -- --list
+pnpm run swizzle --list
+pnpm start
+pnpm start
+rm /var/lib/pacman/db.lck
+sudo rm /var/lib/pacman/db.lck
+z docutry
+zi doc
+git add .
+git commit -m 'feat: plugin'
+git push
+yarn install
+nvm use
+nvm install
+nvm use
+corepack enable
+yarn install
+zi docu
+rm -rf docusaurus
+git clone https://github.com/ozakione\]/docusaurus/
+git clone https://github.com/ozakione/docusaurus/
+code docusaurus
+code .dotfiles
+nvm list
+z docusaurus
+pnpm start
+corepack enable
+pnpm start
+pnpm i
+pnpm build
+pnpm i
+pnpm build
+pnpm start
+pnpm build
+pnpm start
+pnpm build
+pnpm serve
+pnpm i @docusaurus/core@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest
+pnpm start
+pnpm build && pnpm serve
+pnpm start
+pnpm build
+pnpm start
+pnpm build && pnpm serve
+pnpm start
+pnpm build
+pnpm start
+pnpm build
+pnpm serve
+pnpm build && pnpm serve
+git log
+git pull
+git push
+pnpm build && pnpm serve
+pnpm i
+pnpm build && pnpm serve
+pnpm i
+pnpm build && pnpm serve
+pnpm start
+pnpm build
+pnpm serve
+yay exa
+which exa
+which eza
+yay  modern replacement for ls
+yay -Rns exa
+yay -Sc
+z docutry
+cd dev/docweb
+?? get git repo url
+mv docweb docutry
+z docutry
+code .
+nvm ls
+nvm uninstall v20.2.0
+nvm uninstall v20.5.0
+nvm uninstall v20.5.1
+nvm ls
+updatepnpm
+git config --get remote.origin.url
+git config --get remote.origin.url | sed -r 's#(https?://[^/]+)(/.+)?\.git$#git@\2:g'
+code .dotfiles
+https2ssh
+z docus
+https2ssh
+git config --get remote.origin.url
+cd temp/docusaurus
+https2ssh
+take temp
+git clone https://github.com/ozakione/docusaurus/
+git config --get remote.origin.url
+cd docusaurus
+git config --get remote.origin.url
+https2ssh
+yay ripgrep
+yay -Rns ripgrep
+yay ugrep
+ug index
+yarn build:packages
+nvm use
+yarn build:packages
+yarn build:website
+yarn build:website:fast
+yarn serve:website
+setozakigit
+https2ssh
+git push
+?? set remote git url to git@github.com:OzakIOne/docusaurus.git
+git remote set-url origin git@github.com:OzakIOne/docusaurus.git
+git push
+which https2ssh
+yarn serve:website
+yarn start:website
+yarn lint
+yarn prettier
+yarn format
+btop
+cd temp/docusaurus
+https2ssh
+chs ls
+?? change https git url to ssh
+git config --get remote.origin.url
+git remote set-url origin $(git remote get-url origin | sed -e 's/https:/git@/g' | sed -e 's/\.git//g')
+git config --get remote.origin.url
+git remote set-url origin https://github.com/ozakione/docusaurus/
+rm -rf temp
+z docus
+yarn watch
+pnpm swizzle
+yarn serve:website
+yarn start:website
+cd website
+yarn install
+npx docusaurus-mdx-checker
+yarn start
+yarn why unist-util-visit
+yarn resolve
+yarn resolve --help
+yarn install
+yarn start
+yarn install
+yarn start
+yarn clear
+yarn start
+rm -rf node_modules
+yarn install
+yarn start
+rm -rf node_modules
+yarn install
+yarn start
+setozakigit
+git status
+git log
+git log
+yay hg
+setozakigit
+git config --get remote.origin.url
+https2ssh
+?? change remote url
+git remote set-url origin git@github.com:slorber/metro.git
+yarn build
+yarn serve
+nvm use 16
+corepack enable
+yarn install
+yarn build
+?? make an empty git commit
+yay -Sc
+z docus
+code .
+btop
+z dev
+gcl https://github.com/keploy/docs/blob/main/package.json
+gcl https://github.com/keploy/docs/
+cd docs
+bun x ncu
+bun x npm-check-updates
+bun x taze
+bun x taze --help
+bun x taze -I
+corepack enable
+yarn install
+yarn build:website:fast
+yarn serve
+yarn start
+bun x taze -I
+git add .
+git commit -m 'chore: upgrade'
+setozakigit
+git commit -m 'chore: upgrade'
+bun x taze -I
+yarn starrt
+yarn start
+bun x taze --help
+bun x taze -I
+yarn start
+code .
+code ../docutry
+rm -rf docs
+gcl https://github.com/slorber/metro
+cd metro
+nvm use 18
+yarn install
+code .
+cat metro.code-workspace
+cd ..
+gcl https://github.com/slorber/rnw-visual-tests argos-metro
+code argos-metro
+cd argos-metro
+git config --get remote.origin.url
+git remote add origin git@github.com:OzakIOne/metro-argos.git
+?? replace remote origin url
+git remote set-url origin git@github.com:OzakIOne/metro-argos.git
+git branch -M master
+git push -u origin master
+git switch master
+yay ollama
+curl https://ollama.ai/install.sh | sh
+ollama run mistral
+yay reflector
+systemctl enable reflector --now
+sudo systemctl enable reflector --now
+v /etc/xdg/reflector/reflector.conf
+sudo nvim /etc/xdg/reflector/reflector.conf
+?? run reflector sort by age and france and germany country https and latest %
+?? run reflector sort by age and france and germany country https and latest 5
+cat /etc/pacman.d/mirrorlist
+cd .dotfiles
+code .
+nvm use
+nvm install
+nvm install 20
+corepack enable
+updatepnpm
+z schoo
+take school
+gcl git@github.com:hbourget/GeoMaster.git
+cd GeoMaster
+pnpm i
+cd frontend
+pnpm i
+code .
+docker run hello-world
+docker syimages
+docker images
+docker system prune
+code .dotfiles
+sudo systemctl list
+sudo systemctl list-jobs
+sudo systemctl list-automounts
+sudo systemctl list-dependencies
+sudo systemctl list-machines
+sudo systemctl list-paths
+?? list enabled service linux
+?? list user installed aur packages
+?? list user installed packages
+?? list user installed packages arch
+dust
+du -v /mnt
+dust -v /mnt
+dust -v /mnt dev/
+yay -S pdu
+yay pdu
+yay pdu parallel
+yay fast directory tree analyzer
+yay -S parallel-disk-usage-bin
+pdu dev
+cd frontend
+pnpm dev
+setozakigit
+git push
+code .dotfiles
+which docker-compose
+z schoo
+gcl https://github.com/alimtunc/SuperFolio
+cd SuperFolio
+pnpm i
+code .
+pnpm build
+docker compose up
+pnpm build
+cd frontend
+pnpm build
+pnpm i
+pnpm build
+yay fx
+z docu
+yarn watch
+z docus
+yarn start:website
+z docus
+code .
+btop
+yay 6Sc
+yay -Sc
+yay volta
+yay -Rns volta
+yay -Rns volta-bin
+stow ni
+code .dotfiles
+z metro
+zi metro
+git switch docusaurus-v3
+code .
+git switch docusaurus-v3
+glgo
+z dx
+pnpm build
+nvm use 18
+yarn build
+pnpm build
+pnpm i -g @antfu/ni
+pnpm i -g chokidar-cli@
+pnpm i -g chokidar-cli
+chokidar
+chokidar \"/home/ozaki/dev/buildfail-dx/node_modules/.pnpm/@docusaurus+core@2.4.3_@docusaurus+types@2.4.3_react-dom@17.0.2_react@17.0.2_typescript@4.9.5/node_modules/@docusaurus/core/lib/webpack/client.js\" -c \"pnpm build\"
+chokidar \"/home/ozaki/dev/buildfail-dx/node_modules/.pnpm/@docusaurus+core@2.4.3_@docusaurus+types@2.4.3_react-dom@17.0.2_react@17.0.2_typescript@4.9.5/node_modules/@docusaurus/core/lib/webpack/client.js\" -c \" pnpm build\"
+chokidar \"node_modules/*.js\" -c \" pnpm build\"
+chokidar \"./node_modules/*.js\" -c \"pnpm build\"
+chokidar \"./node_modules/*.js\" -c \" pnpm build\"
+chokidar -s \"./node_modules/*.js\" -c \" pnpm build\"
+chokidar -s "./node_modules/*.js" -c "pnpm build"
+chokidar "./node_modules/*.js" -c "pnpm build"
+chokidar "./node_modules/*.js" -c \"pnpm build\"
+chokidar "./node_modules/*.js" -c \" pnpm build\"
+pnpm build
+pnpm build > build.log
+pnpm build @> build.log
+pnpm build 2> build.log
+v build.log
+rm build.log
+pnpm build
+pnpm build]
+pnpm build
+nr build
+nr dev
+nr build
+nr build
+nr build
+z dev
+z docu
+gcl https://github.com/lorchr/light-docusaurus light
+cd light
+echo '18' > .nvmrc
+nvm use
+yarn
+code .
+yarn
+yarn build
+rm -rf light
+pnpm create docusaurus
+cd buildfail-dx
+pnpm build
+code .
+pnpm build
+z docus
+code .
+ollama run mistral
+git branch -A
+ollama run mistral
+openssl dhparam -out dhparams.pem 2048\
+openssl dhparam -in dhparams.pem -pubout -out dhpublickey.pem\
+openssl dhparam -out dhparams.pem 2048
+openssl dh -in dhparams.pem -pubout -out dhpublickey.pem
+?? how to create a dhPublicKey  in bash
+cat dh
+cat dh.pem
+cat dhparams.pem
+rm dhparams.pem
+rm dh.pem
+openssl genpkey -genparam -algorithm DH -out dhp.pem
+openssl genpkey -paramfile dhp.pem -out dhkey.pem
+openssl pkey -in dhkey.pem -pubout -out dhpub.pem
+cat dhp
+cat dhpub.pem
+cat dhkey.pem dhp.pem dhpub.pem 
+z docus
+code .
+pnpm start
+pnpm 
+pnpm i
+pnpm add unist-util-visit
+pnpm start
+pnpm add remark-html
+pnpm install remark-directive
+pnpm start
+cursor .
+taze
+pnpm update -i --latest
+pnpm start
+pnpm add rehype-document
+pnpm start
+pnpm add rehype-document rehype-format
+pnpm start
+pnpm add rehype-stringify
+pnpm add vfile-reporter
+pnpm start
+pnpm add remark-rehype
+pnpm start
+git init
+setozakigit
+git remote add origin git@github.com:OzakIOne/mdast-unused-directives.git
+git push -u origin master
+pnpm start
+pnpm install nodemon
+updatepnpm
+ni nodemon
+nr watch
+nun jest
+ni -g depcheck
+depcheck
+pnpm start
+pnpm start
+nr watch
+pnpm install unist-util-filter
+node
+clear
+pnpm start
+pnpm start\\
+pnpm start
+pnpm start
+echo /home/ozaki/dev/mdast/markdown-parser/src/test.md:11:1
+echo /home/ozaki/dev/mdast/markdown-parser/src/test.md:11
+pnpm start
+yarn jest
+yarn jest unusedDirectives
+nr build:packages
+yarn build:website:fast
+nr build:packages
+yarn build:website:fast
+nr lerna run build --no-private docusaurus-mdx-loader
+nr lerna run build  docusaurus-mdx-loader
+?? specify lerna build packages docusaurus-mdx-loader
+nr lerna run build --scope=packages/docusaurus-mdx-loader
+yarn lerna run build --scope=packages/docusaurus-mdx-loader
+yarn build:packages
+yarn lerna run build --scope=@docusaurus/docusaurus-mdx-loader
+yarn build:packages
+yarn lerna run build --scope=@docusaurus/mdx-loader
+yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+z docus
+cursor .
+which cursor
+take mdast
+code .
+nr watch
+z docus
+code .
+echo /home/ozaki/dev/mdast/markdown-parser/src/test.md:11
+pnpm watch
+yarn jest unusedDirectives
+yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+yarn jest unusedDirectives
+depcheck
+git push
+yarn lerna run build --scope=@docusaurus/mdx-loader
+yarn jest unusedDirectives
+yarn lerna run build --scope=@docusaurus/mdx-loader
+yarn build:packages
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+yarn jest unusedDirectives
+yarn jest unusedDirectives --watch
+git commit -m 'wip: unit test mock'
+git push
+yarn jest unusedDirectives --watch
+yarn jest unusedDirectives
+yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+echo /home/ozaki/dev/mdast/markdown-parser/src/test.md:11
+yarn jest unusedDirectives --watch
+yarn jest unusedDirectives --watch
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+echo '[WARNING] We found a potential error in your documentation fast "website/changelog/source/2.0.0-beta.15.md:204:92" '
+echo '[WARNING] We found a potential error in your documentation fast "website/changelog/source/2.0.0-beta.15.md":204:92 '
+yarn jest unusedDirectives --watch
+yarn jest unusedDirectives
+yarn jest unusedDirectives --watch
+yarn jest unusedDirectives --watch
+yarn jest unusedDirectives
+yarn jest unusedDirectives --watch
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+yarn install
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+echo '[WARNING] We found a potential error in your documentation fast "changelog/source/2.0.0-beta.15.md":259:92'
+echo '[WARNING] We found a potential error in your documentation fast changelog/source/2.0.0-beta.15.md:259:92'
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+z docus
+yarn build:website:fast
+yarn clear:website
+yarn build:website:fast
+nvim temp.log
+yarn clear:website
+yarn build:website:fast
+yarn clear:website
+yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+yarn clear:website
+yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+yarn website:clear && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+nvim temp.log
+z docus
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+node
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+yarn jest unusedDirectives
+yarn jest unusedDirectives --watch
+/usr/sbin/git -C "/home/ozaki/dev/docusaurus" -c "core.editor=code --wait --reuse-window" revert --no-edit cefc3e4bf562e4d69117c2c4457ffa670fa4170d
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+git switch master
+git switch main
+git switch main
+git switch ozaki/mdx-unused-directives
+yarn jest unusedDirectives --watch
+yarn jest unusedDirectives
+yarn jest unusedDirectives --watch
+glgo
+ugit
+yay ugit
+ugit
+git reset --hard HEAD^
+git switch ozaki/mdx-unused-directives
+git pull
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+yarn jest unusedDirectives --watch
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn lerna run build --scope=@docusaurus/logger && yarn build:website:fast
+z docus
+yarn jest unusedDirectives --watch
+z docus
+yarn clear:website && yarn lerna run build --scope=@docusaurus/mdx-loader && yarn build:website:fast
+yay cursor
+rm dh*
+rm temp*
+ssh oracle
+cat .ssh/config
+v .ssh/config
+code .ssh/config
+ssh oracle
+yay -Sc
+pnpm start
+nr start
+take temp
+gcl https://github.com/tejado/telegram-nearby-map
+cd telegram-nearby-map
+pnpm i
+rm -rf temp
+cd frontend
+ni react-svg-map
+nvm install node
+nvm use node
+corepack enable
+updatepnpm
+ni @svg-maps/world
+nr dev
+pnpm i
+nr dev
+nr dev
+z school
+take GeoMaster
+git pull
+git config --list
+git switch ozaki/setup
+code .
+yay bun javascript
+ssh oracle
+yay tldr
+tldr
+tldr 7z
+yay -Sc
+take temp
+pnpm create docusaurus
+cd docuinit
+pnpm i
+pnpm start
+cat package.json
+rm pnpm-lock.yaml
+rm -rf node_modules
+yarn install
+pnpm create vite
+cd panda
+pnpm i
+pnpm install -D @pandacss/dev
+pnpm panda init --postcss
+code .
+pnpm dev
+pnpm build
+pnpm dev
+pnpm build
+pnpm panda codegen
+pnpm build
+pnpm prepare
+pnpm build
+rm -rf docuinit panda
+cd temp/panda
+git init
+git add .
+git commit -m 'q'
+setozakigit
+git commit -m 'q'
+git reset --hard HEAD^
+rm -rf .git
+code .
+v .gitignore
+git init
+setozakigit
+git commit -am 'q'
+git add .
+git commit -a 'q'
+git commit -m 'q'
+git remote add origin git@github.com:OzakIOne/pandavite.git\
+git branch -M master\
+git push -u origin master
+ls temp
+rm -rf temp
+z docus
+git status
+git switch main
+git switch ozaki/brokenAnchor
+yay oha http
+echo $PATH
+code .
+echo $PATH
+z docus
+code .
+z docutry
+git config --list
+code dev
+ls dev
+cd dev
+ls buildfail-dx
+rm -rf buildfail-dx
+rm -rf docuyarn
+ls docucli
+rm -rf docucli
+cd docusaurus
+code .
+yarn 
+yarn jest brokenAnchors --watch
+code $(z docus)
+z docus
+code .
+yarn jest brokenAnchors --watch
+pnpm create docusaurus
+cd tempdelete
+rm -rf tempdelete
+bun create
+bun create docusaurus
+cd tempdelete
+bun start
+rm -rf tempdelete
+bun create docusaurus
+cd tempdelete
+cat package.json
+cd examples/classic
+yarn install
+yarn install
+git switch ozaki/fix-playground
+git switch -c ozaki/fix-playground
+git commit -m 'wip: stackblitz install error'
+cd ../classic-typescript
+rm yarn.lock 
+yarn install
+git commit -m 'wip: stackblitz install error'
+cd ../../../
+cd docusaurus
+yarn examples:generate
+git log
+git push -f
+git rebase -i 791da2e4a1
+?? list global git config
+?? set nvim as git config core editor
+z try
+pnpm build
+code .
+rm -rf docutry
+pnpm create docusaurus
+cd docutest
+pnpm i
+pnpm build
+z docus
+git log
+nvm install node
+nvm install 18
+nvm list
+nvm uninstall 21.0 18.18.0
+nvm uninstall 21.0 
+nvm list
+nvm uninstall 16
+nvm uninstall 20.6
+nvm install 20
+nvm uninstall 20.8
+nvm list
+nvm uninstall 18.18.0
+nvm use 21
+corepack enable
+updatepnpm
+nvm use 20
+corepack enable
+updatepnpm
+nvm use 18
+corepack enable
+updatepnpm
+yarn jest brokenAnchors --watch
+git switch main
+cd examples/classic/
+taze
+pnpm i -g --list
+pnpm -g --list
+pnpm -g list
+?? update all global pnpm packages
+pnpm update -g
+pnpm update -g --lqtest
+pnpm update -g --latest
+pnpm rm -g prisma
+depcheck
+taze
+git config --list
+git config --list --global
+git config --global --list
+git config global --list
+git rebase --continue
+git rebase --abort
+git rebase -i 791da2e4a1
+git push -f
+git switch main
+git branch -D ozaki/fix-playground
+?? git delete remote branch
+git push origin --delete  ozaki/fix-playground
+git switch -c ozaki/brokenanchor-core
+pnpm i -g nodemon
+nodemon --exec "pnpm build" docs/intro.mdx
+nodemon --exec "pnpm build"
+nodemon --exec "pnpm build" --ignore .docusaurus --ignore build
+nodemon --exec "pnpm start" --ignore .docusaurus --ignore build
+pnpm start
+pnpm build
+pnpm start
+z docus
+code .
+cd..
+rm -rf docutest
+pnpm create docusaurus
+cd docutest
+code .
+../docusaurus
+nvm install 16
+pnpm build
+nvm uninstall 16
+nvm use
+nvm use node
+nvm uninstall 16
+yarn watch
+z docus
+btop
+yarn start:website
+btop
+cd dev/docutest
+z docus
+code .
+yarn watch
+yarn build:packages
+yarn watch
+yarn build:packages
+yarn serve:website
+yarn watch
+yarn build:packages
+yarn build:website
+yarn build:website:fast
+yarn build:packages
+yarn build:website:fast
+yarn build:packages
+yarn build:website:fast
+z docus
+yarn start:website
+z docus
+yarn start:website
+z docus
+yarn build:website:fast
+yarn serve:website
+yarn build:website:fast
+btop
+yarn build:website:fast
+btop
+z docus
+code .
+yarn watch
+yarn jest core --watch
+git commit -m 'wip: broken anchors warning '
+git commit -m 'wip: broken anchors warning'
+git commit -m 'wip: refactor'
+git push
+z docus
+z docus
+code .
+yarn jest
+?? create a 7z archive of ./docusaurus directory and exclude node_modules/ folder
+yay -S p7zip
+7z a -xr\!node_modules docusaurus.7z docusaurus
+?? create a 7z archive of ./docusaurus directory and exclude node_modules/ folder and .git folder
+yarn website:clear
+?? create a 7z archive of ./docusaurus directory and exclude node_modules/ folder and .git folder
+7z a -xr\!node_modules -xr\!.git docusaurus.7z docusaurus
+nvm install
+nvm install node
+nvm ls
+nvm uninstall 21.1
+nvm install 20
+nvm install 18
+corepack enable
+updatepnpm
+which eza
+which exa
+which l
+eza -lah --icons --group-directories-first
+z docus
+code .
+z docus
+code .
+z docus
+yarn build:website:fast
+yarn build:packages
+yarn build:website:fast
+z docus
+yarn build:website:fast
+ugrep 'limit-the-number-of-pathnames'
+ugrep 'limit-the-number-of-pathnames' --file-type=md
+ugrep 'limit-the-number-of-pathnames' --file-type=markdown
+ugrep '#limit-the-number-of-pathnames' --file-type=markdown
+yarn jest brokenLinks
+yarn jest brokenLinks
+z docus
+nvm install 18
+updatepnpm
+yarn jest brokenLinks
+yarn build:packages
+yarn build:website:fast
+tldr ugrep
+yarn build:website:fast
+z docus
+yarn build:website:fast
+yarn build:website:fast > tmp.log
+yarn jest brokenLinks
+yarn build:packages
+yarn build:website:fast > tmp.log
+yarn lerna run build --scope=@docusaurus/core
+yarn jest brokenLinks
+yarn build:packages
+yarn lerna run build --scope=@docusaurus/core
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/core
+yarn build:packages
+yarn build:website:fast
+yarn jest brokenLinks
+yarn build:website:fast
+yarn build:packages
+yarn jest brokenLinks
+yarn build:website:fast
+yarn build:packages
+yarn build:website:fast
+yarn jest brokenLinks
+yarn jest brokenLinks --watch
+git push
+z docus
+code .
+z docus
+code .
+yarn jest brokenLinks --watch
+z docus
+code .
+git log
+yarn build:packages
+yarn build:website:fast
+pnpm install --save-dev nodemon
+pnpm start
+pnpm install --save-dev tsx
+pnpm start
+ni i --save lodash
+nr i
+nu i
+nun i
+nun lodash
+ni -D lodash
+ni --save-dev @types/lodash
+nr start
+yarn install
+cd tempdelete
+rm -rf tempdelete
+take temp
+git clone https://github.com/sherlock-project/sherlock.git
+cd sherlock
+docker build -t mysherlock-image .
+docker images
+docker system prune -a -f 
+rm -rf sherlock
+rm -rf temp
+l dev
+ll dev/discord-bot
+cd dev/discord-bot
+cat CONTRIBUTING.md
+cat re
+cat README.md
+git config --list
+rm -rf discord-bot
+yay holele
+yay holehe
+holehe clementcouriol3@gmail.com
+holehe clementcouriol@gmail.com
+yay -Rns holehe
+?? remove ununsed pacman packages
+yay -Sc
+z docus
+code .
+take jsplayground
+pnpm init
+nvm install node
+corepack enable
+updatepnpm
+pnpm init
+code .
+yay -S extra/github-cli
+gh auth
+gh auth login
+gh ssh-keys
+gh ssh-key
+gh ssh-key list
+gh auth refresh -h github.com -s admin:ssh_signing_key
+gh ssh-key list
+gh ssh-key 
+gh ssh-key add
+rm docusaurus.7z
+cd docutest
+cat package.json
+npm --v
+yay sherlock
+yarn jest brokenLinks --watch
+yarn build:packages
+yarn build:website:fast
+git switch main
+git switch ozaki/brokenAnchor-core
+git switch main
+nvm install 18
+nvm install 21
+nvm install 20
+nvm list
+nvm uninstall 209
+nvm use
+pnpm build
+pnpm serve
+pnpm build 
+pnpm serve
+yarn start
+yarn start:website
+yarn serve:website
+yarn start:website
+pnpm build
+pnpm serve
+yarn install
+yarn build:packages
+yarn build:website:fast
+git switch -c ozaki/baseurl-author-imageurl
+yarn build:packages
+yarn build:website:fast
+yarn serve:website
+yarn build:packages
+yarn build:website:fast
+yarn serve:website
+yarn build:packages && yarn build:website:fast
+yarn serve:website
+yarn build:packages && yarn build:website:fast
+yarn serve:website
+yarn jest
+yarn build:website:fast
+yarn build:packages && yarn build:website:fast
+yarn serve:website
+yarn build:packages && yarn build:website:fast
+yarn serve:website
+yarn build:packages && yarn build:website:fast && yarn serve:website
+yarn watch
+yarn build:packages && yarn build:website:fast && yarn serve:website
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn lerna run build --scope=@docusaurus/plugin-content-blog && yarn build:website:fast && yarn serve:website
+yarn lerna run build --scope=@docusaurus/plugin-content-blog && yarn build:website:fast
+yarn serve:website
+yarn lerna run build --scope=@docusaurus/plugin-content-blog && yarn build:website:fast && yarn serve:website
+yarn jest
+yarn jest docusaurus-plugin-content-blog
+yarn jest docusaurus-plugin-content-blog
+yarn jest docusaurus-plugin-content-blog --watch
+git switch main
+z docus
+code .
+cd dev/docutest
+ssh oracle
+git clone https://github.com/ozakione/dockers/
+cd dockers
+cd dockers
+cd jellyfin
+code .
+make up
+aria2
+yay aria2
+cd dl/tvseries
+aria2c 'magnet:?xt=urn:btih:2498f7b75b59aca99296d20f44a4f217ca8f2c43&dn=%5BASW%5D%20Kamonohashi%20Ron%20no%20Kindan%20Suiri%20-%2009%20%5B1080p%20HEVC%20x265%2010Bit%5D%5BAAC%5D&tr=http%3A%2F%2Fnyaa.tracker.wf%3A7777%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce'
+sudo aria2c 'magnet:?xt=urn:btih:2498f7b75b59aca99296d20f44a4f217ca8f2c43&dn=%5BASW%5D%20Kamonohashi%20Ron%20no%20Kindan%20Suiri%20-%2009%20%5B1080p%20HEVC%20x265%2010Bit%5D%5BAAC%5D&tr=http%3A%2F%2Fnyaa.tracker.wf%3A7777%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce'
+../../
+rm -rf dockers
+sudo rm -rf dockers
+?? check if port 5000 is open on ip
+yay -S gnu-netcat
+nc -zv 
+tldr nc
+ping ozaki.one
+ping http://ozaki.one
+yay -S bind
+dig ozaki.one
+dig w.ozaki.one
+dig q.ozaki.one
+dig x.ozaki.one
+ping ozaki.one
+ping q.ozaki.one
+curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \\
+     -H "Authorization: Bearer 4FTD00IDeRtqbwkXBNQXThapYv4C7OeAGh5QK-PD" \\
+     -H "Content-Type:application/json"
+dig x.ozaki.one
+dig ozaki.one
+?? flush dns linux
+?? flush wsl ubuntu dns cache
+dig ozaki.one
+ssh oracle
+cd frontend
+nr dev
+pnpm update -i --latest
+pnpm dev
+taze
+taze --help
+taze -a
+docker compose build
+pnpm build
+docker compose build
+pnpm build
+pnpm dev
+pnpm build
+pnpm dev
+git stash
+pnpm dev
+pnpm build
+pnpm dev
+pnpm build
+docker compose build
+docker compose up
+cd frontend
+pnpm preview
+pnpm buid
+pnpm build
+nr preview
+nr build && nr preview
+pnpm build
+ni -D tsconfig-paths tscpaths
+ni -D vite-tsconfig-paths
+pnpm build
+nr build && nr preview
+nr build && nr preview
+docker compose build
+docker compose up
+z docus
+nvm install
+nvm list
+nvm uninstall 18.18
+gsw main
+code .
+python -m http.server 5556
+yay rust http server
+simple-http-server -p 5556
+node
+?? temporary use port 5555
+git switch ozaki/brokenanchor-core
+yarn
+corepack enable
+yarn build:website:fast
+git switch main
+env PORT=5555 yarn start
+yarn start:website --port
+env PORT=5555 yarn start:website
+env PORT=5555 yarn start
+git switch -c ozaki/env-port
+env PORT=5555 yarn start
+yarn test
+git switch main
+z docus
+git switch ozaki/env-port
+yarn lint
+yay act github
+tldr act
+act lighthouse-report
+act -v
+act --version
+act lighthouse-report
+tldr act
+z docus
+z docus
+mv /home/ozaki/.config/zsh/history /home/ozaki/.config/zsh/history.bak\
+strings /home/ozaki/.config/zsh/history.bak > /home/ozaki/.config/zsh/history\
+fc -R\
+take eslintplayground
+ni -g generator-eslint
+z docus
+yarn lint
+act -l
+act lint
+?? run lint CI github workflow locally with act
+act --help
+pnpm i -g yo
+git switch ozaki/baseurl-author-imageurl
+yarn test
+git switch main
+git switch -c ozaki/eslint-idealimage
+yarn jest brokenLinks
+yarn build
+yarn install
+yarn start
+yarn clear
+yarn install
+yarn build
+yarn build:website:fast
+yarn serve:website
+yarn start
+git switch main
+nr clear
+nr install
+nr i
+gsw ozaki/env-port
+nr start
+env PORT=5555 yarn start
+yarn start
+env PORT=5555 yarn serve:website
+yarn build:website:fast
+env PORT=5555 yarn serve:website
+yarn serve:website
+yarn jest
+git switch main
+git switch ozaki/brokenanchor-core
+nr clear
+nr ubild
+nr build
+yarn build:website:fast
+nvm install node
+corepack enable
+updatepnpm
+nvm list
+nvm uninstall 21.1
+nvm uninstall 21.2
+nvm uninstall 20.9
+nvm list
+nvm uninstall 14
+docker images
+?? delete act data directory
+cat .actrc
+gh copilot
+gh config
+mv /home/ozaki/.config/zsh/history /home/ozaki/.config/zsh/history.bak\
+strings /home/ozaki/.config/zsh/history.bak > /home/ozaki/.config/zsh/history\
+fc -R
+z docus
+git fetch -A
+tldr git fetch
+gsw main
+gsw ozaki/themeconfig
+yarn install
+yarn build:website:fast
+yarn serve:website
+yarn build:website:fast
+yarn test config
+yarn test
+yarn jest config
+yarn jest config.test
+?? rename fileextension based on detected content
+mv /home/ozaki/.config/zsh/history /home/ozaki/.config/zsh/history.bak\
+strings /home/ozaki/.config/zsh/history.bak > /home/ozaki/.config/zsh/history\
+fc -R
+z dockers
+take github
+gcl git@github.com:ozakione/dockers
+code dockers
+lazydocker
+yay lazydocker
+lazydocker
+?? add git submodule
+git submodule add https://github.com/linkwarden/linkwarden.git ./linkwarden
+make linkwardenup
+make linkwardenpull
+cd backend
+docker compose up
+../frontend
+yay bruno
+bruno
+yay -Rns bruno
+yay -Rns bruno-bin
+z geom
+gsw master
+code .
+nr build
+docker logs backend-proxyauth-1 -f
+docker logs backend-game-1 -f
+docker logs backend-country-1 -f
+java --version
+docker logs backend-game-1 -f
+docker logs backend-proxyauth-1 -f
+docker logs backend-country-1
+docker logs backend-user-1
+docker logs backend-game-1 -f
+java --version
+yay openjdk
+yay -Rns jre-openjdk
+cd frontend
+nr de
+nr dev
+nr build
+nr dev
+cd frontend
+nr dev
+cd backend
+docker compose up
+docker compose up --build
+git rebase -i --root
+git rebase --continue
+git rebase --continue
+git commit -m 'chore: ts config'
+git rebase --continue
+docker compose up
+docker compose up --build
+../frontend
+ugit
+git pull
+ugit
+git reset --hard e3a3be7
+git rebase --abort
+git reset --hard 625f33c
+git reset --hard 817adf5
+git rebase -i --root
+git rebase --abort
+git rebase -i --root
+git rebase --abort
+git rebase -i HEAD~20
+git rebase --edit-todo
+git rebase --continue
+git rebase --abort
+git reset --hard HEAD~30
+git rebase --abort
+git reset --hard HEAD~30
+git pull origin
+git rebase --abort
+git pull
+ugit
+?? undo last git commit
+git rebase -i --root
+git rebase --abort
+git log
+git rebase -i HEAD~20
+git rebase --abort
+git reset --hard HEAD^
+?? get the commit that deleted the folder styled-system
+git log --diff-filter=D --summary | grep styled-system
+git log --diff-filter=D --summary | ugrep styled-system
+git log --diff-filter=D --summary | grep styled-system
+git log --diff-filter=D --summary
+git rebase -i --root
+git rebase --continue
+git rebase --continue
+git add .
+git rebase --continue
+git add .
+git rebase --continue
+git add .
+git rebase --continue
+git rebase --abort
+git rebase -i --root
+git ad .
+git add .
+alias | git rebase
+alias | ugrep git rebase
+alias | ugrep 'git rebase'
+grbc
+grbc
+grbc
+cd frontend
+pnpm i
+git reset --hard --root
+git reset --hard master
+git rebase -i --root
+setozakigit
+git rebase -i --root
+git add .
+git rebase --continue
+git rebase --abort
+git rebase -i --root
+grbc
+git rebase --abort
+z geom,
+z geom
+rm -rf GeoMaster
+gcl git@github.com:hbourget/GeoMaster.git
+docker images
+docker system prune -a -f 
+z geo
+cd backend
+docker compose up
+z docus
+z geo
+yay -Yc
+yay -Sc
+sudo du / --exclude /mnt
+sudo ncdu / --exclude /mnt
+docker images
+docker rmi linkwarden
+docker rmi linkwarden:latest
+docker ps
+z link
+docker stop linkwarden-linkwarden-1
+docker stop linkwarden-postgres-1
+docker ps\\
+docker rmi
+docker rmi --help
+docker images
+docker rmi ghcr.io/linkwarden/linkwarden
+docker rmi ghcr.io/linkwarden/linkwarden --force --prune
+docker rmi ghcr.io/linkwarden/linkwarden --force
+docker ps -a -q
+docker ps -a
+docker rm $(docker ps -a -q)
+docker system
+docker system info
+git switch ozaki/brokenanchor-core
+yarn i
+yarn
+yarn build:website:fast
+yarn clear
+yarn install
+yarn build:website:fast
+yarn watch
+yarn start:website
+yarn build:website:fast
+gsw ozaki/themeconfig
+yarn
+yarn jest brokenLinks --watch
+yarn start
+yarn start:website
+yarn install
+yarn build:website:fast
+yarn watch
+z docus
+yarn start:website
+yarn watch
+yarn
+yarn build:website:fast
+yarn serve:website
+yarn start
+z docus
+yay -Rns act
+nvm install node
+nvm list
+nvm uninstall 21.4
+corepack enable
+updatepnpm
+pnpm update -g --latest
+gsw main
+yarn build:website:fast
+yarn serve:website
+yarn start:website
+gsw ozaki/themeconfig
+yarn
+yarn start:website
+yarn build:website:fast
+yarn serve:website
+yarn clear
+yarn start:website
+yarn
+yarn install
+yarn start:website
+yarn build:packages
+yarn install
+yarn build:packages
+yarn start:website
+yarn clear
+yarn install
+yarn start:website
+yarn watch
+yarn start:website
+z docus
+yay thunderbolt
+yay fd
+which pnpmupdate
+which updatepnpm
+yarn watch
+yarn
+yarn watch
+yarn start:website
+yarn clear
+yarn start:website
+git push
+yarn watch
+yarn start:website
+yarn watch
+yarn build:website:fast
+yarn start:website
+yarn build:website:fast
+yarn start:website
+git commit -m 'wip: navbar'
+git push
+yarn jest
+yarn
+yarn jest
+yarn build:website:fast
+yarn watch
+z docus
+yarn build:website:fast
+yarn serve:website
+yarn build
+yarn build:website:fast
+yarn jest
+yarn clear
+yarn
+yarn build:website:fast
+yarn watch
+yarn build:website:fast
+yarn clear
+yarn build:packages
+yarn build:website:fast
+yarn serve:website
+yarn build:website:fast
+yarn serve:website
+yarn build:website:fast
+yarn build:website
+yarn clear
+yarn build
+yarn build:website:fast
+yarn build
+cd examples/classic/
+yarn build
+yarn build:website
+yarn workspace website build --locale fr
+yarn build:website
+git log
+yarn serve:website
+yarn build:website:fast
+yarn serve:website
+yarn clear
+yarn build
+yarn lint
+yarn serve:website
+yarn build:website:deployPreview:build
+yarn build:website:fast
+yarn serve:website
+yarn build:website
+yarn build:website:deployPreview:build
+yarn lint
+bunx @untitaker/hyperlink ./website --check-anchors
+npx @untitaker/hyperlink ./website --check-anchors
+yarn clear
+gsw ozaki/themeconfig
+yarn
+cd examples/classic
+yarn install
+yarn build
+yarn serve
+yarn examples:generate
+yarn examples:generate
+yarn lint:style
+yarn lint:style
+yarn lint
+yarn clear
+yarn build
+yarn build:packages
+yarn jest brokenLinks --watch
+yarn build:website:deployPreview:build
+yarn build:website:fast
+yarn serve:we
+yarn serve:website
+yarn watch
+yarn start:website
+yay -Sc
+yay -Yc
+yarn build:website:fast
+yarn serve:website
+yarn build:website:fast
+yarn serve:website
+ugrep 'document-id'
+man ugrep
+tldr ugrep
+ugrep --file-type=md "document-id"
+ugrep --file-type=markdown "document-id"
+ugrep --file-type=mdx "document-id"
+ugrep 'document-id'
+ugrep 'customize-the-sidebar-items-generator'
+yarn build:website:fast
+yarn build:website
+gsw main
+gswc ozaki/vercel-analytics
+cd packages/docusaurus-plugin-vercel-analytics
+yarn install
+yarn install @vercel/analytics
+yarn add @vercel/analytics
+../../
+yarn
+yarn jest brokenLinks --watch
+yarn
+yarn build:website
+yarn build:website:fast
+yarn jest brokenLinks
+yarn build:website:fast
+yarn jest brokenLinks
+yarn jest brokenLinks --watch
+git push
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'accepts valid link to self' --watch
+yarn jest brokenLinks
+yarn jest brokenLinks -t 'accepts valid link to self' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'REFACTOR' --watch
+yarn jest brokenLinks -t 'REFACTOR' --watch
+yarn jest brokenLinks -t 'REFACTOR' --watch
+yarn jest brokenLinks -t 'REFACTOR' --watch
+yarn
+yarn build:website:fast
+Z DOCUS
+z docus
+yarn jest brokenLinks -t 'REFACTOR' --watch
+yarn jest brokenLinks  --watch
+yarn jest brokenLinks -t 'REFACTOR' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'REFACTOR' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'rejects valid link with empty broken anchor' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'rejects valid link with broken anchor + query-string' --watch
+yarn jest brokenLinks -t 'REFACTOR' --watch
+yarn jest brokenLinks -t 'refactor' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'refactor' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'refactor' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'refactor' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'accepts valid link' --watch
+yarn jest brokenLinks -t 'teste' --watch
+yarn jest brokenLinks -t 'accepts valid link' --watch
+yarn jest brokenLinks --watch
+z docus
+yarn jest brokenLinks -t 'refactor' --watch
+z docus
+yarn jest brokenLinks -t 'ozaki' --watch
+z docus
+yarn jest brokenLinks -t 'ozaki' --watch
+yarn jest brokenLinks -t 'rejects broken link with querystring + anchor' --watch
+yarn jest brokenLinks -t 'ozaki' --watch
+z docus
+yarn jest brokenLinks -t 'refactor' --watch
+yarn jest brokenLinks -t 'accepts valid link to uncollected page' --watch
+z docus
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'accepts valid link to uncollected page' --watch
+z docus
+yarn jest brokenLinks --watch
+git push
+git commit -m 'wip: refactor'
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'refactor' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'rejects broken anchor' --watch
+yarn jest brokenLinks --watch
+yarn jest brokenLinks -t 'refactor' --watch
+yarn jest brokenLinks --watch
+yarn build:website
+cd packages/web
+nr start
+nr build
+cd packages/web
+pnpm i @ozaki/shared
+../web
+pnpm i @ozaki/shared
+cat package.json
+nr build
+cd packages/cli
+nr ts
+nr ts
+../web
+nr dev
+nr build
+nr start
+nr dev
+nr lint
+nr build
+nr dev
+../../
+nr web:dev
+nr web:start
+nr web:build
+nr web:start
+nr web:dev
+nr lint
+cd packages/cli
+nr lint
+nr ts
+nr twatch
+nr twatch --path docs --type doc
+nr twatch --path docs/ --type doc
+nr twatch --path ../docs --type doc
+nr twatch --path docs/ --type doc
+pnpm i @ozaki/shared
+nr twatch --path docs/ --type doc
+nr ts --path docs/ --type doc
+nr twatch --path docs/ --type doc
+nr ts --path docs/ --type doc
+nr ts --path blog/ --type blog
+gsw -c ozaki/publish
+nr cli:dev --path docs/ --type doc
+nr -w cli:dev --path docs/ --type doc
+../../
+nr cli:dev --path docs/ --type doc
+nr cli:start --path docs/ --type doc
+cd../
+cd ../sh
+cd packages/sh
+cd packages/shared
+pnpm init
+pnpm i satori @resvg/resvg-js
+../../
+nr cli:dev --path docs/ --type doc
+nr cli:start --path docs/ --type doc
+nr web:dev
+nr web:build
+nr web:start
+nr cli:dev
+nr cli:dev --path docs/ --type doc
+nr cli:start --path docs/ --type doc
+nr web:build
+nr web:dev
+nr web:start
+nr web:build
+nr web:start
+nr lint
+nr web:build
+nr web:start
+nr web:dev
+nr web:build
+nr web:start
+git checkout main
+git checkout master
+git merge master
+git log
+gsw ozaki/publish
+z local
+z ogi
+git push -u origin ozaki/publish
+git branch -D master
+git checkout --orphan=master
+git push -u origin master
+git push -u origin master -f
+gcl git@github.com:OzakIOne/local-og-image-generator.git
+cd local-og-image-generator
+v README.md
+git add README.md
+git commit -m "first commit"\
+git branch -M master\
+git remote add origin git@github.com:OzakIOne/local-og-image-generator.git\
+git push -u origin master\
+setozakigit
+git commit -m "first commit"\
+git branch -M master\
+git remote add origin git@github.com:OzakIOne/local-og-image-generator.git\
+git push -u origin master\
+gsw -c ozaki/publish
+rm -rf node_modules
+cd packages/cli
+rm -rf node_modules
+z docus
+yarn watch
+git switch master
+git switch -c ozaki/project
+git push
+git branch -A
+?? list git branch
+?? delete remote branch
+git push origin --delete ozaki/publish
+git push -f
+yarn watch
+git push
+z docus
+yarn stat
+yarn start:website
+yarn build:website:fast
+yarn start:website
+yarn build:website:fast
+yarn serve:website
+yarn start:website
+yarn serve:website
+yarn start:website
+z docus
+yarn watch
+yarn install
+yarn watch
+ugrep "M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+z geoma
+code .
+docker images
+docker compose up
+cd frontend
+pnpm build
+pnpm i
+cd../
+ls frontend
+cd backend
+docker compose up -d
+docker system prune -a -f
+docker compose up -d --build
+docker logs backend-game-1 -f
+docker compose down
+docker compose up -d --build
+docker ps
+docker compose down
+docker system prune -a -f
+docker compose up -d --build
+docker compose down
+gsw -c ozaki/rooms
+cd frontend
+pnpm add jotai\
+git merge master
+git fetch master
+git fetch origin master
+git merge master
+cd frontend
+docker compose up
+pnpm dev
+cd frontend
+pnpm dev
+cd backend
+docker compose up -d --build
+docker compose down
+git pull
+docker compose up -d --build
+take temp
+take edge-vanilla
+clear
+cd packages/cli
+pnpm rm @ozaki/nodes @types/react react
+../shared
+pnpm rm @resvg-resvg-js
+pnpm rm @resvg/resvg-js
+../vercel-edge
+pnpm rm @ozaki/nodes 
+../generate
+pnpm rm @ozaki/shared
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe" --font 'qwe'
+../../
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe" --font 'qwe'
+pnpm cli:start --help
+pnpm cli:start --type 5
+pnpm cli:start --type doc
+pnpm cli:start --help
+clear
+pnpm cli:start --help
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe" --font 'qwe'
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe" --font './src/Pacifico.ttf'
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe"
+pnpm cli:start --output ./doc.png --type doc --title "My Title" 
+pnpm cli:start --output ./doc.png --type doc --description "My deasdscriptioneqwe"
+pnpm cli:start --output ./doc.png --type doc 
+pnpm cli:start --output ./doc.png --type blog --title "My Title" --description "My deasdscriptioneqwe"
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png"
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --
+take delete
+pnpm create docusaurus
+cd test
+pnpm i
+npm run swizzle @docusaurus/theme-classic Footer -- --typescript
+npm run swizzle @docusaurus/theme-classic Footer --typescript
+npm run swizzle @docusaurus/theme-classic Footer -- --typescript
+pnpm run swizzle @docusaurus/theme-classic Footer -- --typescript
+pnpm run swizzle @docusaurus/theme-classic Footer --typescript
+npm run swizzle @docusaurus/theme-classic Footer -- --typescript
+nvm use 18
+nvm use 21
+nvm use 18
+npm run swizzle @docusaurus/theme-classic Footer -- --typescript
+npm run swizzle @docusaurus/theme-classic Footer --typescript
+cd delete/test
+npm run swizzle @docusaurus/theme-classic Footer -- --typescript
+npm run swizzle @docusaurus/theme-classic Footer --typescript
+nvm use 18
+npm run swizzle @docusaurus/theme-classic Footer -- --typescript
+npm run swizzle @docusaurus/theme-classic Footer --typescript
+pnpm run swizzle @docusaurus/theme-classic Footer -- --typescript
+pnpm run swizzle @docusaurus/theme-classic Footer --typescript
+yarn run swizzle @docusaurus/theme-classic Footer --typescript
+yarn run swizzle @docusaurus/theme-classic Footer -- --typescript
+pnpm cli:start --output ./doc.png --type blog --title "My Title" --description "My deasdscriptioneqwe"
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe"
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --font 'qwe'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki"
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" 
+pnpm cli:watch --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" 
+pnpm cli:dev --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" 
+watch pnpm cli:watch --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" 
+watch pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" -n 5
+watch pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tag 'tag 1' --tag 'tag 2'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tag 'tag 1' --tag 'tag 2'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tag 'tag 1' --tag 'tag 2'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tag 'tag 1'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tag 'tag 1' --tag 'tag 2'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1' --tags 'tag 2'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1' --tags 'tag e2'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png"
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1' --tags 'tag e2'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1' --tags 'tag e2'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1' 
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1' 
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1' --tags 'tag e2'
+pnpm cli:start --output ./doc.png --type doc --title "My doc" --description "My desc"\
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png"\
+pnpm cli:start --output ./default.png --type default --title "My default" --description "My desc" --moto "My moto"
+pnpm cli:start --output ./default.png --type default --title "My default" --description "My desc" --moto "My moto"
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png"
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1' --tags 'tag e2'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" 
+pnpm cli:start --output ./doc.png --type doc --title "My doc" --description "My desc"                                                                                                 
+pnpm cli:start --output ./doc.png --type doc --title "My doc" --description "My desc" --font 'qwe'
+pnpm vercel:dev
+cd packages/nodes/\ 
+cd packages/nodes
+pnpm i zod
+../vercel-edge
+pnpm add qs
+pnpm add @types/qs
+../../
+pnpm cli:start --output ./doc.png --type doc --title "My doc" --description "My desc"                                                                                                 
+pnpm cli:start --output ./doc.png --type doc --title "My doc"
+ls temp
+git merge master
+git merge origin/master
+docker compose up -d --build
+cd frontend
+pnpm dev
+z geomas
+code .
+cd frontend
+pnpm dev
+clear
+pnpm dev
+pnpm build
+pnpm dev
+git checkout origin/master
+git checkout master
+git merge ozaki/rooms 
+git push
+pnpm dev
+pnpm i
+pnpm dev
+git merge master
+pnpm dev
+git merge master
+pnpm dev
+git merge master
+pnpm dev
+pnpm i
+pnpm dev
+git merge master
+pnpm i
+pnpm dev
+git merge origin/master
+git checkout master
+git merge ozaki/rooms
+pnpm build
+cd backend
+docker compose up -d --build
+docker logs backend-game-1 -f
+docker compose down
+docker compose up -d --build
+docker compose down
+docker compose up -d --build
+docker ps
+docker images
+docker system prune -a -f
+docker compose up -d --build
+docker compose up -d
+docker ps
+z geo
+docker logs geomaster-proxyauth-1 -f
+pnpm i
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki"
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png"
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --moto 'lol'
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png" --tags 'tag 1' --tags 'tag e2'
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe" --font './src/Pacifico.ttf'
+pnpm cli:start generate doc --type doc --title "My Title" --description "My deasdscriptioneqwe" --font './src/Pacifico.ttf'
+pnpm cli:start doc --title "My Title" --description "My deasdscriptioneqwe" --font './src/Pacifico.ttf'
+pnpm cli:start generate doc --title "My Title" --description "My deasdscriptioneqwe" --font './src/Pacifico.ttf'
+cd packages/cli
+pnpm start 
+pnpm start generate doc
+pnpm start generate doc --title 'd' --description 'd'
+pnpm start generate --help
+pnpm start og-generate doc --title 'd' --description 'd'
+pnpm start generate --help
+pnpm start og-generate doc --title 'd' --description 'd'
+pnpm start generate --help
+pnpm start og-generate doc --help
+pnpm start 
+pnpm build
+pnpm i
+corepack prepare pnpm@8.15.0 --activate
+../../
+pnpm cli:build
+bun run src/index.tsx
+bun run src/index.tsx --help
+bun run src/index.tsx og-generate doc --help
+bun run src/index.tsx og-generate doc
+bun run src/index.tsx og-generate doc --title 't' --description 'l'
+pnpm start og-generate doc --help
+bun run src/index.tsx og-generate doc --title 't' --description 'l'
+pnpm start og-generate doc --help
+pnpm start og-generate doc 
+pnpm start og-generate doc --title 'd' --description 'd'
+pnpm build
+pnpm run
+pnpm cli
+pnpm start og-generate doc --title 'd' --description 'd'
+pnpm cli
+bun run dist/index.js
+bun run dist/index.js --help
+bun run dist/index.js og-generate doc 
+bun run dist/index.js og-generate doc --title 't'
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe" --font './src/Pacifico.ttf'
+../../
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe" --font './src/Pacifico.ttf'
+cd packages/vercel-edge
+pnpm i @ozaki/nodes
+cd ../types
+pnpm i @ozaki/nodes
+../../
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe" --font './src/Pacifico.ttf'
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe"
+pnpm web:start
+pnpm vercel:dev
+bunx knip --workspace ./
+pnpm i
+cd packages/cli
+pnpm build
+node dist/index.js
+bun run dist/index.js
+bun run dist/index.js --output testi.png
+bun run dist/index.js --output testi.png --type doc
+../../
+pnpm i -D @swc/cli @swc/core\
+pnpm i -D @swc/cli @swc/core -w\
+cd packages/cli
+pnpm build
+node dist/src/index.js
+pnpm build
+node dist/src/index.js
+pnpm build
+node dist/src/index.js
+pnpm build
+node dist/src/index.js
+pnpm build
+node dist/src/index.js
+node dist/src/index.js --ouput jkyfgh.png --type doc
+node dist/src/index.js --output jkyfgh.png --type doc
+node dist/src/index.js --output jkyfgh.png --type doc --title 'tyufgh'
+pnpm build
+node dist/src/index.js --output jkyfgh.png --type doc --title 'tyufgh'
+pnpm build
+cd ../../
+pnpm build
+cd packages/cli
+node dist/src/index.js --output jkyfgh.png --type doc --title 'tyufgh'
+node dist/index.js --output jkyfgh.png --type doc --title 'tyufgh'
+node dist/index.js --output jkyfghgfcghfch.png --type doc --title 'tyufgh'
+node dist/index.js --output jkyfghgfcghfch.png --type doc --title 'tyufgjgvjgvh'
+cd packages/nodes
+pnpm build
+pnpm i -D turbo -w
+pnpm build
+bunx knip --workspace ./
+pnpm lint
+pnpm build
+cd packages/vercel-edge
+pnpm build
+pnpm i
+pnpm dev
+pnpm build
+pnpm i
+pnpm build
+pnpm run next
+pnpx next
+pnpm start
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe"
+cd packages/generate
+pnpm build
+pnpm un nodemon tsx
+pnpm i
+pnpm build
+pnpm add tsup
+cd packages/shared
+pnpm build
+tree
+tree
+?? tree and ignore folder in gitignore
+?? tree and ignore folder in gitignore -I dist
+tree -I node_modules -I dist
+tree -I node_modules 
+yay -Yc
+yay -Sc
+take temp
+gcl git@github.com:OzakIOne/local-og-image-generator.git
+cd local-og-image-generator/pnpm i
+cd local-og-image-generator
+pnpm i
+git checkout origin/ozaki/project
+git switch origin/ozaki/project
+git pull origin ozaki/project
+git switch origin/ozaki/project
+git switch ozaki/project
+pnpm i
+pnpm build
+pnpm vercel:start
+rm -rf local-og-image-generator
+pnpm un @swc/cli @swc/core -w
+pnpm i
+pnpm website:build
+yarn
+rm -r node_modules
+yarn
+yarn run website:build
+git pull origin deps/docusaurus-3-1-1
+gsw deps/docusaurus-3-1-1
+yarn
+yarn run website:build
+yarn install
+yarn run website:build
+cd website
+yarn install
+yarn run website:build
+yarn run build
+yarn run clear
+yarn run build
+yarn run clear
+npkill
+yarn install
+yarn run serve
+yarn start
+setozakigit
+yarn start
+yarn build
+rm -rf podman-desktop
+l temp
+ls packages/cli
+tree packages/cli
+tree packages/cli -I node_modules
+pnpm build
+pnpm start
+cd packages/vercel-edge-vanilla
+pnpm rm hono
+pnpm i qs @ozaki/shared @ozaki/types
+corepack prepare pnpm@8.15.1 --activate
+pnpm i qs @ozaki/shared @ozaki/types @types/qs
+pnpm i qs @ozaki/shared @ozaki/types @types/qs @vercel/node
+pnpm start
+pnpm debug
+pnpm deploy
+pnpm run deploy
+pnpm i
+pnpm start
+pnpm build
+node dist/index.js
+pnpm build
+vercel nuild
+pnpm i -g vercel@latest
+vercel build
+vercel dev
+vercel build
+vercel dev
+cd packages/types
+pnpm i satori
+pnpm i
+pnpm i
+cd packages/cli
+node dist/index.js --output jkyfghgfcghfch.png --type doc --title 'tyufgjgvjgvh'
+node dist/index.js --help
+node dist/index.js doc
+node dist/index.js doc --title 'p' --description 'jj'
+pnpm build\\
+node dist/index.js doc --title 'p' --description 'jj'
+pnpm build\\
+node dist/index.js doc --title 'p' --description 'jj'
+pnpm build\
+node dist/index.js doc --title 'p' --description 'jj'
+node dist/index.js doc
+node dist/index.js
+node dist/index.js --help
+pnpm build\
+node dist/index.js --help
+node dist/index.js docusaurus-cli-og-image-generator doc
+node dist/index.js docusaurus-cli-og-image-generator doc --title 'kj' --description 'kjj'
+pnpm build
+node dist/index.js docusaurus-cli-og-image-generator doc --title 'kj' --description 'kjj'
+node dist/index.js docusaurus-cli-og-image-generator doc
+node dist/index.js doc
+node dist/index.js doc --title 'p' --description 'jj'
+pnpm build
+node dist/index.js doc --title 'p' --description 'jj'
+pnpm build
+node dist/index.js doc --title 'p' --description 'jj'
+pnpm build
+node dist/index.js doc --title 'p' --description 'jj'
+pnpm build
+node dist/index.js doc --title 'p' --description 'jj'
+pnpm build
+node dist/index.js doc --title 'p' --description 'jj'
+node dist/index.js doc --title 'p' --description 'jj' --output 'jhvb'
+pnpm build
+node dist/index.js doc --title 'p' --description 'jj' --output 'jhvb'
+node dist/index.js doc --title 'p' --description 'jj' --output 'jhvb' --font './src/Pacifico.ttf'
+node dist/index.js doc --title 'p' --description 'jj' --output 'jhvb.png' --font './src/Pacifico.ttf'
+node dist/index.js doc --title 'p' --description 'jj' --output './jhvb.png' --font './src/Pacifico.ttf'
+node dist/index.js doc --title 'p' --description 'jj' --output ./jhvb.png --font './src/Pacifico.ttf'
+pnpm start
+bun run dist/index.js --output testi.png --type doc
+bun dist/index.js doc --title 'p' --description 'jj' --output './jhvb.png' --font './src/Pacifico.ttf'
+bun dist/index.js doc --title 'p' --description 'jj' --output ./jhvb.png --font './src/Pacifico.ttf'
+pnpm build
+node dist/index.js doc --title 'p' --description 'jj' --output ./jhvb.png --font './src/Pacifico.ttf'
+pnpm build
+node dist/index.js doc --title 'p' --description 'jj' --output ./jhvb.png --font './src/Pacifico.ttf'
+pnpm build
+node dist/index.js doc --title 'p' --description 'jj' --output ./jhvb.png --font './src/Pacifico.ttf'
+node dist/index.js blog --title 'p' --description 'jj' --output ./jhvb.png --font './src/Pacifico.ttf'
+node dist/index.js blog --title 'p' --description 'jj' --output ./uytuytuyt.png --font './src/Pacifico.ttf'
+pnpm build
+node dist/index.js blog --title 'p' --description 'jj' --output ./uytuytuyt.png --font './src/Pacifico.ttf'
+node dist/index.js doc --title 'p' --description 'jj' --output ./uytuytuyt.png --font './src/Pacifico.ttf'
+node dist/index.js doc --title 'p' --description 'jjl;,l;,' --output ./uytuytuyt.png
+node dist/index.js doc --title 'p' --description 'jjl;,l;,' --output ./uytuytuyt.png --font '../src/Pacifico.ttf'
+node dist/index.js doc --title 'pkjn' --description 'jjl;,l;,' --output ./uytuytuyt.png --font '../src/Pacifico.ttf'
+pnpm build
+node dist/index.js doc --title 'pkjn' --description 'jjl;,l;,' --output ./uytuytuyt.png --font '../src/Pacifico.ttf'
+node dist/index.js doc --title 'pkjn' --description 'jjl;,l;,' --output ./uytuytuyt.png --font './src/Pacifico.ttf'
+node dist/index.js doc --title 'pkjn' --description 'jjl;,l;,' --output ./uytuytuyt.png
+node dist/index.js doc --title 'pkjn' --description 'jjl;,l;,' --output ./uytuytuyt.png --font './src/Pacifico.ttf'
+node dist/index.js --help
+pnpm build
+node dist/index.js --help
+pnpm build
+node dist/index.js --help
+node dist/index.js blog --help
+node dist/index.js -v
+cd temp
+gcl https://github.com/axel7083/podman-desktop/tree/deps/docusaurus-3-1-1
+gh repo clone axel7083/podman-desktop
+cd podman-desktop
+?? show process using port 3000
+yay -S lsof
+lsof -i :3000
+nr vercel:start
+cd packages/vercel
+nr start
+vercel deploy
+nvm use 18
+nr start
+pnpm update -i --latest
+nr start
+../../
+take testiii
+pnpm i @vercel/og
+pnpm i @vercel/node
+pnpm i vercel
+nr dev
+nvm use 18
+nr dev
+vercel dev
+ni react
+vercel dev
+ni typescript
+pnpm i \@types/react
+vercel dev
+nvm use 18
+vercel dev
+vercel deploy
+pnpm build
+pnpm cli:start --output ./doc.png --type doc --title "My Title" --description "My deasdscriptioneqwe"
+pnpm cli:start doc --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe"
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe"
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author 'g' --authorURL 'https://github.com/neolectron'
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author 'g' --authorURL 'https://github.com/neolectron.png'
+pnpm build
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author 'g' --authorURL 'https://github.com/neolectron.png'
+pnpm lint
+pnpm format
+pnpm lint
+tree packages/cli
+tree packages/cli -I node_modules
+pnpm lint
+pnpm format
+?? prettier ignore file symlink from gitignire
+pnpm format
+pnpm format:fix
+pnpm format
+pnpm format:fix
+pnpm lint
+pnpm up -i --latest
+pnpm i
+pnpm build
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author 'g' --authorURL 'https://github.com/neolectron.png'
+pnpm build
+cd packages/cli
+pnpm format
+pnpm build
+node dist/index.js -v
+pnpm build
+node dist/index.js -v
+cd packages/vercel-edge-vanilla
+vercel start
+vercel dev
+pnpm build
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author 'g' --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe"
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author 'o' --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author 'olol' --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author 'olol' --authorURL
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author  --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe"   --authorURL 'https://github.com/neolectron.png'
+pnpm build
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe"   --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "My Title" --description "My deasdscriptioneqwe" --author  --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "" --description "" --author '' --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "" --description "" --author "" --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "" --description "" --author "l" --authorURL 'https://github.com/neolectron.png'
+pnpm build
+pnpm cli:start blog --output ./doc.png  --title "" --description "" --author "l" --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "l" --description "" --author "l" --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "l" --description "l" --author "l" --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "l" --description "l"
+pnpm cli:start doc --output ./doc.png  --title "l" --description "l"
+pnpm cli:start blog --output ./doc.png  --title "l" --description "l" --author "l" --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start blog --output ./doc.png  --title "l" --description "lijkn" --author "kkk" --authorURL 'https://github.com/neolectron.png'
+pnpm cli:start doc --output ./doc.png  --title "l" --description "lijkn"
+cd packages/vercel-edge-vanilla
+vercel dev
+vercel 
+cd packages/shared
+pnpm add zod
+nr build
+yarn build:website:fast
+yarn build:website:fast
+yarn build:packages
+yarn watch
+yarn b
+yarn build:website:fast
+yarn clear
+yarn build:website:fast
+yarn serve:website
+yarn build:website:fast
+cd website
+yarn build
+z docus
+yarn build:website:fast
+yarn build:packages
+yarn build:website:fast
+yarn build:website:fast
+yarn start:website
+yarn watch
+bun test.js
+yarn start:website
+gsw -c ozaki/blogsort
+yarn start:website
+gsw -
+yarn build:packages
+yarn build:website:fast
+yarn build:packages
+yarn watch
+cd temp
+pnpm create docusaurus
+cd swiztest
+curl https://avatars.githubusercontent.com/u/29860391
+curl https://avatars.githubusercontent.com/u/29860391 -o test.png
+cat test.png
+node
+jobs
+bun repl
+content-type
+bun repl
+cd packages/types
+pnpm build
+pnpm build
+pnpm cli:start blog --output ./blog.png  --title "l" --author "kkk" --authorURL 'https://github.com/neolectron.png' --tags a --tags a
+pnpm cli:start blog --output ./blogdef.png
+pnpm cli:start doc --output ./docdef.png
+pnpm cli:start default --output ./defdef.png
+pnpm build
+pnpm cli:start doc --output ./docdef.png
+pnpm build
+pnpm cli:start doc --output ./docdef.png
+pnpm cli:start doc --output --title '' ./docdef.png
+pnpm cli:start doc --output --title 'oui' ./docdef.png
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm build
+pnpm build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+cd packages/types
+pnpm add @ozaki/shared
+cd ../nodes
+pnpm add @ozaki/shared
+pnpm build
+cd ../../
+pnpm build
+pnpm i
+pnpm build
+pnpm i
+pnpm build
+bunx knip --workspace ./
+pnpm up -i --latest
+pnpm build
+cd ni
+pnpm i
+pnpm build
+cd packages/shared
+pnpm build
+pnpm build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+bunx knip --workspace ./
+bunx knip --workspace ./
+pnpm build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm build
+bunx knip --workspace ./
+pnpm build
+bunx knip --workspace ./
+pnpm build
+bunx knip --workspace ./
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm i
+pnpm build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+node dist/index.js -v
+cd packages/cli
+node dist/index.js -v
+node --inspect dist/index.js doc --title 'debug' --output ./debug.png
+NODE_OPTIONS='inspect' \node dist/index.js doc --title 'debug' --output ./debug.png
+NODE_OPTIONS='inspect' node dist/index.js doc --title 'debug' --output ./debug.png
+NODE_OPTIONS='--inspect' node dist/index.js doc --title 'debug' --output ./debug.png
+nr build
+nr build
+bunx knip --workspace ./
+nr build
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm cli:start --output ./blog.png --type blog --title "My blog" --description "My desc" --author "ozaki" --authorURL "https://github.com/ozakione.png"
+pnpm cli:start doc --title 'oui' --output ./docdef.png
+pnpm cli:start doc --title 'oui' --output ./docdef.png --font './src/Roboto-Regular.ttf'
+pnpm cli:start doc --title 'ooui' --output ./docdef.png --font './src/Roboto-Regular.ttf'
+pnpm cli:start doc --title 'ooui' --output ./docdef.png
+?? delete remote branch ozaki/errorlog
+gsw main
+yarn install
+yarn test
+yarn jest docusaurus-plugin-vercel-analytics --watch
+yarn build:packages
+yarn jest docusaurus-plugin-vercel-analytics --watch
+yarn build:packages
+yarn jest docusaurus-plugin-vercel-analytics --watch
+yarn lerna run build --scope=@docusaurus/plugin-vercel-analytics
+yarn jest docusaurus-plugin-vercel-analytics --watch
+z  docus
+yarn jest docusaurus-plugin-vercel-analytics --watch
+yarn jest
+git commit -m "wip: tests"
+yarn jest docusaurus-plugin-vercel-analytics --watch
+clear
+yarn lerna run build --scope=@docusaurus/plugin-vercel-analytics
+yarn build:packages
+yarn build:website:fast
+yarn build:website:fast
+yarn build:packages
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+npm run serve
+yarn start:website
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+alias | ugrep 'git commit -m'
+alias | ugrep 'git commit'
+gcmsg 'wip: function return void or blogpost[]'
+pnpm i
+updatepnpm
+nvm install 21
+pnpm test
+pnpm test:prod
+pnpm test
+setozakigit
+gsw main
+gsw -c ozaki/doctypo
+gcam 'docs: typo'
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast\ 
+yarn build:website:fast
+yarn build:website:fast\ 
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn build:website:fast
+gcam 'throw error for undefined preset'
+alias gcam
+gcmsg 'throw error for undefined preset'
+gcmsg 'docs: clarify function option'
+yarn lerna run build --scope=@docusaurus/plugin-content-blog
+yarn start:website
+gcmsg 'feat: types, helper function'
+gcmsg 'revert eslint rule'
+gcmsg 'revert eslint autofix rule'
+yarn start:website
+yarn build:website:fast
+yarn serve:website
+yarn start:website
+yarn jest
+yarn jest docusaurus-plugin-content-blog --watch
+gsw main
+yarn jest
+gsw -
+yarn jest
+yay
+mv /home/ozaki/.config/zsh/history /home/ozaki/.config/zsh/history.bak\
+strings /home/ozaki/.config/zsh/history.bak > /home/ozaki/.config/zsh/history\
+fc -R
+sudo pacman -Syu
+yay
+zi
+cd dev/docusaurus-fork
+zi
+cd
+nvm install 21
+corepack enable
+updatepnpm
+nvm list
+nvm uninstall 21.6.1
+nvm install 20
+nvm install 18
+nvm list
+nvm uninstall 20.10
+nvm uninstall 18.19.0
+nvm use 20
+corepack enable
+updatepnpm
+nvm use 18
+corepack enable
+updatepnpm
+nvm use
+nvm use 21
+z docu
+../
+mv docusaurus docusaurus-fork
+gcl git@github.com:facebook/docusaurus.git
+cd docusaurus
+yarn install
+nr build
+gsw -c fix/2.2.0-build
+setozakigit
+z fork
+yarn build:packages
+yarn build:website:fast
+yarn serve:website
+gp
+yarn jest docusaurus-plugin-content-blog --watch
+yay
+z fork
+yarn serve:website
+yarn start
+z fork
+yarn watch
+fd blog-with-ref
+yarn jest docusaurus-plugin-content-blog --watch
+gcmsg 'feat: unit tests'
+gp
+yarn jest docusaurus-plugin-content-blog --watch
+gp
+yarn install
+yarn start
+yarn build:packages
+yarn build:website:fast
+yarn serve:website
+yarn start
+gl
+gsw -c ozaki/npmtoyarn
+setozakigit
+bun i npm-to-yarn
+bun i npm-to-yarn@2.2.1
+bun index.js
+yarn start
+yarn jest
+yarn jest --watch
+z doc
+gst
+z bun
+ll
+zi docu
+gsw main
+gl
+yarn start
+cd temp
+ll
+bun create docusaurus
+cd docch
+bun start
+../
+rm -rf docch/
+yay
+cd temp
+bun create docusaurus
+cd detail
+cd temp
+pnpm create docusaurus
+ll
+rm -rf debug detail
+                   yarn start:website
+nr build
+pnpm cli:start blogextra --output ./show.png --title 'title'
+nr build && pnpm cli:start blogextra --output ./show.png --title 'title'
+bunx knip --workspace ./
+nr build
+nr build && pnpm cli:start blogextra --output ./show.png --title 'title'
+nr build && pnpm cli:start blogextra --output ./show.png --title 'title' --layout 'top'
+nr build && pnpm cli:start blogextra --output ./show.png --title 'title' --layout 'center'
+nr build
+nr build && pnpm cli:start blogtop --output ./top.png --title 'title'
+nr build
+nr build && pnpm cli:start blogtop --output ./top.png --title 'title'
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title'
+nr build
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo ''
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo 
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo 'undefined'
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo ''
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo ""
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo false
+sudo nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo false
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo false
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo 'false'
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo 'fal'
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo 'https://github.com/ozakione.png'
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --logo 
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title'
+pnpm cli:start default --output ./defdef.png --title 'title' --logo 'https://github.com/ozakione.png'
+pnpm cli:start blog --output ./blog.png  --title "l" --author "kkk" --authorURL 'https://github.com/neolectron.png' --tags a --tags a
+pnpm cli:start doc --output ./doc.png  --title "l" --description "lijkn"
+nr build
+pnpm cli:start doc --output ./doc.png  --title "l" --description "lijkn"
+pnpm cli:start doc --output ./doc.png  --title "l" --description "lijkn" --help
+bunx knip --workspace ./
+glg
+gp
+glg
+gl
+gsw -c ozaki/themecommon-formatdate
+yarn watch
+cd temp
+ll
+cd bunplayground
+bun i qs
+bun index.js --watch
+bun --watch index.js
+z docus
+yay
+?? list node process
+btop
+atuin search --exit 1
+yarn jest
+zi
+yarn jest
+yarn jest --fail
+yarn jest --watch
+yarn jest
+zi
+yarn watch
+zi
+yarn start:website
+                                            gl
+bun --watch index.js
+bun i cac
+bun run index.js
+bun run index.js build
+bun run index.js build --env.js '3'
+bun run index.js build --env.js "3"
+bun run index.js build --env.js "3l"
+bun run index.js build --env.js "3"
+gsw -
+yarn jest
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title'
+nr build
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title'
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --tags.react '3' --tags.js '1'
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --tags.react 'e' --tags.js 'q'
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --tags.react '2' --tags.js '3'
+z fork
+yarn build:packages && yarn build:website:fast && yarn serve:website
+yarn watch
+gcmsg 'refactor: review'
+gp
+yarn jest
+yarn jest --watch
+zi
+yarn jest
+git log
+?? get file commit date
+?? get file commit date of last commit
+git log --format=%ct${includeAuthor:+,%an} --max-count=1 $(if [ "$age" = "oldest" ]; then echo "--follow --diff-filter=A"; fi) -- "$(basename "$file")"
+git log --format=%ct${includeAuthor:+,%an} --max-count=1 $(if [ "$age" = "oldest" ]; then echo "--follow --diff-filter=A"; fi) -- "$(basename "$file")" .
+git log --format="%ct${includeAuthor:+,%an}" --max-count=1 $(if [ "$age" = "oldest" ]; then echo "--follow --diff-filter=A"; fi) -- "$(basename "$file")"
+git log --format="%ct${includeAuthor:+,%an}" --max-count=1
+yarn jest
+yarn jest --watch
+yarn build:website:fast && yarn serve:website
+yay
+zi
+yarn start:website
+yarn build:website:fast
+yarn serve:website
+yarn build:website:fast
+yarn serve:website
+yarn start:website
+yarn build:website:fast && yarn serve:websitebsite
+yarn build:website:fast && yarn serve:website
+yarn start:website
+yarn build:website:fast && yarn serve:website
+yay
+yarn jest
+yarn build:packages
+zi
+yarn watch
+zi
+yarn watch
+zi
+yarn start:website
+zi
+yarn start:website
+cd temp
+git clone https://github.com/hanabi/hanabi.github.io.git
+cd hanabi.github.io
+bun i
+bun build
+bun run build
+yarn i
+ll
+rm -rf node_modules bun.lockb yarn.lock
+yarn i
+yarn install
+yarn run build
+python
+yarn
+pip3 install -r requirements.txt
+yay pip
+pip3 install -r requirements.txt
+yay -S extra/python-pip
+pip3 install -r requirements.txt
+fd require
+../
+rm -rf hanabi.github.io
+bun create docusaurus
+cd hanibi
+cd docs
+v about.mdx
+../
+bun run build
+v docs/about.mdx
+bun run build
+bun run serve
+../
+zi
+yarn watch
+zi
+yarn build:website:fast && yarn serve:website
+z temp
+ls
+cd hanibi
+bun  i @docusaurus/plugin-vercel-analytics
+bun run build
+v docusaurus.config.ts
+bun run build
+yarn install
+v package.json
+yarn install
+zi
+yarn watch
+zi
+yarn start:website
+gl
+gcmsg 'refactor: processPosts function'
+gp
+gcmsg 'wip: test process posts'
+gp
+yarn jest
+gsw main
+gl
+gsw ozaki/processBlogPosts
+gsw -
+gcmsg 'feat(blog): allow process blog posts through a options.processBlogPosts function'
+yarn jest
+yarn jest --watch
+gl
+gcmsg 'wip: review comments'
+gsw main
+gl
+gsw -c ozaki/processBlogPosts
+gsw -
+gsw ozaki/themecommon-formatdate
+gp
+gsw ozaki/themecommon-formatdate
+gp
+gsw ozaki/processBlogPosts
+yarn jest 
+gsw ozaki/themecommon-formatdate
+yarn jest
+yarn jest --watch
+gcmsg 'wip: review comments'
+gp
+gsw main
+gl
+gsw ozaki/processBlogPosts
+yarn jest --watch
+yarn build:packages
+yarn build:website:fast
+gcmsg 'feat(blog): allow process blog posts through a options.processBlogPosts function'     
+yarn jest
+yarn build:packages
+yarn format
+yarn jest
+yarn jest --watch\ 
+yarn jest --watch
+gcmsg "wip: config option, test doesn't"
+gp
+yarn lint
+yarn build:packages
+yarn build:website:fast
+yarn serve:website
+yarn start:website
+yay
+node -e "const repl = require('node:repl'); repl.start('> ')\
+\
+lol\
+
+node -e "const repl = require('node:repl'); repl.start('> ')\
+\
+lol\
+\
+>\
+
+gsw main
+gl
+gsw -c ozaki/communityTeams
+gsw ozaki/processBlogPosts
+yarn jest
+yarn jest --watch
+yarn build:packages
+gsw -0
+gsw -
+yarn start:website
+gsw -
+yarn jest --watch
+yarn jest --watch
+yay
+bun run index.js
+yarn build:packages
+yarn build:packages
+yarn jest
+yarn jest --watch
+bun i zod
+bun run index.js
+bun run --watch index.js
+bun run --watch index.js --env.react 3 --env.js 2
+bun run index.js --env.react 3 --env.js 2
+bun run index.js build --env.react 3 --env.js 2
+bun run index.js --env.react 3 --env.js 2
+bun run index.js build --env.react 3 --env.js 2
+bun run index.js build --tags.react 3 --tags.js 2
+bun run index.js build --env.react 3 --env.js 2
+bun run index.js build --tags.react 3 --tags.js 2
+pnpm build
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --tags.react '2' --tags.js '3'
+nr build
+nr build && pnpm cli:start blogcenter --output ./center.png --title 'title' && pnpm cli:start blogtop --output ./top.png --title 'title' --tags.react '2' --tags.js '3':start doc --output ./doc.png  --title "l" --description "lijkn"
+nr build && pnpm cli:start blogtop --output ./top.png --title 'title' --tags.react '2' --tags.js '3':start doc --output ./doc.png  --title "l" --description "lijkn"
+nr build && pnpm cli:start blogtop --output ./top.png --title 'title' --tags.react '2' --tags.js '3'
+vercel deploy
+l
+pnpm up -i --latest
+nr build
+nr build && pnpm cli:start blogtop --output ./top.png --title 'title' --tags.react '2' --tags.js '3'
+vercel deploy
+pnpm up -g --latest
+vercel deploy
+l
+bun run index.js build --tags.react 3 --tags.js 2
+bun run index.js build --type blogtop --tags.react 3 --tags.js 2
+yay
+yay -Yc
+yay -Sc
+glg
+zi
+yarn jest
+yarn jest --filter 'process blog posts load content'
+yay
+?? list all packages installed with yay
+                                                                                                                                             gl
+yarn install
+yarn jest idealImage --watch
+fd ideal
+cd packages/docusaurus-plugin-ideal-image/
+yarn add @docusaurus/logger
+yarn add unist-util-visit
+yarn install
+gl
+gsw -c ozaki/remark-ideal-image-md
+yarn build:packages
+cd packages/docusaurus-mdx-loader/src/remark/idealImages
+cd ../../
+../
+yarn install @docusaurus/plugin-ideal-image
+yarn add @docusaurus/plugin-ideal-image
+yarn add @thene/IdealImage
+yarn add @theme/IdealImage
+yarn jest idealImage --watch
+yay
+gl
+bun start
+bun run start
+bun run build
+../
+rm -rf testatag
+ls
+cd dev
+ls
+cd ../delete
+ls
+bun create docusaurus
+cd testt
+cd testatag
+code .
+../
+ls
+cd
+cd delete
+ls
+ls test
+../
+rm -rf delete
+ll
+ll temp
+rm -rf temp/hanibi
+ll
+ll github
+ll my-website
+rm -rf my-website
+ll
+ll eslintplayground
+l eslintplayground
+rmdir eslintplayground
+ll
+ll temp
+yay
+? rename branch
+git? rename branch
+git branch ozaki/remark-ideal-image-md ozaki/atag-warn
+git branch -m ozaki/remark-ideal-image-md ozaki/atag-warn
+gsw main
+gl
+gsw ozaki/processBlogPosts
+git rebase -i 0d8777c484
+git push
+gl
+git push
+yarn jest docusaurus-plugin-content-blog --watch
+yarn build:packages
+yarn start:website
+gcmsg 'removed formattedDate & fix insecure type'
+yarn jest
+take prtemp
+gh repo creaet
+gh repo create
+cd testpr
+v a.txt
+gcam 'init'
+setozakigit
+gcam 'init'
+ga
+ga .
+gcam 'init'
+gp
+gsw -c b
+v b.txt
+gcam 'b'
+ga .
+gcam 'b'
+gp
+gsw main
+gsw master
+v c.txt
+ga .
+gcam 'c'
+gp
+gsw b
+git merge master
+gp
+yarn jest docusaurus-plugin-content-blog --watch
+gl
+gst
+gl
+yarn jest docusaurus-plugin-content-blog --watch
+gm 'add back formattedDate'
+gcmsg 'add back formattedDate'
+gsw main
+gl
+gsw -
+yarn jest docusaurus-plugin-content-blog --watch
+git? fast forwrd main into ozaki/processBlogPosts branch
+?? list git config
+git merge main
+gsw main
+gl
+gsw -
+gp
+yarn jest docusaurus-plugin-content-blog --watch
+z pluginconblog
+zi
+d packages/docusaurus-plugin-content-blog
+yarn add -D @total-typescript/shoehorn
+yarn add @total-typescript/shoehorn
+cd packages/docusaurus-plugin-content-blog
+yarn add -D @total-typescript/shoehorn
+yarn jest docusaurus-plugin-content-blog --watch
+yarn install
+yarn jest docusaurus-plugin-content-blog --watch
+cd -
+yarn install
+yarn jest docusaurus-plugin-content-blog --watch
+ls
+rm -rf prtemp
+ll temp
+yarn install
+yarn build:website:fast
+gsw main
+gl
+gsw -c ozaki/docVersionned
+yarn build:website:fast
+gl
+gsw -
+gl
+yarn install
+yarn build:packages
+yarn lerna run build --scope=@docusaurus/utils
+yarn build:packages
+yarn clear
+yarn install
+yarn build:packages
+yarn clear
+yarn build:packages
+yarn jest
+yarn start:website
+z docus
+gl
+gsw ozaki/legacyDocsUpdate
+zi
+                                                                                                       yay
+gcmsg 'refactor: tests & shared code'
+gp
+gl
+fl
+gl
+gsw -c ozaki/showcaseFix
+gcmsg 'docs(showcase): update link'
+gl
+yarn jest docusaurus-plugin-content-blog --watch
+yarn jest docusaurus-plugin-content-blog --watch\ 
+yarn jest docusaurus-plugin-content-blog --watch
+yarn install
+yarn jest docusaurus-plugin-content-blog --watch
+git commit -m "wip: git track"
+yarn jest docusaurus-plugin-content-blog --watch
+yarn watch
+yarn build:packages
+yarn watch
+yarn start:website
+yay
+                                                                                                                                                                                                                                                                                                                                                                         yarn jest
+yarn build:website:fast
+yarn serve:website
+yarn jest docusaurus-utils
+yarn start:website
+yarn jest
+yarn jest docusaurus-utils --watch
+NODE_ENV='production' yarn jest docusaurus-utils --watch
+yarn jest docusaurus-utils --watch
+yarn lint
+bash .git/hooks/pre-commit.sample
+git commit -m "wip: review"
+yarn jest
+yarn jest docusaurus-utils
+yarn jest docusaurus-utils --watch
+git push
+yarn jest docusaurus-plugin-content-blog --watch
+yarn build:packages
+yarn start:website
+yarn build:packages
+yarn start:website
+yarn wa
+yarn watch
+yarn start:website
+gl
+yay
+gsw -c ozaki/fixTeam
+yarn install @docusaurus/utils-common
+yarn add @docusaurus/utils-common
+yarn add @docusaurus/utils-common
+yarn install
+yarn add @docusaurus/utils-common
+gsw -c ozaki/utils-shared
+yarn add @docusaurus/utils-common
+yarn install
+yarn jest
+yarn watch
+yarn watch
+yarn lerna run build --scope=@docusaurus/utils-common
+yarn build:packages
+yarn install
+yarn clear
+yarn install
+yarn clear
+yarn install
+yarn jest
+yarn install
+yarn jest
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  yay
+yay -Yc
+yay -Sc
+yarn clear
+yarn install
+yarn watch
+yarn start:website
+gl
+zi
+cd packages/docusaurus-plugin-showcase
+yarn add js-yaml
+yarn clear
+git fetch
+git fetch origin master
+git fetch origin main
+gl
+yarn clear
+yarn install
+yarn jest
+yarn start:website
+yarn clear
+yarn clear && yarn install
+yarn watch
+gcmsg 'wip showcase components'
+yarn start:website
+setozakigit
+gst
+yarn lint
+yarn lint:spelling
+yarn format
+gl
+yarn clear && yarn install
+yarn install
+yarn watch
+yarn install
+yarn watch
+gcmsg 'wip routes per yaml'
+yarn start:website
+yarn cleaer
+yarn clear
+yarn start:website
+z theme classic
+zi
+cd packages/docusaurus-theme-classic
+yarn add react-popper
+                                                                                                                yay
+yay -Sc
+yay -Yc
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              yarn clear && yarn install
+yarn watch
+yarn clear && yarn install
+yarn watch
+yarn start:website
+?? search for string 'console.log' in recent git commit]
+?? search for string 'console.log' recursively in previous git commits
+yarn start:website
+z docus
+yarn start:website
+yarn start:website > log.log
+yarn start:website 2> log.log 
+yarn start:website > logg.log
+pnpm start
+pnpm clear
+pnpm start
+pnpm start
+pnpm create docusaurus testissue
+cd testissue
+../
+ll
+rm -rf testissue
+ll temp
+mv temp playground
+convert
+yay -S imagemagick
+yay
+yay -S imagemagick
+convert aot.png aot.jpg
+file aot.jpg
+file aot.png
+                                                                                                                                                                                                                                                                 yarn watch
+yay
+zi docu
+yay
+yay -Yc
+yay -Sc
+zi
+yarn jest --watch
+git pull
+yarn clear
+yarn install
+yarn clear
+yarn install
+yarn clear && yarn build:packages
+yarn watch
+yarn watch
+yarn start:website
+git pusg
+git push
+gh
+?? test port 22  and port 80
+git push
+git push
+git push
+yarn watch
+yarn start:website
+yarn jest
+yarn jest --watch
+yarn jest 
+yarn jest --watch
+btop
+git config --global --list
+cd playground
+pnpm create docusaurus tailwind32
+cd tailwind32
+pnpm i tailwindcss postcss autoprefixer
+pnpx tailwindcss init
+pnpm start
+pnpm i
+pnpm start
+pnpm clear
+pnpm start
+pnpm i
+pnpm clear
+pnpm start
+pnpm i
+pnpm clear
+pnpm start
+pnpm clear
+pnpm i
+pnpm clear
+nvm install node
+corepack enable
+updatepnpm
+pnpm clear
+pnpm i
+pnpm start
+cd ../
+rm -rf tailwind32
+pnpm create docusaurus tailwind32
+cd tailwind32
+pnpm i tailwindcss postcss autoprefixer
+pnpx tailwindcss init
+pnpm start
+pnpm build
+pnpm serve
+eee
+pnpm serve
+pnpm clear
+pnpm start
+pnpm build
+pnpm serve
+cd ../
+rm -rf tailwind32
+gh
+gh completion
+gh completion -s zsh
+gh
+pnpm create docusaurus tailwind32
+cd tailwind32
+pnpm i tailwindcss postcss autoprefixer
+pnpx tailwindcss init
+pnpm i
+pnpm start
+pnpm build
+pnpm serve
+gh
+gh copilot
+yay
+gh -v
+gh version
+gh copilot
+gh copilot suggest
+gh extensions
+gh extension install github/gh-copilot --force
+gh extension install seachicken/gh-poi
+gh alias set c "gh copilot suggest"
+gh copilot
+gh alias set c "gh copilot suggest"
+gh alias set c "copilot suggest"
+gh c list all dirs
+ls -d */
+z docus
+gh poi
+gh c merge branch main without rebase
+git merge main
+ugit
+gsw main
+gl
+gsw -
+yarn jest
+                                                                                                                       z docus
+yarn clear
+yarn install
+yarn watch
+z docus
+gh poi
+yarn start:website
+sudo yarn start:websiteOA
+yarn start:website
+z docus
+bun run jest --watch
+gl
+gsw -c ozaki/doc-headtag
+yarn watch
+yay
+z docus
+btop
+yay
+yay -Sc
+yay -Yc
+btop
+yarn watch
+gl
+yarn clear && yarn install
+yarn watch
+yarn start:website
+bun run jest --watch
+yarn start:website
+yarn jest
+gsw -c ozaki/pages-lastupdate
+yarn start:website
+yarn watch
+yarn install
+yarn watch
+yarn clear && yarn install
+yarn watch
+yarn watch
+git merge main
+git config --global --list
+yarn watch
+yarn install
+yarn watch
+git pull
+yarn clear
+gcmsg 'wip'
+yarn start:website
+git push -u origin ozaki/showcase
+git checkout main
+gl
+gsw -
+git merge main
+git push -u origin ozaki/showcase
+git pull
+yarn watch
+yarn clear
+yarn install
+git pull
+yarn install
+yarn clear
+yarn install
+yarn start:website
+yarn install
+yarn start:website
+cd packages/docusaurus-theme-classic
+yarn add @popperjs/core
+yarn watch
+yarn install
+yarn start:website
+cd ../../
+yarn start:website
+git merge undo
+btop
+z docus
+gcmsg 'wip'
+yarn install
+?? git commit wip and ignore hooks
+git commit -m "hooks bypass extreme wip" --no-verify
+git push
+git pull
+gsw main
+gl
+gsw -
+git merge main
+git push -u origin ozaki/pages-lastupdate
+yarn clear
+yarn install
+btop
+yay
+yarn watch
+yarn start:website
+yarn build:website:fast
+yarn serve:website
+yarn start:website
+yarn jest
+yarn start:website
+gl
+yay
+yay
+z docus
+git pull
+gh extension install seachicken/gh-poi
+gsw master
+gsw main
+gl
+gh poii
+gh poi
+gsw ozaki/tagsBlogDoc
+gl
+code .
+yay
+yay
+git switch ozaki/mediaShareButtons
+git pull
+yarn install
+yarn start:website
+updatepnpm
+nvm install 18
+nvm list
+nvm uninstall 18.19.1
+nvm uninstall 21.6.2
+nvm install 21
+nvm install 22
+nvm list
+nvm install 20
+nvm uninstall 21.7.
+nvm uninstall 21.7
+nvm uninstall 21.7.1
+nvm list
+nvm uninstall 21.7.1
+nvm uninstall 21
+nvm install 21.7.1
+nvm list
+yay
+yay -Yc
+yay -Sc
+z docus
+git switch main
+gl
+gh poi
+git switch ozaki/legacyDocsUpdate
+gsw -
+gh poi
+git branch -d ozaki/legacyDocsUpdate
+git branch -D ozaki/legacyDocsUpdate
+gh branch
+git branch
+git branch -D ozaki/atag-warn
+code .
+nvm uninstall 21
+nvm uninstall 22
+nvm uninstall 20
+nvm install 22
+nvm install 20
+nvm use 22
+corepack enable
+updatepnpm
+nvm use 20
+corepack enable
+updatepnpm
+nvm use 18
+corepack enable
+updatepnpm
+yarn watch
+bun run jest
+bun run jest --watch
+gcmsg 'remove duplication and inline check'
+bun run jest
+yarn start:website
+gcmsg 'remove socials & support unnamed author'
+git push
+z docus
+code .
+yarn start:website
+yarn start:website
+yarn watch
+yarn clear && yarn install
+yarn watch
+git pull --autostash
+yay
+code
+yay
+git pull --autostash
+gh poi
+git pull
+git status
+git fetch origin ozaki/mediaShareButtons
+git update-ref -d refs/remotes/origin/dependabot/github_actions/github/codeql-action-3.25.10\
+
+cd .git/refs/remotes/origin/dependabot/github_actions/github/\
+
+ls
+rm codeql-action-3.25.10
+cd -
+git reflog expire --expire=now --all\
+git gc --prune=now\
+
+git fetch origin ozaki/mediaShareButtons\
+
+git pull
+sudo git pull[200~git reflog
+git reflog
+git fsck --lost-found
+ls .git/lost-found/commit\
+
+yarn watch
+yarn clear && yarn install
+yarn start:website
+bunx dependency-maintainers
+bunx ihimnm
+yarn watch
+nvm use
+yarn watch
+yarn clear && yarn install
+yarn watch
+yarn clear && yarn install
+yarn start:website
+bunx million
+git pull --autostash
+gh poi
+gsw main
+git pull --autostash
+gsw main
+git pull --autostash
+gsw -
+git pull --autostash
+yarn watch
+yarn clear && yarn install && yarn watch
+yarn watch
+yarn install
+git status
+git commit -m "Merge branch 'main' into ozaki/mediaShareButtons"
+git commit -m "fix type"
+yarn watch
+yarn start:website
+yay
+yay
+yarn start:website
+git pull
+gsw main
+git pull
+gsw -
+git merge main
+git log
+git push -f
+yarn watch
+yarn clear && yarn install 
+yarn watch
+yay
+z docus
+code .
+yay
+yay
+z docus
+bun run jest
+bun run jest --watch\ 
+bun run jest --watch
+cd website ; yarn typecheck ; cd ..
+bun run jest
+bun run jest --watch
+yarn watch
+z docus
+yarn watch
+yarn start:website --no-open
+yarn clear && yarn install
+yarn start:website
+z docus
+gcmsg 'refactor'
+yarn start:website
+yarn start:website --no-open
+yarn build:website:fast && yarn serve:website
+yarn start:website --no-open
+z docus
+gcmsg 'refactor'
+git push
+gsw main
+git pull
+gsw -
+git merge main
+yarn clear 
+yarn install
+sudo yarn install
+yarn install
+yarn build:website:fast && yarn serve:website
+yarn start:website --no-open
+gcmsg 'Merge branch 'main' into ozaki/mediaShareButtons'
+gcmsg "Merge branch 'main' into ozaki/mediaShareButtons"
+git push
+how to list files
+yarn start:website --no-open
+yarn install
+yarn watch
+yarn clear 
+yarn watch
+yarn install
+yarn watch
+yarn jest
+                                                                               ssh rasp
+yay
+yay
+yay -Sc
+yay -Yc
+cd dockers
+z dockers
+git status
+git pull
+code .
+cd ..
+ssh oracle
+cd jellyfin
+make down
+cd ..
+setozakigit
+ssh oracle
+yay streamrip
+pip install streamrip
+yay
+pip install streamrip
+yay -S streamrip
+rip config open
+code  /home/ozaki/.config/streamrip/config.toml
+rip url https://www.deezer.com/fr/artist/69323382
+rip url https://open.spotify.com/artist/51GMhsEGVgOkHzS5Ycj7l9
+curl 141.145.221.71:8096
+ssh oracle
+yay
+yay
+yay
+yay -Yc
+yay -Sc
+ll
+yay
+yay -Sc
+yay -Yc
+ll
+cd github
+ls
+cd dockers
+git pull
+cd ../../
+cd
+cd playground
+ls
+z docu
+gsw main
+gst
+git restore .
+gsw main
+git pull
+gh poi\ 
+gh poi
+git branches
+git branch list
+git branch lis
+git branch 
+docker images
+docker ps
+sudo dockerd
+sudo systemctl docker start
+ollama
+ollama list
+ollama rm mistral
+ollama list
+yay -Rns ollama
+z superfo
+gst
+git origin list
+git origin 
+?? list git origin
+gst
+pnpm start
+npm run start
+cat package.json
+pnpm dev
+z super
+cd ../
+rm -rf SuperFolio
+docker
+docker images
+docker system prune -a -f
+sudo ncdu /
+sudo ncdu / --exclude /mnt
+yay
+yay -Sc
+yay -Yc
+ssh oracle
+cat .ssh/config
+ssh root@66.175.235.111
+cat .ssh/config
+ls
+scp ubuntu@141.145.221.71:/home/ubuntu/dockers/wireguard/config/peer_phone ./
+scp ubuntu@141.145.221.71:/home/ubuntu/dockers/wireguard/config/peer_phone ./peer
+scp ubuntu@141.145.221.71:/home/ubuntu/dockers/wireguard/config/peer_phone/peer_phone.conf ./
+scp ubuntu@141.145.221.71:/home/ubuntu/dockers/wireguard/config/peer_phone/peer_phone.conf ./qwe
+scp ubuntu@141.145.221.71:/home/ubuntu/dockers/wireguard/config/peer_phone/peer_phone.conf ./wg.conf
+cat .ssh/config
+ls
+ssh oracle
