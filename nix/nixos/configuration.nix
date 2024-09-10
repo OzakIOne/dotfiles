@@ -4,8 +4,6 @@ in {
   imports = [ # Include the results of the hardware scan.
     ./hardware.nix
     ./users.nix
-
-    <home-manager/nixos>
   ];
 
   nixpkgs.config.allowUnfree = true;
