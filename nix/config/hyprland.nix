@@ -1,8 +1,7 @@
-{ lib, username, host, config, ... }:
+{ lib, username, config, ... }:
 
 let
-  # inherit (import ../hosts/${host}/variables.nix)
-  inherit (import ../nixos/variables.nix)
+  inherit (import ./variables.nix)
     browser terminal extraMonitorSettings keyboardLayout;
 in with lib; {
   wayland.windowManager.hyprland = {
