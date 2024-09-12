@@ -189,8 +189,8 @@ in {
     cursor.size = 24;
     fonts = {
       monospace = {
-        package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
-        name = "JetBrainsMono Nerd Font Mono";
+        package = pkgs.nerdfonts.override { fonts = [ "CascadiaMono" ]; };
+        name = "CascadiaMono";
       };
       sansSerif = {
         package = pkgs.montserrat;

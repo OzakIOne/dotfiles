@@ -10,7 +10,7 @@
         show-icons = true;
         icon-theme = "Papirus";
         location = 0;
-        font = "JetBrainsMono Nerd Font Mono 12";
+        font = "CascadiaMono";
         drun-display-format = "{icon} {name}";
         display-drun = " Apps";
         display-run = " Run";
@@ -172,7 +172,7 @@
         };
         "element-text" = {
           background-color = mkLiteral "transparent";
-          font = "JetBrainsMono Nerd Font Mono 12";
+          font = "CascadiaMono";
           text-color = mkLiteral "inherit";
           cursor = mkLiteral "inherit";
           vertical-align = mkLiteral "0.5";
