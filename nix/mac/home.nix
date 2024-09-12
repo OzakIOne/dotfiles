@@ -5,39 +5,27 @@ let
     curl
     fd
     fx
-    jq
     yq
-    git
     duf
     ffmpeg
     atuin
-    make
     lazydocker
     ncdu
-    fnm
-    atuin
-    ollama
-    lazydocker
-    tealdeer
-    github-copilot-cli
-    zoxide
     tmux
     glow
+    make
     bun
-    gh
-    fzf
     unzip
+    aria2
     wget
     zip
-    # shell better alternatives
+    ## shell better alternatives
     neovim
-    ripgrep
     ugrep
-    bat
+    gh
     btop
-    bottom
     dust
-    # nix
+    ## nix
     statix
     deadnix
     alejandra
@@ -45,6 +33,21 @@ let
     nixfmt
     nvd
     nil
+
+    ## home manager
+    # fzf
+    # jq
+    # zoxide
+    # ripgrep
+    # bat
+    # bottom
+    # git
+
+    ## WSL
+    # antigen-git
+    # imagemagick
+    # stow
+    # ugit
   ];
   stable-packages = with pkgs;
     [ (nerdfonts.override { fonts = [ "CascadiaMono" ]; }) ]

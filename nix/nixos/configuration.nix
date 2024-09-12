@@ -104,37 +104,27 @@ in {
     curl
     fd
     fx
-    github-copilot-cli
-    fzf
-    ollama
-    jq
     yq
-    lazydocker
-    git
     duf
     ffmpeg
-    ncdu
-    tealdeer
     atuin
-    fnm
-    make
+    lazydocker
+    ncdu
     tmux
-    gh
     glow
+    make
     bun
     unzip
-    zoxide
+    aria2
     wget
     zip
-    # shell better alternatives
+    ## shell better alternatives
     neovim
-    ripgrep
     ugrep
-    bat
+    gh
     btop
-    bottom
     dust
-    # nix
+    ## nix
     statix
     deadnix
     alejandra
@@ -142,6 +132,21 @@ in {
     nixfmt
     nvd
     nil
+
+    ## home manager
+    # fzf
+    # jq
+    # zoxide
+    # ripgrep
+    # bat
+    # bottom
+    # git
+
+    ## WSL
+    # antigen-git
+    # imagemagick
+    # stow
+    # ugit
 
     (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
   ];
