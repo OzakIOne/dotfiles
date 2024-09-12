@@ -188,13 +188,13 @@ in {
       log = { decorate = "full"; };
 
       # Color section configuration
-      color = {
-        status = {
-          added = "green";
-          changed = "yellow bold";
-          untracked = "red bold";
-        };
-      };
+      # color = {
+      #   status = {
+      #     added = "green";
+      #     changed = "yellow bold";
+      #     untracked = "red bold";
+      #   };
+      # };
 
       pull = { rebase = true; };
       rebase = { autostash = true; };
