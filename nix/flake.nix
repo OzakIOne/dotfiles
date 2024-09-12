@@ -6,6 +6,7 @@
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:danth/stylix";
+    vscode-server.url = "github:nix-community/nixos-vscode-server";
     # fine-cmdline = {
     #   url = "github:VonHeikemen/fine-cmdline.nvim";
     #   flake = false;
@@ -29,6 +30,7 @@
           modules = [
             ./nixos/configuration.nix
             inputs.stylix.nixosModules.stylix
+            inputs.vscode-server.homeModules.default
             home-manager.nixosModules.home-manager
             {
               home-manager.extraSpecialArgs = {
