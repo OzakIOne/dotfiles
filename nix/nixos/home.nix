@@ -286,7 +286,6 @@ in {
     jq = { enable = true; };
     bat = { enable = true; };
     fzf = { enable = true; };
-    delta = { enable = true; };
     yt-dlp = { enable = true; };
     zoxide = { enable = true; };
     bottom = { enable = true; };
