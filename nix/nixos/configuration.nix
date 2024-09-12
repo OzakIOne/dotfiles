@@ -91,15 +91,55 @@ in {
     WLR_NO_HARDWARE_CURSORS = "1";
   };
   environment.systemPackages = with pkgs; [
-    wget
-    curl
     waybar
     dunst
+    delta
     libnotify
     wezterm
     rofi-wayland
     swww
     home-manager
+
+    coreutils
+    curl
+    fd
+    fx
+    jq
+    yq
+    git
+    duf
+    ffmpeg
+    ncdu
+    tmux
+    glow
+    bun
+    unzip
+    wget
+    zip
+    # shell better alternatives
+    nvim
+    ripgrep
+    ugrep
+    bat
+    btop
+    bottom
+    dust
+    # nix
+    statix
+    deadnix
+    alejandra
+    nh
+    nixfmt
+    nvd
+    nil
+
+    fnm
+    atuin
+    ollama
+    lazydocker
+    tealdeer
+    github-copilot-cli
+    (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
   ];
 
   xdg.portal = {

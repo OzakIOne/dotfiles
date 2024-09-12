@@ -2,53 +2,6 @@
 let
   inherit (import ./variables.nix) gitUsername gitEmail;
 
-  unstable-packages = with pkgs.unstable; [
-    coreutils
-    curl
-    fd
-    fx
-    delta
-    jq
-    yq
-    git
-    duf
-    ffmpeg
-    ncdu
-    tmux
-    glow
-    bun
-    unzip
-    wget
-    zip
-    # shell better alternatives
-    nvim
-    ripgrep
-    ugrep
-    bat
-    btop
-    bottom
-    dust
-    # nix
-    statix
-    deadnix
-    alejandra
-    nh
-    nixfmt
-    nvd
-    nil
-  ];
-
-  stable-packages = with pkgs;
-    [
-      fnm
-      atuin
-      ollama
-      lazydocker
-      tealdeer
-      github-copilot-cli
-      (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
-    ] ++ (if stdenv.isDarwin then [ raycast colima ] else [ google-chrome ]);
-
   scripts = [
     (import ../scripts/emopicker9000.nix { inherit pkgs; })
     (import ../scripts/task-waybar.nix { inherit pkgs; })
@@ -82,12 +35,9 @@ in {
   ];
 
   home = {
-
     username = "${username}";
     homeDirectory = "/home/${username}";
-
-    packages = scripts ++ stable-packages ++ unstable-packages;
-
+    packages = scripts;
     stateVersion = "23.11";
   };
 
