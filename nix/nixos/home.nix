@@ -1,19 +1,6 @@
 { pkgs, username, lib, ... }:
-let inherit (import ./variables.nix) gitUsername gitEmail;
-in {
-  nixpkgs = { config = { allowUnfree = true; }; };
-  nixpkgs.config.allowUnfreePredicate = _: true;
-
-  imports = [
-    ../../config/emoji.nix
-    ../../config/hyprland.nix
-    ../../config/rofi/rofi.nix
-    ../../config/rofi/config-emoji.nix
-    ../../config/rofi/config-long.nix
-    ../../config/swaync.nix
-    ../../config/waybar.nix
-    ../../config/wlogout.nix
-  ];
+let
+  inherit (import ./variables.nix) gitUsername gitEmail;
 
   unstable-packages = with pkgs.unstable; [
     coreutils
@@ -60,6 +47,21 @@ in {
       github-copilot-cli
       (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
     ] ++ (if stdenv.isDarwin then [ raycast colima ] else [ google-chrome ]);
+
+in {
+  nixpkgs = { config = { allowUnfree = true; }; };
+  nixpkgs.config.allowUnfreePredicate = _: true;
+
+  imports = [
+    ../../config/emoji.nix
+    ../../config/hyprland.nix
+    ../../config/rofi/rofi.nix
+    ../../config/rofi/config-emoji.nix
+    ../../config/rofi/config-long.nix
+    ../../config/swaync.nix
+    ../../config/waybar.nix
+    ../../config/wlogout.nix
+  ];
 
   home = {
 
