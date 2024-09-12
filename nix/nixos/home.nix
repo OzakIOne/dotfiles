@@ -296,7 +296,7 @@ in {
   };
 
   services = {
-    vscode-server = { enable = true; };
+    # vscode-server = { enable = true; };
     hypridle = {
       settings = {
         general = {
