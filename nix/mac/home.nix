@@ -18,7 +18,7 @@ let
     wget
     zip
     # shell better alternatives
-    nvim
+    neovim
     ripgrep
     ugrep
     bat
