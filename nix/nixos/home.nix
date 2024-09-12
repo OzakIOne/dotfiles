@@ -1,4 +1,4 @@
-{ pkgs, username, lib, ... }:
+{ pkgs, username, lib, host, ... }:
 let
   inherit (import ./variables.nix) gitUsername gitEmail;
 
@@ -48,6 +48,23 @@ let
       (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
     ] ++ (if stdenv.isDarwin then [ raycast colima ] else [ google-chrome ]);
 
+  scripts = [
+    (import ../scripts/emopicker9000.nix { inherit pkgs; })
+    (import ../scripts/task-waybar.nix { inherit pkgs; })
+    (import ../scripts/squirtle.nix { inherit pkgs; })
+    (import ../scripts/nvidia-offload.nix { inherit pkgs; })
+    (import ../scripts/wallsetter.nix {
+      inherit pkgs;
+      inherit username;
+    })
+    (import ../scripts/web-search.nix { inherit pkgs; })
+    (import ../scripts/rofi-launcher.nix { inherit pkgs; })
+    (import ../scripts/screenshootin.nix { inherit pkgs; })
+    (import ../scripts/list-hypr-bindings.nix {
+      inherit pkgs;
+      inherit host;
+    })
+  ];
 in {
   nixpkgs = { config = { allowUnfree = true; }; };
   nixpkgs.config.allowUnfreePredicate = _: true;
@@ -68,7 +85,7 @@ in {
     username = "${username}";
     homeDirectory = "/home/${username}";
 
-    packages = stable-packages ++ unstable-packages;
+    packages = scripts ++ stable-packages ++ unstable-packages;
 
     stateVersion = "23.11";
   };
