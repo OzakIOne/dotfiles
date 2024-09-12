@@ -104,16 +104,26 @@ in {
     curl
     fd
     fx
+    github-copilot-cli
+    fzf
+    ollama
     jq
     yq
+    lazydocker
     git
     duf
     ffmpeg
     ncdu
+    tealdeer
+    atuin
+    fnm
+    make
     tmux
+    gh
     glow
     bun
     unzip
+    zoxide
     wget
     zip
     # shell better alternatives
@@ -133,12 +143,6 @@ in {
     nvd
     nil
 
-    fnm
-    atuin
-    ollama
-    lazydocker
-    tealdeer
-    github-copilot-cli
     (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
   ];
 

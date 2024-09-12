@@ -235,7 +235,6 @@ in {
           gh-poi
           # gh-copilot
         ];
-
     };
 
     kitty = {

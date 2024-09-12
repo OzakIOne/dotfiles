@@ -10,10 +10,22 @@ let
     git
     duf
     ffmpeg
+    atuin
+    make
+    lazydocker
     ncdu
+    fnm
+    atuin
+    ollama
+    lazydocker
+    tealdeer
+    github-copilot-cli
+    zoxide
     tmux
     glow
     bun
+    gh
+    fzf
     unzip
     wget
     zip
@@ -34,17 +46,9 @@ let
     nvd
     nil
   ];
-
   stable-packages = with pkgs;
-    [
-      fnm
-      atuin
-      ollama
-      lazydocker
-      tealdeer
-      github-copilot-cli
-      (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
-    ] ++ (if stdenv.isDarwin then [ raycast colima ] else [ google-chrome ]);
+    [ (nerdfonts.override { fonts = [ "CascadiaMono" ]; }) ]
+    ++ (if stdenv.isDarwin then [ raycast colima ] else [ google-chrome ]);
 in {
   nixpkgs = { config = { allowUnfree = true; }; };
   nixpkgs.config.allowUnfreePredicate = _: true;
