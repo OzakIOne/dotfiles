@@ -7,6 +7,7 @@ let
     curl
     fd
     fx
+    delta
     jq
     yq
     git
