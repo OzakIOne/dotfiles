@@ -163,41 +163,43 @@ in {
 
     git = {
       enable = true;
+      extraConfig = {
+        core = {
+          editor = "code -w -n";
+          autocrlf = "input";
+          fileMode = false;
+          whitespace = "-trailing-space";
+          pager = "${pkgs.delta}/bin/bat";
+        };
+        rerere = { enabled = true; };
+        push = { autoSetupRemote = true; };
+        user = {
+          name = "${gitUsername}";
+          email = "${gitEmail}";
+        };
 
-      core = {
-        editor = "code -w -n";
-        autocrlf = "input";
-        fileMode = false;
-        whitespace = "-trailing-space";
-        pager = "${pkgs.delta}/bin/bat";
+        delta = {
+          navigate = true;
+          line-numbers = true;
+        };
+
+        stash = { showPatch = true; };
+
+        log = { decorate = "full"; };
+
+        # Color section configuration
+        color = {
+          status = {
+            added = "green";
+            changed = "yellow bold";
+            untracked = "red bold";
+          };
+        };
+
+        pull = { rebase = true; };
+        rebase = { autostash = true; };
       };
-      rerere = { enabled = true; };
-      push = { autoSetupRemote = true; };
-      user = {
-        name = "${gitUsername}";
-        email = "${gitEmail}";
-      };
 
-      delta = {
-        navigate = true;
-        line-numbers = true;
-      };
-
-      stash = { showPatch = true; };
-
-      log = { decorate = "full"; };
-
-      # Color section configuration
-      # color = {
-      #   status = {
-      #     added = "green";
-      #     changed = "yellow bold";
-      #     untracked = "red bold";
-      #   };
-      # };
-
-      pull = { rebase = true; };
-      rebase = { autostash = true; };
     };
 
     fd = {
