@@ -70,14 +70,14 @@ in {
   nixpkgs.config.allowUnfreePredicate = _: true;
 
   imports = [
-    ../../config/emoji.nix
-    ../../config/hyprland.nix
-    ../../config/rofi/rofi.nix
-    ../../config/rofi/config-emoji.nix
-    ../../config/rofi/config-long.nix
-    ../../config/swaync.nix
-    ../../config/waybar.nix
-    ../../config/wlogout.nix
+    ../config/emoji.nix
+    ../config/hyprland.nix
+    ../config/rofi/rofi.nix
+    ../config/rofi/config-emoji.nix
+    ../config/rofi/config-long.nix
+    ../config/swaync.nix
+    ../config/waybar.nix
+    ../config/wlogout.nix
   ];
 
   home = {
