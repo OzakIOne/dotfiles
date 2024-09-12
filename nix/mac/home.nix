@@ -1,20 +1,5 @@
 { pkgs, lib, ... }:
-
-{
-  nixpkgs = { config = { allowUnfree = true; }; };
-  nixpkgs.config.allowUnfreePredicate = _: true;
-
-  imports = [
-    ../../config/emoji.nix
-    ../../config/hyprland.nix
-    ../../config/rofi/rofi.nix
-    ../../config/rofi/config-emoji.nix
-    ../../config/rofi/config-long.nix
-    ../../config/swaync.nix
-    ../../config/waybar.nix
-    ../../config/wlogout.nix
-  ];
-
+let
   unstable-packages = with pkgs.unstable; [
     coreutils
     curl
@@ -60,6 +45,9 @@
       github-copilot-cli
       (nerdfonts.override { fonts = [ "CascadiaMono" ]; })
     ] ++ (if stdenv.isDarwin then [ raycast colima ] else [ google-chrome ]);
+in {
+  nixpkgs = { config = { allowUnfree = true; }; };
+  nixpkgs.config.allowUnfreePredicate = _: true;
 
   home = {
     username = "clementcouriol";
