@@ -219,7 +219,6 @@ in {
     };
 
     eza = {
-      enableAliases = true;
       enable = true;
       enableZshIntegration = true;
     };
