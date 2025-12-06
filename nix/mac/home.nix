@@ -96,7 +96,6 @@ in {
         export ATUIN_NOBIND=1
         eval "$(${pkgs.atuin}/bin/atuin init zsh)"
         bindkey '^r' _atuin_search_widget
-        eval "$(${pkgs.github-copilot-cli}/bin/github-copilot-cli alias -- \"$0\")"
 
       '';
 

@@ -2,7 +2,6 @@ eval "$(starship init zsh)"
 
 which pacman &> /dev/null && source /usr/share/doc/find-the-command/ftc.zsh noprompt noupdate
 
-eval "$(github-copilot-cli alias -- "$0")"
 
 # zoxide
 _ZO_ECHO=1
