@@ -36,7 +36,7 @@ export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 export NVM_DIR="${XDG_DATA_HOME}/nvm"
 export _Z_DATA="${XDG_DATA_HOME}/z"
 export PKG_CACHE_PATH="${XDG_CACHE_HOME}/pkg-cache/"
-git config --global core.editor "code -n -w"
+git config --global core.editor "code"
 touch $HOME/.config/wgetrc
 
 function arch() {

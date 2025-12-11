@@ -11,3 +11,5 @@ source $HOME/.config/zsh/.zshali
 source $HOME/.config/zsh/.zshconf
 
 source $HOME/.config/zsh/.zshkey
+# bun completions
+[ -s "/home/ozaki/.local/share/bun/_bun" ] && source "/home/ozaki/.local/share/bun/_bun"

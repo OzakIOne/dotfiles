@@ -9,7 +9,7 @@ export LD_LIBRARY_PATH=/usr/lib/qt/plugins/platforms/:$LD_LIBRARY_PATH
 #export QT_QPA_PLATFORM="wayland;xcb"
 export ANDROID_HOME="$HOME/Android/Sdk"
 
-export EDITOR="code -n -w"
+export EDITOR="code"
 export BROWSER="brave"
 export TERMINAL="kitty"
 export TERM="xterm-256color"
